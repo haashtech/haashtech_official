@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  font-family: "Share Tech", sans-serif;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+section{
+    scroll-snap-align: start;
+}
+:root {
+  --transition: 0.25s;
+  --spark: 1.8s;
+}
+.text-style {
+  font-family: "Share Tech";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  font-size: clamp(10px, 6vw, 40px);
+  line-height: 135%;
+  /* or 65px */
+  letter-spacing: -0.01em;
+
+  background: linear-gradient(90deg, #ffbd6a 33.05%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-container {
+  width: 100%;
+  
+}
+.shadow_bubble {
+  
+  border-radius: 50%;
+  background: #e98200;
+  opacity: 0.5;
+  z-index: -99999;
+  box-shadow: 0 0 30px 20px rgba(255, 189, 106, 0.5);
+  position: fixed;
+  transform: translate(-50%, -50%); /* Center the bubble */
+  filter: blur(65px);
+}
+
+  
+/* Ellipse 1 */
+
+/* @media (min-width: 1280px) {
+  .section-container {
+    padding-left: 6rem ;
+    padding-right: 6rem ;
+  }
+} */
+/* .main-1{
+    display: flex;
+    background-color: #FFBD6A;
+    column-gap: 20px;
+}
+.right-Side{
+ width: 50%;
+}
+
+.left-Side{
+    width: 50%;
+} */
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* button group starts*/
+/* Updated CSS with background color #FFBD6A */
+.sparkle-button_1 {
+  --active: 0;
+  --bg: #ffbd6a; /* Set background color to #FFBD6A */
+  color: black;
+  background: var(--bg);
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  padding: 0.5em 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  white-space: nowrap;
+  border-radius: 100px;
+  position: relative;
+  box-shadow: 0 0 calc(var(--active) * 6em) calc(var(--active) * 3em)
+      hsl(260 97% 61% / 0.75),
+    0 0.05em 0 0
+      hsl(260 calc(var(--active) * 97%) calc((var(--active) * 50%) + 30%)) inset,
+    0 -0.05em 0 0 hsl(260 calc(var(--active) * 97%) calc(var(--active) * 60%)) inset;
+  transition: box-shadow var(--transition), scale var(--transition),
+    background var(--transition);
+  scale: calc(1 + (var(--active) * 0.1));
+}
+
+.sparkle-button_1:hover {
+  transform: scale(1.05); /* Scale up the button on hover */
+  transition: transform 0.5s ease;
+}
+
+.sparkle-button_2 {
+  --cut: 0.1em;
+  --active: 0;
+  --bg: radial-gradient(
+      40% 50% at center 100%,
+      hsl(270 calc(var(--active) * 97%) 72% / var(--active)),
+      transparent
+    ),
+    radial-gradient(
+      80% 100% at center 120%,
+      hsl(260 calc(var(--active) * 97%) 70% / var(--active)),
+      transparent
+    ),
+    hsl(260 calc(var(--active) * 97%) calc((var(--active) * 44%) + 12%));
+  color: #8c8c8c;
+  background: var(--bg);
+  font-size: 1rem;
+  font-weight: 500;
+  border: 0;
+  cursor: pointer;
+  padding: 0.9em 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  white-space: nowrap;
+  border-radius: 100px;
+  position: relative;
+  box-shadow: 0 0 calc(var(--active) * 6em) calc(var(--active) * 3em)
+      hsl(260 97% 61% / 0.75),
+    0 0.05em 0 0
+      hsl(260 calc(var(--active) * 97%) calc((var(--active) * 50%) + 30%)) inset,
+    0 -0.05em 0 0 hsl(260 calc(var(--active) * 97%) calc(var(--active) * 60%)) inset;
+  transition: box-shadow var(--transition), scale var(--transition),
+    background var(--transition);
+  scale: calc(1 + (var(--active) * 0.1));
+}
+
+button:active {
+  transform: scale(5);
+  transition: all 3s;
+}
+/* CSS for button hover effect */
+.sparkle-button button:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+  transition: transform 0.5s ease;
+}
+
+.button-hacks:hover .text {
+  transform: translateX(20px); /* Adjust the value as needed */
+  transition: transform 0.5s ease;
+}
+
+.button-hacks:hover i {
+  transform: translateX(10px); /* Adjust the value as needed */
+  transition: transform 0.5s ease;
+}
+
+
+/* scroll effects */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* ======== */
+
+.card-avatar:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 0px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+.card-avatar:hover .wrapper::after,
+.wrapper::before
+{
+    opacity: 1;
+}
+.card-avatar:hover .wrapper::after{
+    height: 120px;
+}
+.card-avatar:hover .wrapper::before{
+    opacity: 1;
+}
+.card-avatar .charecter{
+    opacity: 0;
+}
+.card-avatar:hover .charecter {
+   opacity: 1;
+   transform: translate3d(0%, -50%, 100px) translateY(-100%);
+
+}
+.card-avatar .wrapper, .card_title, .charecter {
+    transition: transform 0.5s ease; 
+
+}
+/* .card-avatar .card_title{
+transform: translateY(-60px);
+} */
+.card-avatar:hover .card_title {
+    transform: translate3d(0%, -50%, 100px) translateY(-100%);
+    font-weight: 700;
+    color: #e98200;
+}

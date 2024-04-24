@@ -1,0 +1,30 @@
+.h-100vh {
+  height: 100vh;
+}
+.h-75vh {
+  height: 75vh;
+}
+.h-50vh {
+  height: 50vh;
+}
+.h-25vh {
+  height: 25vh;
+}
+
+.py-24 {
+  padding-top: 6rem /* 96px */;
+  padding-bottom: 6rem /* 96px */;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex{
+    display: flex;
+}
+.text-sub{
+    color: #8C8C8C;
+}
+
+/* A donec porta aliquam urna non nunc. Fames mi neque ullamcorper aliquam nibh. */

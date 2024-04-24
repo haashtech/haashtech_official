@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- md modal -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <title>Haash || Home</title>
+    
+  </head>
+  <body class="bg-black">
+    <!-- #Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-lg-3">
+      <div class="container">
+        <a class="navbar-brand" href="#Home">
+          <img
+            src="assets/imgs/logo/haashlogo.png"
+            alt="Haash Technologies"
+            class="w-50"
+          />
+        </a>
+        <!-- toggle button -->
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- sidebar -->
+        <div
+          class="sidebar offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <!-- sidebar header -->
+          <div class="offcanvas-header">
+            <a href="/" class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img
+                src="assets/imgs/logo/haashlogo.png"
+                alt="Haash Technologies"
+                class="w-50"
+              />
+            </a>
+            <button
+              type="button"
+              class="btn-close btn-close-white shadow-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <!-- sidebar body -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#AboutUs">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#Services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#Career">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#Blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#Contact">Contact</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+            <!-- search bar -->
+            <!-- <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- #Section One -->
+    <section class="container section-container w-100 mx-auto " style="height: 522px;" id="Home">
+      <div class="h-100 main-1 row row-cols-md-2">
+        <!-- show after md screen size -->
+        <div
+          class="left-Side h-100 h-auto flex-center d-block d-md-none position-relative"
+        >
+          <model-viewer
+            style="z-index: 0; height: 100%; width: 100%; top: 0; right: 0"
+            src="untitled.glb"
+            alt="A 3D model"
+            camera-controls
+            disable-zoom
+            max-field-of-view="40deg"
+            min-field-of-view="40deg"
+            autoplay
+            auto-rotate
+            camera-orbit="20deg 100deg 100m"
+          ></model-viewer>
+          <div
+          class="shadow_bubble shadow_bubble_2 position-absolute"
+          style="top: 50%; left: 50%; width: 200px; height: 200px"
+        ></div>
+        </div>
+        <!-- show after md screen size -->
+
+        <!-- first -->
+        <div class="text-white right-Side position-relative" style="">
+          <div class="position-absolute bottom-0">
+            <p class="text-style">
+              Innovate with Us: Welcome to Our World of Digital Solutions
+            </p>
+            <small class="" style="color: #8c8c8c"
+              >Et quis lacus eros pellentesque sed maecenas nulla faucibus
+              facilisis. Interdum faucibus sit venenatis id ac enim. Habitasse
+              ut enim condimentum varius. Libero mauris tellus sit varius sem
+              viverra non mi. Vulputate amet nullam id vulputate.</small
+            >
+
+            <!-- button  group -->
+            <div class="sparkle-button my-3 d-flex gap-2">
+              <button class="sparkle-button_1">
+                <span class="text d-flex gap-2 justify-content-end"
+                  >Reel
+                  <span
+                    style="
+                      width: 30px;
+                      height: 30px;
+                      border-radius: 100%;
+                      background: #000;
+                    "
+                    class="text-center d-flex align-items-center justify-content-center"
+                    ><i
+                      class="fa-solid fa-play"
+                      style="color: #fabd64"
+                    ></i></span
+                ></span>
+              </button>
+              <!-- ====== -->
+              <button class="sparkle-button_2">
+                <span class="text button-hacks"
+                  >Get Started <i class="fa-light fa fa-arrow-right"></i
+                ></span>
+              </button>
+            </div>
+            <!-- button  group ends-->
+          </div>
+          <!-- #shadow_bubble_1 -->
+          <div
+            class="shadow_bubble shadow_bubble_1 d-md-block d-none"
+            style="top: 50%; left: 10%; width: 150px; height: 150px"
+          ></div>
+        </div>
+        <!-- Left Side Starts -->
+        <!-- #3d modal starts -->
+        <!-- show befor md screen size -->
+        <div
+          class="left-Side h-100 h-auto flex-center d-md-block d-none position-relative"
+        >
+          <model-viewer
+            style="
+              z-index: 0;
+              height: 100%;
+              width: 100%;
+              top: 0;
+              right: 0;
+              box-shadow: 0 0 20px rgba(0, 0, 0rgb (211, 135, 42));
+            "
+            src="untitled.glb"
+            alt="A 3D model"
+            camera-controls
+            disable-zoom
+            max-field-of-view="40deg"
+            min-field-of-view="40deg"
+            autoplay
+            auto-rotate
+            ar="none"
+            shadow-intensity="0.9"
+          ></model-viewer>
+          <div
+          class="shadow_bubble shadow_bubble_2 position-absolute"
+          style="top: 50%; left: 50%; width: 300px; height: 300px"
+        ></div>
+        </div>
+      </div>
+      <!-- shadow_bubble_2 -->
+    
+    </section>
+
+    <!-- second section -->
+    <section class="container section-container w-100 mx-auto py-5 reveal">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col card-avatar">
+          <div class=" h-100 ">
+            <div class="wrapper">
+            <img src="assets/imgs/cards/card1.png" class="card-img-top " alt="..." style="cursor: pointer;">
+             <img src="assets/imgs/logo/haashlogo.png" class="charecter " alt="..." style="cursor: pointer;">
+            </div>
+           
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text text-sub card_title">A donec porta aliquam urna non nunc. Fames mi neque ullamcorper.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col card-avatar">
+          <div class=" h-100 ">
+            <div class="wrapper">
+              
+            <img src="assets/imgs/cards/card2.png" class="card-img-top " alt="..." style="cursor: pointer;">
+            <img src="assets/imgs/logo/haashlogo.png" class="charecter " alt="..." style="cursor: pointer;">
+            </div>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text text-sub card_title">A donec porta aliquam urna non nunc. Fames mi neque ullamcorper.A donec porta aliquames mi neque ullamcorper.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col card-avatar">
+          <div class=" h-100 ">
+            <div class="wrapper">
+            <img src="assets/imgs/cards/card3.png" class="card-img-top " alt="..." style="cursor: pointer;">
+            <img src="assets/imgs/logo/haashlogo.png" class="charecter " alt="..." style="cursor: pointer;">
+
+            </div>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text text-sub card_title">A donec porta aliquam urna non nunc. Fames mi neque ullamcorper.A donec porta aliquames mi neque ullamcorper.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/scrollYanime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
