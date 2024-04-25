@@ -26,5 +26,92 @@
 .text-sub{
     color: #8C8C8C;
 }
+.text-head{
+background: linear-gradient(90deg, #FFFFFF 0%, #6C6C6C 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+font-size: clamp(10px, 6vw, 48px);
+text-align: center;
+padding: 2rem 0;
+width: 40%;
+text-transform: capitalize;
+}
 
+@media (max-width: 768px) {
+  .text-head {
+    width: calc(100% - 2rem);
+  }
+}
+.text-style {
+  font-family: "Share Tech";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  font-size: clamp(10px, 6vw, 40px);
+  line-height: 135%;
+  /* or 65px */
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #ffbd6a 33.05%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.card-bg {
+  box-sizing: border-box;
+  background: linear-gradient(101.64deg, #000000 3.1%, #151515 98.29%);
+  border-radius: 10px;
+  margin: 1em auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card-bg {
+    width: calc(50% - 2rem);
+  }
+}
+.accordion-part{
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .accordion-part {
+    width: 100%;
+    padding: 1rem 0 2rem 0;
+  }
+}
+.accordion-item{
+  background: transparent;
+  border-bottom: 1px white solid;
+  color: #8C8C8C;
+}
+.accordion-button{
+  background: transparent;
+  outline: none;
+  background: linear-gradient(90deg, #FFFFFF 0%, #6C6C6C 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+.accordion-button:not(.collapsed){
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  background: linear-gradient(90deg, #FFFFFF 0%, #6C6C6C 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+color: #FFFFFF;
+}
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+/* Change accordion button text color to white */
+
+
+/*  */
 /* A donec porta aliquam urna non nunc. Fames mi neque ullamcorper aliquam nibh. */

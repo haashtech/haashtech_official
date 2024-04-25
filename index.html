@@ -35,8 +35,8 @@
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/cardCarousal.css">
     <title>Haash || Home</title>
-    
   </head>
   <body class="bg-black">
     <!-- #Header Section -->
@@ -146,7 +146,11 @@
     </nav>
 
     <!-- #Section One -->
-    <section class="container section-container w-100 mx-auto " style="height: 522px;" id="Home">
+    <section
+      class="container section-container w-100 mx-auto"
+      style="height: 522px"
+      id="Home"
+    >
       <div class="h-100 main-1 row row-cols-md-2">
         <!-- show after md screen size -->
         <div
@@ -165,14 +169,14 @@
             camera-orbit="20deg 100deg 100m"
           ></model-viewer>
           <div
-          class="shadow_bubble shadow_bubble_2 position-absolute"
-          style="top: 50%; left: 50%; width: 200px; height: 200px"
-        ></div>
+            class="shadow_bubble shadow_bubble_2 position-absolute"
+            style="top: 50%; left: 50%; width: 200px; height: 200px"
+          ></div>
         </div>
         <!-- show after md screen size -->
 
         <!-- first -->
-        <div class="text-white right-Side position-relative" style="">
+        <div class="text-white right-Side position-relative">
           <div class="position-absolute bottom-0">
             <p class="text-style">
               Innovate with Us: Welcome to Our World of Digital Solutions
@@ -224,6 +228,18 @@
         <div
           class="left-Side h-100 h-auto flex-center d-md-block d-none position-relative"
         >
+          <img
+            src="assets/imgs/cards/sphereaquare.png"
+            alt=""
+            class="position-absolute"
+            style="top: 50px; width: 120px"
+          />
+          <img
+            src="assets/imgs/cards/sphereaquare.png"
+            alt=""
+            class="position-absolute"
+            style="left: 50%; bottom: 0; width: 120px"
+          />
           <model-viewer
             style="
               z-index: 0;
@@ -243,63 +259,306 @@
             auto-rotate
             ar="none"
             shadow-intensity="0.9"
-          ></model-viewer>
+          >
+          </model-viewer>
+
           <div
-          class="shadow_bubble shadow_bubble_2 position-absolute"
-          style="top: 50%; left: 50%; width: 300px; height: 300px"
-        ></div>
+            class="shadow_bubble shadow_bubble_2 position-absolute"
+            style="top: 50%; left: 50%; width: 300px; height: 300px"
+          ></div>
         </div>
       </div>
       <!-- shadow_bubble_2 -->
-    
     </section>
 
     <!-- second section -->
     <section class="container section-container w-100 mx-auto py-5 reveal">
+      <div class="w-100 flex-center">
+        <h2 class="text-head">Showcasing Our Work: A Glimpse of Excellence</h2>
+      </div>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col card-avatar">
-          <div class=" h-100 ">
+          <div class="h-100">
             <div class="wrapper">
-            <img src="assets/imgs/cards/card1.png" class="card-img-top " alt="..." style="cursor: pointer;">
-             <img src="assets/imgs/logo/haashlogo.png" class="charecter " alt="..." style="cursor: pointer;">
+              <img
+                src="assets/imgs/cards/card1.png"
+                class="card-img-top"
+                alt="Haash Tech "
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/imgs/logo/haashlogo.png"
+                class="charecter position-absolute"
+                alt="Haash Tech "
+                style="cursor: pointer; left: 0; bottom: 0"
+              />
             </div>
-           
-            <div class="card-body">
-              <!-- <h5 class="card-title">Card title</h5> -->
-              <p class="card-text text-sub card_title">A donec porta aliquam urna non nunc. Fames mi neque ullamcorper.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col card-avatar">
-          <div class=" h-100 ">
-            <div class="wrapper">
-              
-            <img src="assets/imgs/cards/card2.png" class="card-img-top " alt="..." style="cursor: pointer;">
-            <img src="assets/imgs/logo/haashlogo.png" class="charecter " alt="..." style="cursor: pointer;">
-            </div>
-            <div class="card-body">
-              <!-- <h5 class="card-title">Card title</h5> -->
-              <p class="card-text text-sub card_title">A donec porta aliquam urna non nunc. Fames mi neque ullamcorper.A donec porta aliquames mi neque ullamcorper.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col card-avatar">
-          <div class=" h-100 ">
-            <div class="wrapper">
-            <img src="assets/imgs/cards/card3.png" class="card-img-top " alt="..." style="cursor: pointer;">
-            <img src="assets/imgs/logo/haashlogo.png" class="charecter " alt="..." style="cursor: pointer;">
 
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text text-sub card_title">
+                A donec porta aliquam urna non nunc. Fames mi neque ullamcorper.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col card-avatar">
+          <div class="h-100">
+            <div class="wrapper">
+              <img
+                src="assets/imgs/cards/card2.png"
+                class="card-img-top"
+                alt="Haash Tech "
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/imgs/logo/haashlogo.png"
+                class="charecter position-absolute"
+                alt="Haash Tech "
+                style="cursor: pointer; left: 0; bottom: 0"
+              />
             </div>
             <div class="card-body">
               <!-- <h5 class="card-title">Card title</h5> -->
-              <p class="card-text text-sub card_title">A donec porta aliquam urna non nunc. Fames mi neque ullamcorper.A donec porta aliquames mi neque ullamcorper.</p>
+              <p class="card-text text-sub card_title">
+                A donec porta aliquam urna non nunc. Fames mi neque
+                ullamcorper.A donec porta aliquames mi neque ullamcorper.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col card-avatar">
+          <div class="h-100">
+            <div class="wrapper">
+              <img
+                src="assets/imgs/cards/card3.png"
+                class="card-img-top"
+                alt="Haash Tech "
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/imgs/logo/haashlogo.png"
+                class="charecter position-absolute"
+                alt="Haash Tech "
+                style="cursor: pointer; left: 0; bottom: 0"
+              />
+            </div>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text text-sub card_title">
+                A donec porta aliquam urna non nunc. Fames mi neque
+                ullamcorper.A donec porta aliquames mi neque ullamcorper.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- #section 3 -->
+
+    <section class="container section-container w-100 mx-auto py-5 reveal">
+      <div class="flex-center text-center flex-column w-100">
+        <!-- head text start -->
+
+        <div class="w-50">
+          <h1 class="text-style">Our Services</h1>
+          <small class="text-sub"
+            >We're dedicated to exceeding your expectations. Explore our
+            comprehensive range of services tailored to meet your specific
+            requirements. Let's innovate together.</small
+          >
+        </div>
+        <!-- head text end -->
+        <!-- cards start -->
+        <div class="w-100">
+          <div
+            class="row row-cols-md-2 mx-auto user-cards"
+            style="padding: 2rem 5rem"
+          >
+            <div class="cards">
+              <div class="profile-img">
+                <img src="assets/imgs/cards/mobAppCard.png" alt="" />
+              </div>
+              <h2>Mobile App Development</h2>
+              <small
+                >From enterprise to consumer apps that are specifically tailored
+                to meet your business needs</small
+              >
+              <button>Read more</button>
+            </div>
+            <!--service card 2  -->
+            <div class="cards">
+              <div class="profile-img">
+                <img src="assets/imgs/cards/webAppCard.png" alt="" />
+              </div>
+              <h2>Web App Development</h2>
+              <small
+                >Dive into the realm of intuitive web applications exclusively
+                tailored to gift an immersive digital experience</small
+              >
+              <button>Read more</button>
+            </div>
+            <!--service card 3  -->
+
+            <div class="cards">
+              <div class="profile-img">
+                <img src="assets/imgs/cards/UiuxCard.png" alt="" />
+              </div>
+              <h2>UI/UX Design</h2>
+              <small
+                >Embracing UI/UX in crafting seamless experiences, keeping up
+                with efficiency and elegance</small
+              >
+              <button>Read more</button>
+            </div>
+            <!--service card 4  -->
+            <div class="cards">
+              <div class="profile-img">
+                <img src="assets/imgs/cards/EAppCard.png" alt="" />
+              </div>
+              <h2>E-commerce</h2>
+              <small
+                >Bridge the gap between your storefront and customer with our
+                strategic e-commerce solutions</small
+              >
+              <button>Read more</button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <button class="sparkle-button_2">
+              <span class="text button-hacks">View all</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- #section 4 -->
+    <section class="container section-container w-100 mx-auto py-5 reveal">
+      <div class="mb-3" style="max-width: 100%">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="assets/imgs/cards/aboutbg.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8 px-4">
+            <div class="card-body " style="">
+              <h5 class="card-title text-style">About Us</h5>
+              <p class="card-text text-white " style="max-width: calc(100% - 5rem); font-weight: initial; font-size: 15px;">
+                At Haashtech, we are committed to driving innovation and
+                delivering excellence. With a dedicated team of experts, we
+                specialize in creating cutting-edge software solutions that meet
+                and exceed the needs of our clients. Our mission is to provide
+                high-quality, tailored services that propel businesses to
+                success in the digital world. Backed by a passion for technology
+                and a drive for innovation, we are your trusted partner on the
+                journey to achieving your goals. Let's embark on this journey
+                together."
+              </p>
+              <p class="card-text">
+                <button class="sparkle-button_2">
+                  <span class="text button-hacks"
+                    >Discover more <i class="fa-light fa fa-arrow-right"></i
+                  ></span>
+                </button>
+              </p>
+              <!-- result -->
+              <div class="d-flex gap-3 pt-sm-5">
+                <div class="flex-center flex-column lh-base" style="width: 150px; height: 100px; border-radius: 5px; border: 1px #555 solid; color: #FFBD6A;">
+                  <span>100+</span>
+                  <span>Clients</span>
+                </div>
+                <div class="flex-center flex-column" style="width: 150px; height: 100px; border-radius: 5px; border: 1px #555 solid; color: #FFBD6A;">
+                  <span>100+</span>
+                  <span>Projects</span>
+                </div>
+                <div class="flex-center flex-column" style="width: 150px; height: 100px; border-radius: 5px; border: 1px #555 solid; color: #FFBD6A;">
+                  <span>50+</span>
+                  <span>Strength</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- section 5 -->
+    <section class="container section-container w-100 mx-auto py-5 reveal">
+      <div class="d-md-flex">
+        <!-- left side -->
+      <div class="accordion-part">
+        <h2 class="text-style ">Transforming Visions into Realities</h2>
+        <div class="accordion accordion-flush " id="accordionFlushExample">
+          <div class="accordion-item  ">
+            <h2 class="accordion-header ">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Et quis lacus eros Haashtech maecenas nulla faucibus facilisis. 
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right side -->
+      <div class="slider">
+        <div class="item img-fluid">
+            <!-- <img src="assets/imgs/cards/carosal1.png" alt="we the devolepers"> -->
+        </div>
+        <div class="item img-fluid">
+            <!-- <img src="assets/imgs/cards/carosal1.png" alt="we the devolepers"> -->
+        </div>
+        <div class="item img-fluid">
+            <!-- <img src="assets/imgs/cards/carosal1.png" alt="we the devolepers"> -->
+        </div>
+        <div class="item img-fluid">
+            <!-- <img src="assets/imgs/cards/carosal1.png" alt="we the devolepers"> -->
+        </div>
+        <div class="item img-fluid">
+            <!-- <img src="assets/imgs/cards/carosal1.png" alt="we the devolepers"> -->
+        </div>
+        <div class="item img-fluid">
+            <!-- <img src="assets/imgs/cards/carosal1.png" alt="we the devolepers"> -->
+        </div>
+        <div class="item img-fluid">
+            <!-- <img src="assets/imgs/cards/carosal1.png" alt="we the devolepers"> -->
+        </div>
+        <button id="next">></button>
+        <button id="prev"><</button>
+    </div>
+      </div>
+    </section>
+
     <script src="assets/js/scrollYanime.js"></script>
+    <script src="assets/js/cardCarousal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

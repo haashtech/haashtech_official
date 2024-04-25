@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body style="background-color: #26293e;">
+<style>
+  body {
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .user-cards {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  .cards {
+    margin: 3em 1em 1em 1em;
+    max-width: 35em;
+    background: rgba(171, 171, 171, 0.1);
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    border-radius: 0.8em;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    position: relative;
+    backdrop-filter: blur(4px);
+    border: 1px #555 solid;
+  }
+  .cards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(0deg, #59fc72, #44c9fa);
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border-radius: inherit;
+    /* animation: fill 2s ease-in-out forwards; */
+  }
+  .profile-img {
+    width: 6em;
+    height: 6em;
+    margin: -4em auto 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #59fc72, #02bafc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 0.5em #26293e;
+  }
+  .profile-img img {
+    width: 90%;
+    height: 90%;
+    border-radius: inherit;
+  }
+  .cards h2 {
+    color: #fff;
+    margin: 2em 0 0.8em 0;
+    font-weight: 400;
+  }
+  .cards small {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 27px;
+    max-width: 20em;
+    margin: 2em auto 2em auto;
+    transition: 0.2s;
+  }
+  .cards button {
+    background: rgba(171, 171, 171, 0.2);
+    border: none;
+    border-radius: 3em;
+    padding: 0.8em 2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+  .cards:hover button {
+    background-color: #fff;
+    color: #111;
+  }
+  .cards:hover small {
+    color: #fff;
+  }
+  .cards:nth-child(2) .profile-img,
+      .cards:nth-child(2)::before {
+        background: linear-gradient(0deg, #ffc15d, #ff4e57);
+      }
+  .cards:hover::before {
+        animation: fill 2s ease-in-out forwards;
+      }
+  @keyframes fill {
+    40% {
+      width: 100%;
+      height: 0.5em;
+    }
+    50% {
+      width: 100%;
+      height: 0.5em;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+    }
+  }
+</style>
+
+<div class="user-cards">
+  <div class="cards">
+    <div class="profile-img">
+      <img src="../assets/imgs/cards/card1.png" alt="" />
+    </div>
+    <h2>Mobile App Development</h2>
+    <small>From enterprise to consumer apps that are specifically tailored to meet your business needs</small>
+    <button>Read more</button>
+  </div>
+  <div class="cards">
+    <div class="profile-img">
+      <img src="../assets/imgs/cards/card1.png" alt="" />
+    </div>
+    <h2>Mobile App Development</h2>
+    <small>From enterprise to consumer apps that are specifically tailored to meet your business needs</small>
+    <button>Read more</button>
+  </div>
+  <div class="cards">
+    <div class="profile-img">
+      <img src="../assets/imgs/cards/card1.png" alt="" />
+    </div>
+    <h2>Mobile App Development</h2>
+    <small>From enterprise to consumer apps that are specifically tailored to meet your business needs</small>
+    <button>Read more</button>
+  </div>
+</div>
+
+
+
+ <!-- <div class="card card-bg">
+              <div class="flex w-100 gap-4">
+                <div class="w-50">
+                  <h3>Mobile App Development</h3>
+                  <small
+                    >From enterprise to consumer apps that are specifically
+                    tailored to meet your business needs</small
+                  >
+                </div>
+                <div class="w-50">s</div>
+              </div>
+            </div>
+            card2
+            <div class="card card-bg">
+              <div class="flex w-100 gap-4">
+                <div class="w-50">
+                  <h3>Mobile App Development</h3>
+                  <small
+                    >From enterprise to consumer apps that are specifically
+                    tailored to meet your business needs</small
+                  >
+                </div>
+                <div class="w-50">s</div>
+              </div>
+            </div>
+            seond row
+            card3
+            <div class="card card-bg">
+              <div class="flex w-100 gap-4">
+                <div class="w-50">
+                  <h3>Mobile App Development</h3>
+                  <small
+                    >From enterprise to consumer apps that are specifically
+                    tailored to meet your business needs</small
+                  >
+                </div>
+                <div class="w-50">s</div>
+              </div>
+            </div>
+            card4
+            <div class="card card-bg">
+              <div class="flex w-100 gap-4">
+                <div class="w-50">
+                  <h3>Mobile App Development</h3>
+                  <small
+                    >From enterprise to consumer apps that are specifically
+                    tailored to meet your business needs</small
+                  >
+                </div>
+                <div class="w-50">s</div>
+              </div>
+            </div> -->
+</body>
+</html>
