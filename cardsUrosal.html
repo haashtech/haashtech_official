@@ -36,7 +36,8 @@
         background-size: cover;
         border-radius: 10px;
         padding: 20px;
-        transition: transform 0.5s, filter 0.5s, opacity 0.5s; /* Added opacity transition */
+        transition: transform 0.5s, filter 0.5s, opacity 0.5s; 
+        animation: slideAnimation 3s infinite;
       }
 
       .slider .item:nth-child(1) {
@@ -88,9 +89,18 @@
   opacity: 0.5;
 }
 
-@media scroll{
-    
-}
+@keyframes slideAnimation {
+    0% {
+      /* transform: translateX(0) ; Starting from the fourth item */
+      
+    }
+    100% {
+      .item:nth-child(4){
+        /* transform: translateX(calc(-255)) ; */
+      }
+      
+    }
+  }
 
     </style>
   </head>
