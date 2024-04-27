@@ -76,7 +76,7 @@ body {
 
 .section-heading {
   /* font-size: 3rem; */
-  color: var(--subcolor);
+  /* color: var(--subcolor); */
   padding: 2rem 0;
 }
 
@@ -111,12 +111,11 @@ body {
 background: linear-gradient(101.84deg, #000000 2.52%, #202020 97.74%);
 border-radius: 15px;
 }
-.tranding-slide-top{
-    
-}
+
 .tranding-slide-top .tranding-slide-img-2{
-    width: 80px;
-    height: 80px;
+    /* width: 75px; */
+    height: 70px;
+    padding-right: 1rem;
 }
 .tranding-slide-top .tranding-slide-img-1{
     width: 100px;
