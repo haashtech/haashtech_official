@@ -14,6 +14,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,6 +42,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
     <link rel="stylesheet" href="assets/css/cardCarousal.css" />
+    <link rel="stylesheet" href="assets/css/carousal2.css" />
     <title>Haash || Home</title>
   </head>
   <body class="bg-black">
@@ -447,7 +454,7 @@
             />
           </div>
           <div class="col-md-8 px-4">
-            <div class="card-body" >
+            <div class="card-body">
               <h5 class="card-title text-style">About Us</h5>
               <p
                 class="card-text text-white"
@@ -522,7 +529,7 @@
       </div>
     </section>
 
-    <!-- section 5 -->
+    <!-- #section 5 -->
     <section class="container section-container w-100 mx-auto py-5 reveal">
       <div class="d-md-flex">
         <!-- left side -->
@@ -648,33 +655,122 @@
       </div>
     </section>
 
-    <!-- section 6 -->
-    <section class="container section-container mx-auto py-5 reveal">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item  active">
-            <img src="assets/imgs/cards/carosal1.png" class="d-block w-100" alt="review to us" style="height: 300px;">
+    <!-- #section 6 -->
+   
+    <section id="tranding" class="reveal">
+      <div class="container-auto flex-center">
+        <h2 class="text-center text-style">What people say</h2>
+        <small class="text-center section-heading">
+          Et quis lacus eros pellentesque sed maecenas nulla faucibus facilisis.
+          Interdum faucibus sit venenatis id ac enim. Habitasse ut enim
+          condimentum varius. Libero mauris tellus sit
+        </small>
+      </div>
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper position-relative">
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide px-3">
+              <div
+                class="tranding-slide-top py-3 justify-content-between d-flex px-2 align-items-center"
+              >
+                <div class="tranding-slide-img tranding-slide-img-1"></div>
+                <img
+                  class="tranding-slide-img-2"
+                  src="assets/imgs/icons/quote.png"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="tranding-slide-content">
+                <h2 class="text-white">Hanz zimmer</h2>
+                <p class="text-sub">Musician & Techy</p>
+              </div>
+              <div class="">
+                <span class="text-white"
+                  >“ Et quis lacus eros Haashtech maecenas nulla faucibus
+                  facilisis. Interdum faucibus sit venenatis id ac enim.
+                  Habitasse ut enim condimentum varius. “</span
+                >
+              </div>
+            </div>
+
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide px-3">
+              <div
+                class="tranding-slide-top py-3 justify-content-between d-flex px-2 align-items-center"
+              >
+                <div class="tranding-slide-img tranding-slide-img-1"></div>
+                <img
+                  class="tranding-slide-img-2"
+                  src="assets/imgs/icons/quote.png"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="tranding-slide-content">
+                <h2 class="text-white">Hanz zimmer</h2>
+                <p class="text-sub">Musician & Techy</p>
+              </div>
+              <div class="">
+                <span class="text-white"
+                  >“ Et quis lacus eros Haashtech maecenas nulla faucibus
+                  facilisis. Interdum faucibus sit venenatis id ac enim.
+                  Habitasse ut enim condimentum varius. “</span
+                >
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <div class="swiper-slide tranding-slide px-3">
+              <div
+                class="tranding-slide-top py-3 justify-content-between d-flex px-2 align-items-center"
+              >
+                <div class="tranding-slide-img tranding-slide-img-1"></div>
+                <img
+                  class="tranding-slide-img-2"
+                  src="assets/imgs/icons/quote.png"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="tranding-slide-content">
+                <h2 class="text-white">Hanz zimmer</h2>
+                <p class="text-sub">Musician & Techy</p>
+              </div>
+              <div class="">
+                <span class="text-white"
+                  >“ Et quis lacus eros Haashtech maecenas nulla faucibus
+                  facilisis. Interdum faucibus sit venenatis id ac enim.
+                  Habitasse ut enim condimentum varius. “</span
+                >
+              </div>
+            </div>
+            <div
+            class="shadow_bubble shadow_bubble_2 position-absolute"
+            style=" width: 200px; height: 200px"
+          ></div>
+            <!-- Slide-end -->
+            <!-- Slide-end -->
           </div>
-          <div class="carousel-item ">
-            <img src="assets/imgs/cards/carosal1.png" class="d-block w-100" alt="review to us" style="height: 300px;">
-          </div>
-          <div class="carousel-item ">
-            <img src="assets/imgs/cards/carosal1.png" class="d-block w-100" alt="review to us" style="height: 300px;">
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <i class="bi bi-caret-left"></i>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <i class="bi bi-caret-right"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
     <script src="assets/js/scrollYanime.js"></script>
     <script src="assets/js/cardCarousal.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- swipper curosal -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/cardCarousalTwo.js"></script>
   </body>
 </html>
