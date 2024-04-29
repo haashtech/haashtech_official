@@ -20,30 +20,33 @@
   justify-content: center;
   align-items: center;
 }
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
-.text-sub{
-    color: #8C8C8C;
+.text-sub {
+  color: #8c8c8c;
 }
-.text-head{
-background: linear-gradient(90deg, #FFFFFF 0%, #6C6C6C 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-font-size: clamp(10px, 6vw, 48px);
-text-align: center;
-padding: 2rem 0;
-width: 40%;
-text-transform: capitalize;
+.client-color {
+  color: #6b6b6b;
+}
+.text-head {
+  background: linear-gradient(90deg, #ffffff 0%, #6c6c6c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: clamp(10px, 6vw, 48px);
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+  text-transform: capitalize;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .text-head {
     width: calc(100% - 2rem);
   }
-}
+} */
 .text-style {
   font-family: "Share Tech";
   font-style: normal;
@@ -51,7 +54,6 @@ text-transform: capitalize;
   font-size: 38px;
   font-size: clamp(10px, 6vw, 40px);
   line-height: 135%;
-  /* or 65px */
   letter-spacing: -0.01em;
   text-transform: capitalize;
   background: linear-gradient(90deg, #ffbd6a 33.05%, #ffffff 100%);
@@ -66,13 +68,26 @@ text-transform: capitalize;
   margin: 1em auto;
   width: 100%;
 }
-
+@media (max-width: 1330px) {
+  .text-style {
+    width: 100%;
+  }
+  .section-service {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .section-service {
+    width: 50%;
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   .card-bg {
     width: calc(50% - 2rem);
   }
 }
-.accordion-part{
+.accordion-part {
   width: 50%;
 }
 @media (max-width: 768px) {
@@ -81,37 +96,36 @@ text-transform: capitalize;
     padding: 1rem 0 2rem 0;
   }
 }
-.accordion-item{
+.accordion-item {
   background: transparent;
   border-bottom: 1px white solid;
-  color: #8C8C8C;
+  color: #8c8c8c;
 }
-.accordion-button{
+.accordion-button {
   background: transparent;
   outline: none;
-  background: linear-gradient(90deg, #FFFFFF 0%, #6C6C6C 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+  background: linear-gradient(90deg, #ffffff 0%, #6c6c6c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   background-color: transparent;
   outline: none;
   box-shadow: none;
-  background: linear-gradient(90deg, #FFFFFF 0%, #6C6C6C 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-color: #FFFFFF;
+  background: linear-gradient(90deg, #ffffff 0%, #6c6c6c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  color: #ffffff;
 }
-.accordion-button:focus{
+.accordion-button:focus {
   box-shadow: none;
 }
 
 /* Change accordion button text color to white */
-
 
 /*  */
 /* A donec porta aliquam urna non nunc. Fames mi neque ullamcorper aliquam nibh. */

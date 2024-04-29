@@ -9,18 +9,16 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
-section{
-    scroll-snap-align: start;
+section {
+  scroll-snap-align: start;
 }
 :root {
   --transition: 0.25s;
   --spark: 1.8s;
 }
 
-
 .section-container {
   width: 100%;
-  
 }
 .shadow_bubble {
   border-radius: 50%;
@@ -33,7 +31,6 @@ section{
   filter: blur(65px);
 }
 
-  
 /* Ellipse 1 */
 
 /* @media (min-width: 1280px) {
@@ -132,10 +129,10 @@ section{
   scale: calc(1 + (var(--active) * 0.1));
 }
 
-button:active {
+/* button:active {
   transform: scale(5);
   transition: all 3s;
-}
+} */
 /* CSS for button hover effect */
 .sparkle-button button:hover {
   transform: scale(1.05); /* Adjust the scale factor as needed */
@@ -152,56 +149,53 @@ button:active {
   transition: transform 0.5s ease;
 }
 
-
 /* scroll effects */
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 2s ease;
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
 }
-.reveal.active{
-    transform: translateY(0px);
-    opacity: 1;
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
 /* ======== */
 
 .card-avatar:hover .wrapper {
-    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
-    box-shadow: 0px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 0px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
 .card-avatar:hover .wrapper::after,
-.wrapper::before
-{
-    opacity: 1;
+.wrapper::before {
+  opacity: 1;
 }
-.card-avatar:hover .wrapper::after{
-    height: 120px;
+.card-avatar:hover .wrapper::after {
+  height: 120px;
 }
-.card-avatar:hover .wrapper::before{
-    opacity: 1;
+.card-avatar:hover .wrapper::before {
+  opacity: 1;
 }
-.card-avatar .charecter{
-    opacity: 0;
+.card-avatar .charecter {
+  opacity: 0;
 }
 .card-avatar:hover .charecter {
-   opacity: 1;
-   transform: translate3d(0%, -50%, 100px) translateY(-100%);
-
+  opacity: 1;
+  transform: translate3d(0%, -50%, 100px) translateY(-100%);
 }
-.card-avatar .wrapper, .card_title, .charecter {
-    transition: transform 0.5s ease; 
-
+.card-avatar .wrapper,
+.card_title,
+.charecter {
+  transition: transform 0.5s ease;
 }
 /* .card-avatar .card_title{
 transform: translateY(-60px);
 } */
 .card-avatar:hover .card_title {
-    transform: translate3d(0%, -50%, 100px) translateY(-100%);
-    font-weight: 700;
-    color: #e98200;
+  transform: translate3d(0%, -50%, 100px) translateY(-100%);
+  font-weight: 700;
+  color: #e98200;
 }
-
 
 /* service cards */
 .user-cards {
@@ -225,14 +219,22 @@ transform: translateY(-60px);
   backdrop-filter: blur(4px);
   border: 1px #555 solid;
 }
+@media (max-width: 425px) {
+  .cards {
+    width: 100%;
+  }
+  .user-cards {
+    padding: 0px 0rem;
+  }
+}
 .cards::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   /* background: linear-gradient(0deg, #59fc72, #44c9fa); */
-  background: linear-gradient(0deg, #3F337F, #BBCBE2);
+  background: linear-gradient(0deg, #3f337f, #bbcbe2);
   width: 0;
   height: 0;
   z-index: -1;
@@ -245,7 +247,7 @@ transform: translateY(-60px);
   margin: -4em auto 0 auto;
   border-radius: 50%;
   /* background: linear-gradient(0deg, #59fc72, #02bafc); */
-  background: linear-gradient(0deg, #3F337F, #BBCBE2);
+  background: linear-gradient(0deg, #3f337f, #bbcbe2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,16 +288,16 @@ transform: translateY(-60px);
   color: #fff;
 }
 .cards:nth-child(2) .profile-img,
-    .cards:nth-child(2)::before {
-      background: linear-gradient(0deg, #3F337F, #BBCBE2);
-    }
-    .cards:nth-child(3) .profile-img,
-    .cards:nth-child(3)::before {
-      background: linear-gradient(0deg, #3F337F, #BBCBE2);
-    }
+.cards:nth-child(2)::before {
+  background: linear-gradient(0deg, #3f337f, #bbcbe2);
+}
+.cards:nth-child(3) .profile-img,
+.cards:nth-child(3)::before {
+  background: linear-gradient(0deg, #3f337f, #bbcbe2);
+}
 .cards:hover::before {
-      animation: fill 1s ease-in-out forwards;
-    }
+  animation: fill 1s ease-in-out forwards;
+}
 @keyframes fill {
   40% {
     width: 100%;
@@ -308,5 +310,156 @@ transform: translateY(-60px);
   100% {
     width: 100%;
     height: 100%;
+  }
+}
+
+/* ============================== */
+.section-clintes {
+  /* display: grid;
+place-items:  center; */
+}
+.section-clintes_title {
+  text-align: center;
+  width: 50%;
+}
+
+/* section-clintes_slider */
+.section-clintes_slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.section-clintes_slidertrack {
+  display: flex;
+  width: calc(250px * 6);
+  animation: clientScroll 20s linear infinite;
+}
+@keyframes clientScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-250px * 3)
+    ); /* Adjust according to the total width of your slides */
+  }
+}
+
+.section-clintes_card {
+  /* height: 200px; if image
+  width: 250px; */
+  height: 100px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.section-clintes .section-clintes_slider span {
+  width: 100%;
+}
+
+/* gradient shadow .section-clintes_card */
+.section-clintes_slide::before,
+.section-clintes_slide::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  z-index: 2;
+}
+
+.section-clintes_slide::before {
+  left: 0;
+  top: 0;
+}
+.section-clintes_slide::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(100deg);
+}
+
+/* .section-clintes .section-clintes_slider */
+
+.section-clintes .section-clintes_slider .section-clintes_card span:hover {
+  /* transform: translateZ(20px); */
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+.section-clintes .client_spotify:hover {
+  color: green;
+}
+.section-clintes .client_netflix:hover {
+  color: red;
+}
+.section-clintes .client_disney:hover {
+  color: blue;
+}
+#G-1 {
+  color: #4889f4; /* Google Blue */
+}
+#o-1 {
+  color: #ea4335; /* Google Red */
+}
+#o-2 {
+  color: #fbbe0d; /* Google Green */
+}
+#G-2 {
+  color: #4889f4; /* Google Yellow */
+}
+#L {
+  color: #3aab58; /* Google Red */
+}
+#E {
+  color: #ea4335; /* Google Blue */
+}
+.section-clintes_card:hover .client_google {
+  display: none;
+}
+.section-clintes_card #google {
+  display: none;
+  transition: all 0.5s;
+}
+.section-clintes_card:hover #google {
+  display: block;
+  transition: all 0.5s;
+}
+
+.section-clintes_slidertrack:hover {
+  animation-play-state: paused;
+}
+/* moves the slide track leftwards (-250px) by half (6 images / 2 = 12) of its width */
+/* section-energy-hand_flex */
+
+.section-energy-hand_flex {
+  display: flex;
+}
+.section-energy-hand_right{
+  width: 50%;
+}
+.section-energy-hand_left{
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .section-energy-hand_flex {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .section-energy-hand_right{
+    width: 100%;
+  }
+  .section-energy-hand_left{
+    width: 100%;
   }
 }

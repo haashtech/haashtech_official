@@ -48,3 +48,14 @@
 
 /* slider2 */
 /*  */
+@media (max-width:768px){
+  .slider{
+    width: 100%;
+    margin-right: 0;
+  }
+  .item{
+    left: 10%;
+    width: 80%;
+    height: 250px;
+  }
+}
