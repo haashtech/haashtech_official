@@ -40,14 +40,17 @@ function validationForm(event) {
   
     // Phone number validation
     const phoneRegex = /^\d{10}$/; // Regular expression to validate 10-digit phone numbers
-    const phoneValue = document.getElementById("phone").value;
-    if (!phoneValue.match(phoneRegex)) {
+    const phone = document.getElementById("phone")
+    if (!phone.value.match(phoneRegex)) {
       error_phone.innerHTML = "Please enter a valid phone number";
+      phone.style.outline = '1px solid red';
       error_phone.style.margin = "5px";
       isValid = false;
     } else {
       error_phone.innerHTML = "";
       error_phone.style.margin = "";
+      phone.style.outline = '';
+
     }
   
     if (message.value === "" || message.value.length < 5) {

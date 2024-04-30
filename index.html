@@ -45,9 +45,9 @@
     <link rel="stylesheet" href="assets/css/carousal2.css" />
     <title>Haash || Home</title>
   </head>
-  <body class="bg-black">
+  <body>
     <!-- #Header Section -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-lg-3">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-lg-3">
       <div class="container">
         <a class="navbar-brand" href="#Home">
           <img
@@ -56,7 +56,7 @@
             class="w-50"
           />
         </a>
-        <!-- toggle button -->
+      // toggle button 
         <button
           class="navbar-toggler shadow-none border-0"
           type="button"
@@ -68,14 +68,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- sidebar -->
+        // sidebar 
         <div
           class="sidebar offcanvas offcanvas-start"
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
-          <!-- sidebar header -->
+          // sidebar header 
           <div class="offcanvas-header">
             <a href="/" class="offcanvas-title" id="offcanvasNavbarLabel">
               <img
@@ -84,19 +84,14 @@
                 class="w-50"
               />
             </a>
-            <button
-              type="button"
-              class="btn-close btn-close-white shadow-none"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
 
-          <!-- sidebar body -->
+         // sidebar body 
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-2" href="#About">About Us</a>
@@ -113,841 +108,926 @@
               <li class="nav-item">
                 <a class="nav-link mx-2" href="#Contact">Contact</a>
               </li>
-              <!-- <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li> -->
+             
             </ul>
-            <!-- search bar -->
-            <!-- <form class="d-flex mt-3" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
+           
+          </div>
+        </div>
+      </div>
+    </nav> -->
+    <style>
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        transition: opacity 0.75s, visibility 0.75s;
+        z-index: 9999;
+      }
+      .preloader-hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .preloader::after {
+        content: "";
+        height: 75px;
+        width: 75px;
+        border: 5px solid #dddddd;
+        border-top-color: #e98200;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite;
+      }
+      @keyframes loading {
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+    </style>
+
+    <!-- ********preloader******** -->
+    <div class="preloader"></div>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top container py-3 px-md-0 px-3"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#Home">
+          <img
+            src="assets/imgs/logo/haashlogo.png"
+            alt="Haash Technologies"
+            class="w-50"
+          />
+        </a>
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas sidebar offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a href="/" class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img
+                src="assets/imgs/logo/haashlogo.png"
+                alt="Haash Technologies"
+                class="w-50"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form> -->
+            </a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#About">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#Services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#Career">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#Blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#Contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </nav>
-
-    <!-- #Section 1 -->
-    <section
-      class="container section-container w-100 mx-auto"
-      style="height: 522px"
-      id="Home"
-    >
-      <div class="h-100 main-1 row row-cols-md-2">
-        <!-- show after md screen size -->
-        <div
-          class="left-Side h-100 h-auto flex-center d-block d-md-none position-relative"
-        >
-          <model-viewer
-            style="z-index: 0; height: 100%; width: 100%; top: 0; right: 0"
-            src="untitled.glb"
-            alt="A 3D model"
-            camera-controls
-            disable-zoom
-            max-field-of-view="40deg"
-            min-field-of-view="40deg"
-            autoplay
-            auto-rotate
-            camera-orbit="20deg 100deg 100m"
-          ></model-viewer>
-          <div
-            class="shadow_bubble shadow_bubble_2 position-absolute"
-            style="top: 50%; left: 50%; width: 200px; height: 200px"
-          ></div>
-        </div>
-        <!-- show after md screen size -->
-
-        <!-- first -->
-        <div class="text-white right-Side position-relative Innovate">
-          <div class="position-absolute bottom-0">
-            <p class="text-style">
-              Innovate with Us: Welcome to Our World of Digital Solutions
-            </p>
-            <small class="" style="color: #8c8c8c"
-              >Et quis lacus eros pellentesque sed maecenas nulla faucibus
-              facilisis. Interdum faucibus sit venenatis id ac enim. Habitasse
-              ut enim condimentum varius. Libero mauris tellus sit varius sem
-              viverra non mi. Vulputate amet nullam id vulputate.</small
-            >
-
-            <!-- button  group -->
-            <div class="sparkle-button my-3 d-flex gap-2">
-              <button class="sparkle-button_1">
-                <span class="text d-flex gap-2 justify-content-end align-items-center w-100 fs-4"
-                  >Reel
-                  <span
-                    style="
-                      width: 30px;
-                      height: 30px;
-                      border-radius: 100%;
-                      background: #000;
-                    "
-                    class="text-center d-flex align-items-center justify-content-center"
-                    ><i
-                      class="fa-solid fa-play"
-                      style="color: #fabd64"
-                    ></i></span
-                ></span>
-              </button>
-              <!-- ====== -->
-              <button class="sparkle-button_2">
-                <span class="text button-hacks fs-4"
-                  >Get Started <i class="fa-light fa fa-arrow-right"></i
-                ></span>
-              </button>
-            </div>
-            <!-- button  group ends-->
-          </div>
-          <!-- #shadow_bubble_1 -->
-          <div
-            class="shadow_bubble shadow_bubble_1 d-md-block d-none"
-            style="top: 50%; left: 10%; width: 150px; height: 150px"
-          ></div>
-        </div>
-        <!-- Left Side Starts -->
-        <!-- #3d modal starts -->
-        <!-- show befor md screen size -->
-        <div
-          class="left-Side h-100 h-auto flex-center d-md-block d-none position-relative"
-        >
-          <img
-            src="assets/imgs/cards/sphereaquare.png"
-            alt=""
-            class="position-absolute"
-            style="top: 50px; width: 120px"
-          />
-          <img
-            src="assets/imgs/cards/sphereaquare.png"
-            alt=""
-            class="position-absolute"
-            style="left: 50%; bottom: 0; width: 120px"
-          />
-          <model-viewer
-            style="
-              z-index: 0;
-              height: 100%;
-              width: 100%;
-              top: 0;
-              right: 0;
-              box-shadow: 0 0 20px rgba(0, 0, 0rgb (211, 135, 42));
-            "
-            src="untitled.glb"
-            alt="A 3D model"
-            camera-controls
-            disable-zoom
-            max-field-of-view="40deg"
-            min-field-of-view="40deg"
-            autoplay
-            auto-rotate
-            ar="none"
-            shadow-intensity="0.9"
-          >
-          </model-viewer>
-
-          <div
-            class="shadow_bubble shadow_bubble_2 position-absolute"
-            style="top: 50%; left: 50%; width: 300px; height: 300px"
-          ></div>
-        </div>
-      </div>
-      <!-- shadow_bubble_2 -->
-    </section>
-
-    <!-- #section 2 -->
-    <section
-      class="container section-container w-100 mx-auto py-5 reveal"
-      id="Showcase"
-    >
-      <div class="w-100 flex-center">
-        <h2 class="text-head">Showcasing Our Work: A Glimpse of Excellence</h2>
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col card-avatar">
-          <div class="h-100">
-            <div class="wrapper">
-              <img
-                src="assets/imgs/cards/card1.png"
-                class="card-img-top"
-                alt="Haash Tech "
-                style="cursor: pointer"
-              />
-              <img
-                src="assets/imgs/logo/haashlogo.png"
-                class="charecter position-absolute"
-                alt="Haash Tech "
-                style="cursor: pointer; left: 0; bottom: 0"
-              />
-            </div>
-
-            <div class="card-body">
-              <!-- <h5 class="card-title">Card title</h5> -->
-              <p class="card-text text-sub card_title">
-                A donec porta aliquam urna non nunc. Fames mi neque ullamcorper.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- card 2 -->
-        <div class="col card-avatar">
-          <div class="h-100">
-            <div class="wrapper">
-              <img
-                src="assets/imgs/cards/card2.png"
-                class="card-img-top"
-                alt="Haash Tech "
-                style="cursor: pointer"
-              />
-              <img
-                src="assets/imgs/logo/haashlogo.png"
-                class="charecter position-absolute"
-                alt="Haash Tech "
-                style="cursor: pointer; left: 0; bottom: 0"
-              />
-            </div>
-            <div class="card-body">
-              <!-- <h5 class="card-title">Card title</h5> -->
-              <p class="card-text text-sub card_title">
-                A donec porta aliquam urna non nunc. Fames mi neque
-                ullamcorper.A donec porta aliquames mi neque ullamcorper.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col card-avatar">
-          <div class="h-100">
-            <div class="wrapper">
-              <img
-                src="assets/imgs/cards/card3.png"
-                class="card-img-top"
-                alt="Haash Tech "
-                style="cursor: pointer"
-              />
-              <img
-                src="assets/imgs/logo/haashlogo.png"
-                class="charecter position-absolute"
-                alt="Haash Tech "
-                style="cursor: pointer; left: 0; bottom: 0"
-              />
-            </div>
-            <div class="card-body">
-              <!-- <h5 class="card-title">Card title</h5> -->
-              <p class="card-text text-sub card_title">
-                A donec porta aliquam urna non nunc. Fames mi neque
-                ullamcorper.A donec porta aliquames mi neque ullamcorper.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- #section 3 -->
-
-    <section
-      class="container section-container w-100 mx-auto py-5 reveal"
-      id="Services"
-    >
+    <main  class="bg-black">
+      <!-- #Section 1 -->
+      <section
+        class="container section-container w-100 mx-auto"
+        style="height: 522px"
+        id="Home"
       >
-      <div class="flex-center text-center flex-column w-100">
-        <!-- head text start -->
-
-        <div class="section-service w-50 flex-center flex-column">
-          <h1 class="text-style">Our Services</h1>
-          <small class="text-sub"
-            >We're dedicated to exceeding your expectations. Explore our
-            comprehensive range of services tailored to meet your specific
-            requirements. Let's innovate together.</small
-          >
-        </div>
-        <!-- head text end -->
-        <!-- cards start -->
-        <div class="w-100">
+        <div class="h-100 main-1 row row-cols-md-2">
+          <!-- show after md screen size -->
           <div
-            class="row row-cols-md-2 mx-auto user-cards"
-            style="padding: 2rem 5rem"
+            class="left-Side h-100 h-auto flex-center d-block d-md-none position-relative"
           >
-            <div class="cards">
-              <div class="profile-img">
-                <img src="assets/imgs/cards/mobAppCard.png" alt="" />
-              </div>
-              <h2>Mobile App Development</h2>
-              <small
-                >From enterprise to consumer apps that are specifically tailored
-                to meet your business needs</small
-              >
-              <button>Read more</button>
-            </div>
-            <!--service card 2  -->
-            <div class="cards">
-              <div class="profile-img">
-                <img src="assets/imgs/cards/webAppCard.png" alt="" />
-              </div>
-              <h2>Web App Development</h2>
-              <small
-                >Dive into the realm of intuitive web applications exclusively
-                tailored to gift an immersive digital experience</small
-              >
-              <button>Read more</button>
-            </div>
-            <!--service card 3  -->
+            <model-viewer
+              style="z-index: 0; height: 100%; width: 100%; top: 0; right: 0"
+              src="untitled.glb"
+              alt="A 3D model"
+              camera-controls
+              disable-zoom
+              max-field-of-view="40deg"
+              min-field-of-view="40deg"
+              autoplay
+              auto-rotate
+              camera-orbit="20deg 100deg 100m"
+            ></model-viewer>
+            <div
+              class="shadow_bubble shadow_bubble_2 position-absolute"
+              style="top: 50%; left: 50%; width: 200px; height: 200px"
+            ></div>
+          </div>
+          <!-- show after md screen size -->
 
-            <div class="cards">
-              <div class="profile-img">
-                <img src="assets/imgs/cards/UiuxCard.png" alt="" />
-              </div>
-              <h2>UI/UX Design</h2>
-              <small
-                >Embracing UI/UX in crafting seamless experiences, keeping up
-                with efficiency and elegance</small
-              >
-              <button>Read more</button>
-            </div>
-            <!--service card 4  -->
-            <div class="cards">
-              <div class="profile-img">
-                <img src="assets/imgs/cards/EAppCard.png" alt="" />
-              </div>
-              <h2>E-commerce</h2>
-              <small
-                >Bridge the gap between your storefront and customer with our
-                strategic e-commerce solutions</small
-              >
-              <button>Read more</button>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center align-items-center">
-            <button class="sparkle-button_2">
-              <span class="text button-hacks">View all</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- #section 4 -->
-    <section
-      class="container section-container w-100 mx-auto py-5 reveal"
-      id="About"
-    >
-      <div class="mb-3" style="max-width: 100%">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="assets/imgs/cards/aboutbg.png"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8 px-4">
-            <div class="card-body">
-              <h5 class="card-title text-style">About Us</h5>
-              <p
-                class="card-text text-white"
-                style="
-                  max-width: calc(100% - 5rem);
-                  font-weight: initial;
-                  font-size: 15px;
-                "
-              >
-                At Haashtech, we are committed to driving innovation and
-                delivering excellence. With a dedicated team of experts, we
-                specialize in creating cutting-edge software solutions that meet
-                and exceed the needs of our clients. Our mission is to provide
-                high-quality, tailored services that propel businesses to
-                success in the digital world. Backed by a passion for technology
-                and a drive for innovation, we are your trusted partner on the
-                journey to achieving your goals. Let's embark on this journey
-                together."
+          <!-- first -->
+          <div class="text-white right-Side position-relative Innovate">
+            <div class="position-absolute bottom-0">
+              <p class="text-style">
+                Innovate with Us: Welcome to Our World of Digital Solutions
               </p>
-              <p class="card-text">
-                <button class="sparkle-button_2">
-                  <span class="text button-hacks"
-                    >Discover more <i class="fa-light fa fa-arrow-right"></i
+              <small class="" style="color: #8c8c8c"
+                >Et quis lacus eros pellentesque sed maecenas nulla faucibus
+                facilisis. Interdum faucibus sit venenatis id ac enim. Habitasse
+                ut enim condimentum varius. Libero mauris tellus sit varius sem
+                viverra non mi. Vulputate amet nullam id vulputate.</small
+              >
+
+              <!-- button  group -->
+              <div class="sparkle-button my-3 d-flex gap-2">
+                <button class="sparkle-button_1">
+                  <span
+                    class="text d-flex gap-2 justify-content-end align-items-center w-100 fs-4"
+                    >Reel
+                    <span
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        background: #000;
+                      "
+                      class="text-center d-flex align-items-center justify-content-center"
+                      ><i
+                        class="fa-solid fa-play"
+                        style="color: #fabd64"
+                      ></i></span
                   ></span>
                 </button>
-              </p>
-              <!-- result -->
-              <div class="d-flex gap-3 pt-sm-5">
-                <div
-                  class="flex-center flex-column lh-base"
-                  style="
-                    width: 150px;
-                    height: 100px;
-                    border-radius: 5px;
-                    border: 1px #555 solid;
-                    color: #ffbd6a;
-                  "
-                >
-                  <span>100+</span>
-                  <span>Clients</span>
-                </div>
-                <div
-                  class="flex-center flex-column"
-                  style="
-                    width: 150px;
-                    height: 100px;
-                    border-radius: 5px;
-                    border: 1px #555 solid;
-                    color: #ffbd6a;
-                  "
-                >
-                  <span>100+</span>
-                  <span>Projects</span>
-                </div>
-                <div
-                  class="flex-center flex-column"
-                  style="
-                    width: 150px;
-                    height: 100px;
-                    border-radius: 5px;
-                    border: 1px #555 solid;
-                    color: #ffbd6a;
-                  "
-                >
-                  <span>50+</span>
-                  <span>Strength</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- #section 5 -->
-    <section class="container section-container w-100 mx-auto py-5 reveal">
-      <div class="d-md-flex">
-        <!-- left side -->
-        <div class="accordion-part">
-          <h2 class="text-style">Transforming Visions into Realities</h2>
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseOne"
-                >
-                  Et quis lacus eros Haashtech maecenas nulla faucibus
-                  facilisis.
+                <!-- ====== -->
+                <button class="sparkle-button_2">
+                  <span class="text button-hacks fs-4"
+                    >Get Started <i class="fa-light fa fa-arrow-right"></i
+                  ></span>
                 </button>
-              </h2>
-              <div
-                id="flush-collapseOne"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the first item's accordion body.
-                </div>
               </div>
+              <!-- button  group ends-->
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
-                >
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div
-                id="flush-collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the second item's accordion body. Let's imagine this being
-                  filled with some actual content.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseThree"
-                >
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div
-                id="flush-collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the third item's accordion body. Nothing more exciting
-                  happening here in terms of content, but just filling up the
-                  space to make it look, at least at first glance, a bit more
-                  representative of how this would look in a real-world
-                  application.
-                </div>
-              </div>
-            </div>
+            <!-- #shadow_bubble_1 -->
+            <div
+              class="shadow_bubble shadow_bubble_1 d-md-block d-none"
+              style="top: 50%; left: 10%; width: 150px; height: 150px"
+            ></div>
           </div>
-        </div>
-        <!-- right side -->
-        <div class="slider">
+          <!-- Left Side Starts -->
+          <!-- #3d modal starts -->
+          <!-- show befor md screen size -->
           <div
-            class="item img-fluid"
-            style="background-image: url(assets/imgs/cards/card1.png)"
-          ></div>
-          <div
-            class="item img-fluid"
-            style="background-image: url(assets/imgs/cards/card2.png)"
-          ></div>
-          <div
-            class="item img-fluid"
-            style="background-image: url(assets/imgs/cards/card3.png)"
-          ></div>
-          <div
-            class="item img-fluid"
-            style="background-image: url(assets/imgs/cards/carosal1.png)"
-          ></div>
-          <div
-            class="item img-fluid"
-            style="background-image: url(assets/imgs/cards/aboutbg.png)"
-          ></div>
-          <div
-            class="item img-fluid"
-            style="background-image: url(assets/imgs/cards/carosal1.png)"
-          ></div>
-          <div
-            class="item img-fluid"
-            style="background-image: url(assets/imgs/cards/aboutbg.png)"
-          ></div>
-          <!-- <button id="next">></button>
-        <button id="prev"><</button> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- #section 6 -->
-
-    <section id="tranding" class="reveal">
-      <!-- heaad texts -->
-      <div class="container-auto flex-center bg-transparent">
-        <h2 class="text-center text-style">What people say</h2>
-        <small class="text-center section-heading text-sub">
-          Et quis lacus eros pellentesque sed maecenas nulla faucibus facilisis.
-          Interdum faucibus sit venenatis id ac enim. Habitasse ut enim
-          condimentum varius. Libero mauris tellus sit
-        </small>
-      </div>
-      <!-- heaad texts ends-->
-
-      <div class="container">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper position-relative">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide px-3">
-              <div
-                class="tranding-slide-top py-3 justify-content-between d-flex px-2 align-items-center"
-              >
-                <div class="tranding-slide-img tranding-slide-img-1"></div>
-                <img
-                  class="tranding-slide-img-2"
-                  src="assets/imgs/icons/quote.png"
-                  alt="Image 2"
-                />
-              </div>
-              <div class="tranding-slide-content">
-                <h2 class="text-white">Hanz zimmer</h2>
-                <p class="text-sub">Musician & Techy</p>
-              </div>
-              <div class="">
-                <span class="text-white"
-                  >“ Et quis lacus eros Haashtech maecenas nulla faucibus
-                  facilisis. Interdum faucibus sit venenatis id ac enim.
-                  Habitasse ut enim condimentum varius. “</span
-                >
-              </div>
-            </div>
-
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide px-3">
-              <div
-                class="tranding-slide-top py-3 justify-content-between d-flex px-2 align-items-center"
-              >
-                <div class="tranding-slide-img tranding-slide-img-1"></div>
-                <img
-                  class="tranding-slide-img-2"
-                  src="assets/imgs/icons/quote.png"
-                  alt="Image 2"
-                />
-              </div>
-              <div class="tranding-slide-content">
-                <h2 class="text-white">Hanz zimmer</h2>
-                <p class="text-sub">Musician & Techy</p>
-              </div>
-              <div class="">
-                <span class="text-white"
-                  >“ Et quis lacus eros Haashtech maecenas nulla faucibus
-                  facilisis. Interdum faucibus sit venenatis id ac enim.
-                  Habitasse ut enim condimentum varius. “</span
-                >
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <div class="swiper-slide tranding-slide px-3">
-              <div
-                class="tranding-slide-top py-3 justify-content-between d-flex px-2 align-items-center"
-              >
-                <div class="tranding-slide-img tranding-slide-img-1"></div>
-                <img
-                  class="tranding-slide-img-2"
-                  src="assets/imgs/icons/quote.png"
-                  alt="Image 2"
-                />
-              </div>
-              <div class="tranding-slide-content">
-                <h2 class="text-white">Hanz zimmer</h2>
-                <p class="text-sub">Musician & Techy</p>
-              </div>
-              <div class="">
-                <span class="text-white"
-                  >“ Et quis lacus eros Haashtech maecenas nulla faucibus
-                  facilisis. Interdum faucibus sit venenatis id ac enim.
-                  Habitasse ut enim condimentum varius. “</span
-                >
-              </div>
-            </div>
-
-            <!-- Slide-end -->
-            <!-- Slide-end -->
-          </div>
-
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <i class="bi bi-caret-left"></i>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <i class="bi bi-caret-right"></i>
-            </div>
-
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="shadow_bubble shadow_bubble_2 position-absolute"
-        style="top: 50%; left: 50%; width: 290px; height: 290px"
-      ></div>
-    </section>
-
-    <!-- #section 7 -->
-
-    <section class="container section-clintes">
-      <div class="flex-center">
-        <span class="text-style flex-center text-center section-clintes_title">
-          Unveiling Success Stories: Our Client Gallery of Innovation
-        </span>
-      </div>
-      <div class="section-clintes_slider">
-        <div class="section-clintes_slidertrack">
-          <div class="section-clintes_card">
-            <span class="fs-1 client-color client_spotify">Spotify</span>
-            <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-          </div>
-          <div class="section-clintes_card">
-            <span class="fs-1 client-color client_meta">Meta</span>
-            <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-          </div>
-          <div class="section-clintes_card">
-            <span class="fs-1 client-color client_microsoft">MicroSoft</span>
-            <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-          </div>
-          <div class="section-clintes_card">
-            <span class="fs-1 client-color client_google">Google</span>
-            <span id="google" class="fs-1">
-              <span id="G-1">G</span>
-              <span id="o-1">o</span>
-              <span id="o-2">o</span>
-              <span id="G-2">g</span>
-              <span id="L">l</span>
-              <span id="E">e</span>
-            </span>
-
-            <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-          </div>
-          <div class="section-clintes_card">
-            <span class="fs-1 client-color client_netflix">Netflix</span>
-            <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-          </div>
-          <div class="section-clintes_card">
-            <span class="fs-1 client-color client_disney">Disney +</span>
-            <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- #section 8 -->
-    <section class="w-100 m-0 p-0 section-energy-hand" id="Contact">
-      <div class="section-energy-hand_flex">
-        <div class="section-energy-hand_left">
-          <div
-            class="d-flex flex-column container ps-5 ms-5"
-            style="color: #924600"
+            class="left-Side h-100 h-auto flex-center d-md-block d-none position-relative"
           >
-            <h2 style="font-size: 30px">
-              Say Hello! <i class="fa-solid fa-hand" style="color: #ffd43b"></i>
-            </h2>
-            <span>How can I assist you today?</span>
+            <img
+              src="assets/imgs/cards/sphereaquare.png"
+              alt=""
+              class="position-absolute"
+              style="top: 50px; width: 120px"
+            />
+            <img
+              src="assets/imgs/cards/sphereaquare.png"
+              alt=""
+              class="position-absolute"
+              style="left: 50%; bottom: 0; width: 120px"
+            />
+            <model-viewer
+              style="
+                z-index: 0;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                right: 0;
+                box-shadow: 0 0 20px rgba(0, 0, 0rgb (211, 135, 42));
+              "
+              src="untitled.glb"
+              alt="A 3D model"
+              camera-controls
+              disable-zoom
+              max-field-of-view="40deg"
+              min-field-of-view="40deg"
+              autoplay
+              auto-rotate
+              ar="none"
+              shadow-intensity="0.9"
+            >
+            </model-viewer>
+
+            <div
+              class="shadow_bubble shadow_bubble_2 position-absolute"
+              style="top: 50%; left: 50%; width: 300px; height: 300px"
+            ></div>
           </div>
-          <img
-            src="assets/imgs/cards/energy-hand.png"
-            alt="energy-hand"
-            style="max-width: 100%"
-          />
+        </div>
+        <!-- shadow_bubble_2 -->
+      </section>
+
+      <!-- #section 2 -->
+      <section
+        class="container section-container w-100 mx-auto py-5 reveal"
+        id="Showcase"
+      >
+        <div class="w-100 flex-center">
+          <h2 class="text-head">
+            Showcasing Our Work: A Glimpse of Excellence
+          </h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col card-avatar">
+            <div class="h-100">
+              <div class="wrapper">
+                <img
+                  src="assets/imgs/cards/card1.png"
+                  class="card-img-top"
+                  alt="Haash Tech "
+                  style="cursor: pointer"
+                />
+                <img
+                  src="assets/imgs/logo/haashlogo.png"
+                  class="charecter position-absolute"
+                  alt="Haash Tech "
+                  style="cursor: pointer; left: 0; bottom: 0"
+                />
+              </div>
+
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text text-sub card_title">
+                  A donec porta aliquam urna non nunc. Fames mi neque
+                  ullamcorper.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col card-avatar">
+            <div class="h-100">
+              <div class="wrapper">
+                <img
+                  src="assets/imgs/cards/card2.png"
+                  class="card-img-top"
+                  alt="Haash Tech "
+                  style="cursor: pointer"
+                />
+                <img
+                  src="assets/imgs/logo/haashlogo.png"
+                  class="charecter position-absolute"
+                  alt="Haash Tech "
+                  style="cursor: pointer; left: 0; bottom: 0"
+                />
+              </div>
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text text-sub card_title">
+                  A donec porta aliquam urna non nunc. Fames mi neque
+                  ullamcorper.A donec porta aliquames mi neque ullamcorper.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col card-avatar">
+            <div class="h-100">
+              <div class="wrapper">
+                <img
+                  src="assets/imgs/cards/card3.png"
+                  class="card-img-top"
+                  alt="Haash Tech "
+                  style="cursor: pointer"
+                />
+                <img
+                  src="assets/imgs/logo/haashlogo.png"
+                  class="charecter position-absolute"
+                  alt="Haash Tech "
+                  style="cursor: pointer; left: 0; bottom: 0"
+                />
+              </div>
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text text-sub card_title">
+                  A donec porta aliquam urna non nunc. Fames mi neque
+                  ullamcorper.A donec porta aliquames mi neque ullamcorper.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- #section 3 -->
+
+      <section
+        class="container section-container w-100 mx-auto py-5 reveal"
+        id="Services"
+      >
+        >
+        <div class="flex-center text-center flex-column w-100">
+          <!-- head text start -->
+
+          <div class="section-service w-50 flex-center flex-column">
+            <h1 class="text-style">Our Services</h1>
+            <small class="text-sub"
+              >We're dedicated to exceeding your expectations. Explore our
+              comprehensive range of services tailored to meet your specific
+              requirements. Let's innovate together.</small
+            >
+          </div>
+          <!-- head text end -->
+          <!-- cards start -->
+          <div class="w-100">
+            <div
+              class="row row-cols-md-2 mx-auto user-cards"
+              style="padding: 2rem 5rem"
+            >
+              <div class="cards">
+                <div class="profile-img">
+                  <img src="assets/imgs/cards/mobAppCard.png" alt="" />
+                </div>
+                <h2>Mobile App Development</h2>
+                <small
+                  >From enterprise to consumer apps that are specifically
+                  tailored to meet your business needs</small
+                >
+                <button>Read more</button>
+              </div>
+              <!--service card 2  -->
+              <div class="cards">
+                <div class="profile-img">
+                  <img src="assets/imgs/cards/webAppCard.png" alt="" />
+                </div>
+                <h2>Web App Development</h2>
+                <small
+                  >Dive into the realm of intuitive web applications exclusively
+                  tailored to gift an immersive digital experience</small
+                >
+                <button>Read more</button>
+              </div>
+              <!--service card 3  -->
+
+              <div class="cards">
+                <div class="profile-img">
+                  <img src="assets/imgs/cards/UiuxCard.png" alt="" />
+                </div>
+                <h2>UI/UX Design</h2>
+                <small
+                  >Embracing UI/UX in crafting seamless experiences, keeping up
+                  with efficiency and elegance</small
+                >
+                <button>Read more</button>
+              </div>
+              <!--service card 4  -->
+              <div class="cards">
+                <div class="profile-img">
+                  <img src="assets/imgs/cards/EAppCard.png" alt="" />
+                </div>
+                <h2>E-commerce</h2>
+                <small
+                  >Bridge the gap between your storefront and customer with our
+                  strategic e-commerce solutions</small
+                >
+                <button>Read more</button>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <button class="sparkle-button_2">
+                <span class="text button-hacks">View all</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- #section 4 -->
+      <section
+        class="container section-container w-100 mx-auto py-5 reveal"
+        id="About"
+      >
+        <div class="mb-3" style="max-width: 100%">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/imgs/cards/aboutbg.png"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8 px-4">
+              <div class="card-body">
+                <h5 class="card-title text-style">About Us</h5>
+                <p
+                  class="card-text text-white"
+                  style="
+                    max-width: calc(100% - 5rem);
+                    font-weight: initial;
+                    font-size: 15px;
+                  "
+                >
+                  At Haashtech, we are committed to driving innovation and
+                  delivering excellence. With a dedicated team of experts, we
+                  specialize in creating cutting-edge software solutions that
+                  meet and exceed the needs of our clients. Our mission is to
+                  provide high-quality, tailored services that propel businesses
+                  to success in the digital world. Backed by a passion for
+                  technology and a drive for innovation, we are your trusted
+                  partner on the journey to achieving your goals. Let's embark
+                  on this journey together."
+                </p>
+                <p class="card-text">
+                  <button class="sparkle-button_2">
+                    <span class="text button-hacks"
+                      >Discover more <i class="fa-light fa fa-arrow-right"></i
+                    ></span>
+                  </button>
+                </p>
+                <!-- result -->
+                <div class="d-flex gap-3 pt-sm-5">
+                  <div
+                    class="flex-center flex-column lh-base"
+                    style="
+                      width: 150px;
+                      height: 100px;
+                      border-radius: 5px;
+                      border: 1px #555 solid;
+                      color: #ffbd6a;
+                    "
+                  >
+                    <span>100+</span>
+                    <span>Clients</span>
+                  </div>
+                  <div
+                    class="flex-center flex-column"
+                    style="
+                      width: 150px;
+                      height: 100px;
+                      border-radius: 5px;
+                      border: 1px #555 solid;
+                      color: #ffbd6a;
+                    "
+                  >
+                    <span>100+</span>
+                    <span>Projects</span>
+                  </div>
+                  <div
+                    class="flex-center flex-column"
+                    style="
+                      width: 150px;
+                      height: 100px;
+                      border-radius: 5px;
+                      border: 1px #555 solid;
+                      color: #ffbd6a;
+                    "
+                  >
+                    <span>50+</span>
+                    <span>Strength</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- #section 5 -->
+      <section class="container section-container w-100 mx-auto py-5 reveal">
+        <div class="d-md-flex">
+          <!-- left side -->
+          <div class="accordion-part">
+            <h2 class="text-style">Transforming Visions into Realities</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Et quis lacus eros Haashtech maecenas nulla faucibus
+                    facilisis.
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the
+                    space to make it look, at least at first glance, a bit more
+                    representative of how this would look in a real-world
+                    application.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="slider">
+            <div
+              class="item img-fluid"
+              style="background-image: url(assets/imgs/cards/card1.png)"
+            ></div>
+            <div
+              class="item img-fluid"
+              style="background-image: url(assets/imgs/cards/card2.png)"
+            ></div>
+            <div
+              class="item img-fluid"
+              style="background-image: url(assets/imgs/cards/card3.png)"
+            ></div>
+            <div
+              class="item img-fluid"
+              style="background-image: url(assets/imgs/cards/carosal1.png)"
+            ></div>
+            <div
+              class="item img-fluid"
+              style="background-image: url(assets/imgs/cards/aboutbg.png)"
+            ></div>
+            <div
+              class="item img-fluid"
+              style="background-image: url(assets/imgs/cards/carosal1.png)"
+            ></div>
+            <div
+              class="item img-fluid"
+              style="background-image: url(assets/imgs/cards/aboutbg.png)"
+            ></div>
+            <!-- <button id="next">></button>
+        <button id="prev"><</button> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- #section 6 -->
+
+      <section id="tranding" class="reveal">
+        <!-- heaad texts -->
+        <div class="container-auto flex-center bg-transparent">
+          <h2 class="text-center text-style">What people say</h2>
+          <small class="text-center section-heading text-sub">
+            Et quis lacus eros pellentesque sed maecenas nulla faucibus
+            facilisis. Interdum faucibus sit venenatis id ac enim. Habitasse ut
+            enim condimentum varius. Libero mauris tellus sit
+          </small>
+        </div>
+        <!-- heaad texts ends-->
+
+        <div class="container">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper position-relative">
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide px-3">
+                <div
+                  class="tranding-slide-top py-3 justify-content-between d-flex px-2 align-items-center"
+                >
+                  <div class="tranding-slide-img tranding-slide-img-1"></div>
+                  <img
+                    class="tranding-slide-img-2"
+                    src="assets/imgs/icons/quote.png"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="tranding-slide-content">
+                  <h2 class="text-white">Hanz zimmer</h2>
+                  <p class="text-sub">Musician & Techy</p>
+                </div>
+                <div class="">
+                  <span class="text-white"
+                    >“ Et quis lacus eros Haashtech maecenas nulla faucibus
+                    facilisis. Interdum faucibus sit venenatis id ac enim.
+                    Habitasse ut enim condimentum varius. “</span
+                  >
+                </div>
+              </div>
+
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide px-3">
+                <div
+                  class="tranding-slide-top py-3 justify-content-between d-flex px-2 align-items-center"
+                >
+                  <div class="tranding-slide-img tranding-slide-img-1"></div>
+                  <img
+                    class="tranding-slide-img-2"
+                    src="assets/imgs/icons/quote.png"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="tranding-slide-content">
+                  <h2 class="text-white">Hanz zimmer</h2>
+                  <p class="text-sub">Musician & Techy</p>
+                </div>
+                <div class="">
+                  <span class="text-white"
+                    >“ Et quis lacus eros Haashtech maecenas nulla faucibus
+                    facilisis. Interdum faucibus sit venenatis id ac enim.
+                    Habitasse ut enim condimentum varius. “</span
+                  >
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <div class="swiper-slide tranding-slide px-3">
+                <div
+                  class="tranding-slide-top py-3 justify-content-between d-flex px-2 align-items-center"
+                >
+                  <div class="tranding-slide-img tranding-slide-img-1"></div>
+                  <img
+                    class="tranding-slide-img-2"
+                    src="assets/imgs/icons/quote.png"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="tranding-slide-content">
+                  <h2 class="text-white">Hanz zimmer</h2>
+                  <p class="text-sub">Musician & Techy</p>
+                </div>
+                <div class="">
+                  <span class="text-white"
+                    >“ Et quis lacus eros Haashtech maecenas nulla faucibus
+                    facilisis. Interdum faucibus sit venenatis id ac enim.
+                    Habitasse ut enim condimentum varius. “</span
+                  >
+                </div>
+              </div>
+
+              <!-- Slide-end -->
+              <!-- Slide-end -->
+            </div>
+
+            <div class="tranding-slider-control">
+              <div class="swiper-button-prev slider-arrow">
+                <i class="bi bi-caret-left"></i>
+              </div>
+              <div class="swiper-button-next slider-arrow">
+                <i class="bi bi-caret-right"></i>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
         <div
-          class="section-energy-hand_right d-flex justify-content-center align-items-center"
-        >
-          <!-- contact form -->
-          <form
-            id="contact"
-            method="POST"
-            class="container"
-            novalidate
-            style="max-width: 80%"
+          class="shadow_bubble shadow_bubble_2 position-absolute"
+          style="top: 50%; left: 50%; width: 290px; height: 290px"
+        ></div>
+      </section>
+
+      <!-- #section 7 -->
+
+      <section class="container section-clintes re">
+        <div class="flex-center">
+          <span
+            class="text-style flex-center text-center section-clintes_title"
           >
-            <input
-              type="hidden"
-              name="access_key"
-              value="51250e50-7d71-43a1-b74d-5c5eeeef7e2f"
+            Unveiling Success Stories: Our Client Gallery of Innovation
+          </span>
+        </div>
+        <div class="section-clintes_slider">
+          <div class="section-clintes_slidertrack">
+            <div class="section-clintes_card">
+              <span class="fs-1 client-color client_spotify">Spotify</span>
+              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
+            </div>
+            <div class="section-clintes_card">
+              <span class="fs-1 client-color client_meta">Meta</span>
+              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
+            </div>
+            <div class="section-clintes_card">
+              <span class="fs-1 client-color client_microsoft">MicroSoft</span>
+              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
+            </div>
+            <div class="section-clintes_card">
+              <span class="fs-1 client-color client_google">Google</span>
+              <span id="google" class="fs-1">
+                <span id="G-1">G</span>
+                <span id="o-1">o</span>
+                <span id="o-2">o</span>
+                <span id="G-2">g</span>
+                <span id="L">l</span>
+                <span id="E">e</span>
+              </span>
+
+              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
+            </div>
+            <div class="section-clintes_card">
+              <span class="fs-1 client-color client_netflix">Netflix</span>
+              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
+            </div>
+            <div class="section-clintes_card">
+              <span class="fs-1 client-color client_disney">Disney +</span>
+              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- #section 8 -->
+      <section class="w-100 m-0 p-0 section-energy-hand reveal" id="Contact">
+        <div class="section-energy-hand_flex">
+          <div class="section-energy-hand_left">
+            <div
+              class="d-flex flex-column container ps-5 ms-5"
+              style="color: #924600"
+            >
+              <h2 style="font-size: 30px">
+                Say Hello!
+                <i class="fa-solid fa-hand" style="color: #ffd43b"></i>
+              </h2>
+              <span>How can I assist you today?</span>
+            </div>
+            <img
+              src="assets/imgs/cards/energy-hand.png"
+              alt="energy-hand"
+              style="max-width: 100%"
             />
-            <!-- <input
+          </div>
+          <div
+            class="section-energy-hand_right d-flex justify-content-center align-items-center"
+          >
+            <!-- contact form -->
+            <form
+              id="contact"
+              method="POST"
+              class="container"
+              novalidate
+              style="max-width: 80%"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="51250e50-7d71-43a1-b74d-5c5eeeef7e2f"
+              />
+              <!-- <input
               type="hidden"
               name="redirect"
               value="http://127.0.0.1:5500/index.html"
             /> -->
-            <div class="mb-3">
-              <!-- <label for="" class="text-white">Email address</label> -->
-              <input
-                type="text"
-                class="form-control fs-4"
-                style="
-                  border: 1px solid #924600;
-                  outline: none;
-                  color: #e19854;
-                  padding: 1.3rem;
-                  background: transparent;
-                "
-                id="name"
-                name="Name"
-                placeholder="Your Name"
-              />
-              <div id="error_name" class="error text-danger"></div>
-            </div>
-            <div class="mb-3">
-              <!-- <label for="floatingPassword1" class="text-white">Password</label> -->
-              <input
-                type="email"
-                class="form-control fs-4"
-                style="
-                  border: 1px solid #924600;
-                  outline: none;
-                  color: #e19854;
-                  padding: 1.3rem;
-                  background: transparent;
-                "
-                id="email"
-                name="Email"
-                placeholder="Password"
-              />
-              <div id="error_email" class="error text-danger"></div>
-            </div>
-            <div class="mb-3">
-              <!-- <label for="" class="text-white">Email address</label> -->
-              <input
-                type="phone"
-                class="form-control fs-4"
-                style="
-                  border: 1px solid #924600;
-                  outline: none;
-                  color: #e19854;
-                  padding: 1.3rem;
-                  background: transparent;
-                "
-                name="phone"
-                id="phone"
-                placeholder="Phone Number"
-              />
-              <div id="error_phone" class="error text-danger"></div>
-            </div>
-            <div class="mb-3">
-              <!-- <label for="" class="text-white">Password</label> -->
-              <textarea
-                class="form-control bg-transparent p-3 text-white fs-4"
-                id="message"
-                rows="4"
-                name="Message"
-                placeholder="Your Message"
-                required
-              ></textarea>
-              <div id="error_message" class="error text-danger"></div>
-            </div>
-            <div class="col-12">
-              <button
-                class="btn btn-primary fs-3"
-                id="form-submit"
-                type="submit"
-              >
-                Submit form
-              </button>
-              <div id="result" class="text-success mt-3"></div>
-            </div>
-          </form>
+              <div class="mb-3">
+                <!-- <label for="" class="text-white">Email address</label> -->
+                <input
+                  type="text"
+                  class="form-control fs-4"
+                  style="
+                    border: 1px solid #924600;
+                    outline: none;
+                    color: #e19854;
+                    padding: 1.3rem;
+                    background: transparent;
+                  "
+                  id="name"
+                  name="Name"
+                  placeholder="Your Name"
+                />
+                <div id="error_name" class="error text-danger"></div>
+              </div>
+              <div class="mb-3">
+                <!-- <label for="floatingPassword1" class="text-white">Password</label> -->
+                <input
+                  type="email"
+                  class="form-control fs-4"
+                  style="
+                    border: 1px solid #924600;
+                    outline: none;
+                    color: #e19854;
+                    padding: 1.3rem;
+                    background: transparent;
+                  "
+                  id="email"
+                  name="Email"
+                  placeholder="Password"
+                />
+                <div id="error_email" class="error text-danger"></div>
+              </div>
+              <div class="mb-3">
+                <!-- <label for="" class="text-white">Email address</label> -->
+                <input
+                  type="phone"
+                  class="form-control fs-4"
+                  style="
+                    border: 1px solid #924600;
+                    outline: none;
+                    color: #e19854;
+                    padding: 1.3rem;
+                    background: transparent;
+                  "
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone Number"
+                />
+                <div id="error_phone" class="error text-danger"></div>
+              </div>
+              <div class="mb-3">
+                <!-- <label for="" class="text-white">Password</label> -->
+                <textarea
+                  class="form-control bg-transparent p-3 text-white fs-4"
+                  id="message"
+                  rows="4"
+                  name="Message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <div id="error_message" class="error text-danger"></div>
+              </div>
+              <div class="col-12">
+                <button
+                  class="btn btn-primary fs-3"
+                  id="form-submit"
+                  type="submit"
+                >
+                  Submit form
+                </button>
+                <div id="result" class="text-success mt-3"></div>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- #footer -->
+        <!-- #footer -->
     <footer class="py-24 container">
       <img
         src="assets/imgs/logo/haashlogofooter.png"
@@ -1028,6 +1108,9 @@
         </div>
       </div>
     </footer>
+    </main>
+
+  
 
     <!-- <img src="assets/imgs/logo/flotingpieces.png" alt=""> -->
     <style>
@@ -1084,31 +1167,18 @@
     <!-- Required for hCaptcha -->
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="assets/js/formValidation.js"></script>
     <script src="assets/js/cardCarousalTwo.js"></script>
+    <script src="assets/js/formValidation.js"></script>
+
     <!-- sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const sections = document.querySelectorAll("section");
-        const images = [
-          "assets/imgs/logo/flotingpieces.png",
-          "assets/imgs/logo/flotingpieces2.png",
-        ];
-
-        sections.forEach((section, index) => {
-          if (index === 6  ) return; // Skip section 6
-          if (index === 4  ) return;
-          const imgCount = index < images.length ? 2 : 1; // Limit 2 images per section
-
-          for (let i = 0; i < imgCount; i++) {
-            const img = document.createElement("img");
-            img.src = images[i];
-            img.alt = "Floating Pieces Logo";
-            img.classList.add(i === 0 ? "bottom-left" : "bottom-right"); // Alternate positioning
-            section.appendChild(img);
-          }
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".preloader");
+        loader.classList.add("preloader-hidden");
+        loader.addEventListener("transitionend", () => {
+          document.body.removeChild(loader);
         });
       });
     </script>

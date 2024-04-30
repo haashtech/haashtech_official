@@ -10,7 +10,23 @@
 .h-25vh {
   height: 25vh;
 }
+.navbar .sidebar a{
+  position: relative;
+}
+.navbar .sidebar a::after{
+ content: '';
+ position: absolute;
+ background-color: #ffbd6a;
+ height: 1px ;
+ width: 0;
+ left: 0;
+ bottom: 0;
+ transition: all 0.5s;
+}
+.navbar .sidebar a:hover::after{
+ width: 100%;
 
+}
 .py-24 {
   padding-top: 6rem /* 96px */;
   padding-bottom: 6rem /* 96px */;
