@@ -43,9 +43,55 @@
     <link rel="stylesheet" href="assets/css/custom.css" />
     <link rel="stylesheet" href="assets/css/cardCarousal.css" />
     <link rel="stylesheet" href="assets/css/carousal2.css" />
+    <link rel="stylesheet" href="assets/css/preloader.css" />
+    <link
+      rel="icon"
+      href="assets/imgs/logo/haashlogo.png"
+      type="image/x-icon"
+    />
     <title>Haash || Home</title>
   </head>
   <body>
+    <style>
+      .form-label input {
+        background-color: aliceblue;
+      }
+      /* Custom Styles */
+      .form-label {
+        color: #924600; /* Text color */
+      }
+      .form-control {
+        border-color: #924600; /* Input border color */
+        color: white; /* Input text color */
+      }
+      .btn-primary {
+        background-color: #924600; /* Button background color */
+      }
+      .form-control::placeholder {
+        color: #e19854; /* Placeholder text color */
+      }
+
+      section {
+        position: relative; /* Ensure positioning context for absolute positioning */
+      }
+
+      .bottom-left {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+      }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 120px;
+        right: -32px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
     <!-- #Header Section -->
     <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-lg-3">
       <div class="container">
@@ -115,51 +161,16 @@
         </div>
       </div>
     </nav> -->
-    <style>
-      .preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        transition: opacity 0.75s, visibility 0.75s;
-        z-index: 9999;
-      }
-      .preloader-hidden {
-        opacity: 0;
-        visibility: hidden;
-      }
-      .preloader::after {
-        content: "";
-        height: 75px;
-        width: 75px;
-        border: 5px solid #dddddd;
-        border-top-color: #e98200;
-        border-radius: 50%;
-        animation: loading 0.75s ease infinite;
-      }
-      @keyframes loading {
-        from {
-          transform: rotate(0turn);
-        }
-        to {
-          transform: rotate(1turn);
-        }
-      }
-    </style>
 
     <!-- ********preloader******** -->
     <div class="preloader"></div>
 
+    <!-- ********Header******** -->
     <nav
-      class="navbar navbar-expand-lg navbar-dark fixed-top container py-3 px-md-0 px-3"
+      class="navbar navbar-expand-lg navbar-dark fixed-top py-3 px-md-0 px-3"
     >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#Home">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
           <img
             src="assets/imgs/logo/haashlogo.png"
             alt="Haash Technologies"
@@ -205,7 +216,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="#About">About Us</a>
+                <a class="nav-link mx-2" href="aboutUs.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-2" href="#Services">Services</a>
@@ -217,14 +228,14 @@
                 <a class="nav-link mx-2" href="#Blog">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="#Contact">Contact</a>
+                <a class="nav-link mx-2" href="contactUs.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    <main  class="bg-black">
+    <main class="bg-black">
       <!-- #Section 1 -->
       <section
         class="container section-container w-100 mx-auto"
@@ -354,8 +365,9 @@
 
       <!-- #section 2 -->
       <section
-        class="container section-container w-100 mx-auto py-5 reveal"
+        class="container section-container w-100 mx-auto reveal"
         id="Showcase"
+        style="padding: 12rem 0rem"
       >
         <div class="w-100 flex-center">
           <h2 class="text-head">
@@ -551,15 +563,15 @@
                     font-size: 15px;
                   "
                 >
-                  At Haashtech, we are committed to driving innovation and
-                  delivering excellence. With a dedicated team of experts, we
-                  specialize in creating cutting-edge software solutions that
-                  meet and exceed the needs of our clients. Our mission is to
-                  provide high-quality, tailored services that propel businesses
-                  to success in the digital world. Backed by a passion for
-                  technology and a drive for innovation, we are your trusted
-                  partner on the journey to achieving your goals. Let's embark
-                  on this journey together."
+                  At <code class="fs-3">Haashtech</code> , we are committed to
+                  driving innovation and delivering excellence. With a dedicated
+                  team of experts, we specialize in creating cutting-edge
+                  software solutions that meet and exceed the needs of our
+                  clients. Our mission is to provide high-quality, tailored
+                  services that propel businesses to success in the digital
+                  world. Backed by a passion for technology and a drive for
+                  innovation, we are your trusted partner on the journey to
+                  achieving your goals. Let's embark on this journey together."
                 </p>
                 <p class="card-text">
                   <button class="sparkle-button_2">
@@ -858,7 +870,7 @@
 
       <!-- #section 7 -->
 
-      <section class="container section-clintes re">
+      <section class="container section-clintes reveal">
         <div class="flex-center">
           <span
             class="text-style flex-center text-center section-clintes_title"
@@ -906,258 +918,228 @@
       </section>
 
       <!-- #section 8 -->
-      <section class="w-100 m-0 p-0 section-energy-hand reveal" id="Contact">
-        <div class="section-energy-hand_flex">
-          <div class="section-energy-hand_left">
-            <div
-              class="d-flex flex-column container ps-5 ms-5"
-              style="color: #924600"
-            >
-              <h2 style="font-size: 30px">
-                Say Hello!
-                <i class="fa-solid fa-hand" style="color: #ffd43b"></i>
-              </h2>
-              <span>How can I assist you today?</span>
-            </div>
-            <img
-              src="assets/imgs/cards/energy-hand.png"
-              alt="energy-hand"
-              style="max-width: 100%"
-            />
+      <section class="py-5 container w-100 mx-auto">
+        <div class="flex-center text-start flex-column w-100">
+          <div class="">
+            <h1 class="text-head">Design.Build.Market.</h1>
           </div>
-          <div
-            class="section-energy-hand_right d-flex justify-content-center align-items-center"
-          >
-            <!-- contact form -->
-            <form
-              id="contact"
-              method="POST"
-              class="container"
-              novalidate
-              style="max-width: 80%"
+          <div class="w-100">
+            <div
+              class="row row-cols-md-2 mx-auto user-cards"
+              style="padding: 2rem 5rem text-head-sm"
             >
-              <input
-                type="hidden"
-                name="access_key"
-                value="51250e50-7d71-43a1-b74d-5c5eeeef7e2f"
-              />
-              <!-- <input
-              type="hidden"
-              name="redirect"
-              value="http://127.0.0.1:5500/index.html"
-            /> -->
-              <div class="mb-3">
-                <!-- <label for="" class="text-white">Email address</label> -->
-                <input
-                  type="text"
-                  class="form-control fs-4"
-                  style="
-                    border: 1px solid #924600;
-                    outline: none;
-                    color: #e19854;
-                    padding: 1.3rem;
-                    background: transparent;
-                  "
-                  id="name"
-                  name="Name"
-                  placeholder="Your Name"
-                />
-                <div id="error_name" class="error text-danger"></div>
+              <!-- design card 1 -->
+              <div class="design text-start fw-lighter">
+                <div class="mb-3"><h3>Meet Our Team</h3></div>
+                <div class="mb-3">
+                  <span class=""
+                    >At [Startup Name], we're driven by a shared commitment to
+                    innovation, integrity, and making a positive impact on the
+                    world." "</span
+                  >
+                </div>
+                <div>
+                  <button class="bg-transparent border-0 text-white">
+                    Learn more <i class="fa-light fa fa-arrow-right"></i>
+                  </button>
+                </div>
               </div>
-              <div class="mb-3">
-                <!-- <label for="floatingPassword1" class="text-white">Password</label> -->
-                <input
-                  type="email"
-                  class="form-control fs-4"
-                  style="
-                    border: 1px solid #924600;
-                    outline: none;
-                    color: #e19854;
-                    padding: 1.3rem;
-                    background: transparent;
-                  "
-                  id="email"
-                  name="Email"
-                  placeholder="Password"
-                />
-                <div id="error_email" class="error text-danger"></div>
+
+              <!-- design card 2  -->
+              <div class="design text-start fw-lighter">
+                <div class="mb-3"><h3>Our expertise</h3></div>
+                <div class="mb-3">
+                  <span
+                    >At [Startup Name], we're driven by a shared commitment to
+                    innovation, integrity, and making a positive impact on the
+                    world." "</span
+                  >
+                </div>
+                <!-- Added mb-3 class for bottom margin -->
+                <div>
+                  <button class="bg-transparent border-0 text-white">
+                    Learn more <i class="fa-light fa fa-arrow-right"></i>
+                  </button>
+                </div>
               </div>
-              <div class="mb-3">
-                <!-- <label for="" class="text-white">Email address</label> -->
-                <input
-                  type="phone"
-                  class="form-control fs-4"
-                  style="
-                    border: 1px solid #924600;
-                    outline: none;
-                    color: #e19854;
-                    padding: 1.3rem;
-                    background: transparent;
-                  "
-                  name="phone"
-                  id="phone"
-                  placeholder="Phone Number"
-                />
-                <div id="error_phone" class="error text-danger"></div>
+
+              <!-- design card 3  -->
+
+              <div class="design text-start fw-lighter">
+                <div class="mb-3"><h3>Join our team</h3></div>
+                <!-- Added mb-3 class for bottom margin -->
+                <div class="mb-3">
+                  <span class="fw-lighter"
+                    >At [Startup Name], we're driven by a shared commitment to
+                    innovation, integrity, and making a positive impact on the
+                    world."</span
+                  >
+                </div>
+                <!-- Added mb-3 class for bottom margin -->
+                <div>
+                  <button class="bg-transparent border-0 text-white">
+                    Learn more <i class="fa-light fa fa-arrow-right"></i>
+                  </button>
+                </div>
               </div>
-              <div class="mb-3">
-                <!-- <label for="" class="text-white">Password</label> -->
-                <textarea
-                  class="form-control bg-transparent p-3 text-white fs-4"
-                  id="message"
-                  rows="4"
-                  name="Message"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-                <div id="error_message" class="error text-danger"></div>
+
+              <!-- design card 4  -->
+              <div class="design text-start fw-lighter">
+                <div class="mb-3"><h3>Our Purpose & Values</h3></div>
+                <!-- Added mb-3 class for bottom margin -->
+                <div class="mb-3">
+                  <span class="fw-lighter"
+                    >At [Startup Name], we're driven by a shared commitment to
+                    innovation, integrity, and making a positive impact on the
+                    world."</span
+                  >
+                </div>
+                <!-- Added mb-3 class for bottom margin -->
+                <div>
+                  <button class="bg-transparent border-0 text-white">
+                    Learn more <i class="fa-light fa fa-arrow-right"></i>
+                  </button>
+                </div>
               </div>
-              <div class="col-12">
-                <button
-                  class="btn btn-primary fs-3"
-                  id="form-submit"
-                  type="submit"
-                >
-                  Submit form
-                </button>
-                <div id="result" class="text-success mt-3"></div>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>
 
-        <!-- #footer -->
-    <footer class="py-24 container">
-      <img
-        src="assets/imgs/logo/haashlogofooter.png"
-        alt="footer logo"
-        class="mx-auto mb-5"
-      />
-      <div class="row">
-        <div class="col-md-4">
-          <!-- <h3 class="text-start mb-4">Address</h3> -->
-          <address class="footer_items">
-            <span>Haashtech Private Limited,</span><br />
-            <span>#208, 2nd Floor,</span><br />
-            <span>Nit Calicut West,</span><br />
-            <span>Shankar Nagar Road, Kattangal,</span><br />
-            <span>Kozhikode, Kerala,</span><br />
-            <span>India - 682304</span>
-          </address>
+      <!-- #section 8 -->
+      <section class="w-100 mx-auto">
+        <div class="d-md-flex" style="height: 400px;">
+            <div class="sec_map_l bg-white h-100 d-flex h-100 flex-column  align-items-center justify-content-center">
+                <div class="d-flex flex-column align-items-center ">
+                    <div class="d-flex flex-column pt-2">
+                        <span style="color: #ff8a00; font-size: clamp(10px, 6vw, 40px)">Where to Find Us:</span>
+                        <span style="color: #ff8a00; font-size: clamp(10px, 6vw, 40px); margin-bottom: 3rem;">Navigate Your Way"?</span>
+                    </div>
+                    <div class="w-100 text-start mt-5">
+                        <h3 class="mb-4 text-black fs-1">Company</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="tel:6520 125 154" class="text-decoration-none footer_items">6520 125 154</a>
+                            </li>
+                            <li>
+                                <a href="mailto:abcs@gmail.com" class="text-decoration-none footer_items">abcs@gmail.com</a>
+                            </li>
+                            <li>
+                                <ul class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2">
+                                    <li><a href="https://www.instagram.com/odio_fashion/"><img src="assets/imgs/logo/instablack.png" alt="instagram" /></a></li>
+                                    <li><img src="assets/imgs/logo/fbblack.png" alt="facebook" /></li>
+                                    <li><img src="assets/imgs/logo/prime_twitterblack.png" alt="Twitter" /></li>
+                                    <li><img src="assets/imgs/logo/linkdinblack.png" alt="LinkedIn" /></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_map_r">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.154298471097!2d75.934691074095!3d11.32940824875246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba643000c7d3771%3A0x9463d4507015c114!2sHaash%20india%20exports%20private%20limited!5e1!3m2!1sen!2sin!4v1714564975445!5m2!1sen!2sin" width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-2">
-          <h3 class="text-start mb-4 text-white">Company</h3>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#About" class="text-decoration-none footer_items"
-                >About</a
-              >
-            </li>
-            <li>
-              <a href="#Contact" class="text-decoration-none footer_items"
-                >Contact Us</a
-              >
-            </li>
-            <li>
-              <a href="#Services" class="text-decoration-none footer_items"
-                >Services</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h3 class="text-start mb-4 text-white">Contact</h3>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#" class="text-decoration-none footer_items"
-                >6520 125 154</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none footer_items"
-                >abcs@gmail.com</a
-              >
-            </li>
-            <li>
+    </section>
+    
+
+      <!-- #footer -->
+      <footer class="py-24 container">
+        <div class="row">
+          <div class="col-md-1">
+            <img
+              src="assets/imgs/logo/haashlogofooter.png"
+              alt="footer logo"
+              class="mx-auto mb-5"
+            />
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-3">
+            <!-- <h3 class="text-start mb-4">Address</h3> -->
+            <address class="footer_items">
+              <span>Haashtech Private Limited,</span><br />
+              <span>#208, 2nd Floor,</span><br />
+              <span>Nit Calicut West,</span><br />
+              <span>Shankar Nagar Road, Kattangal,</span><br />
+              <span>Kozhikode, Kerala,</span><br />
+              <span>India - 682304</span>
+            </address>
+          </div>
+
+          <div class="col-md-2">
+            <h3 class="text-start mb-4 text-white">Company</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="aboutUs.html" class="text-decoration-none footer_items"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#Contact" class="text-decoration-none footer_items"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#Services" class="text-decoration-none footer_items"
+                  >Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h3 class="text-start mb-4 text-white">Services</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none footer_items"
+                  >Ui/ux design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none footer_items"
+                  >Web development</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none footer_items"
+                  >App development</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none footer_items"
+                  >E-commerce</a
+                >
+              </li>
+              <!-- <li>
               <ul
                 class="list-unstyled d-flex gap-4 justify-content-start align-items-center"
               >
-                <li><img src="assets/imgs/logo/Vector-1.png" alt="" /></li>
+                <li><a href="https://www.instagram.com/odio_fashion/"><img src="assets/imgs/logo/Vector-1.png" alt="" /></a></li>
                 <li><img src="assets/imgs/logo/Vector.png" alt="" /></li>
                 <li><img src="assets/imgs/logo/prime_twitter.png" alt="" /></li>
               </ul>
-            </li>
-          </ul>
+            </li> -->
+            </ul>
+          </div>
         </div>
-      </div>
-      <!-- foot -->
-      <div class="row">
-        <div class="col-md-4">
-          <h3 class="text-start mt-4 footer_items">
-            @2024 all rights are reserved
-          </h3>
+        <!-- foot -->
+        <div class="row">
+          <div class="col-md-2">
+            <span class="text-start mt-4 footer_items fs-5">
+              @2024 all rights are reserved
+            </span>
+          </div>
+
+          <div class="col-md">
+            <span class="text-start mt-4 footer_items fs-5"
+              >Terms of services | Privacy policy</span
+            >
+          </div>
         </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-2">
-          <h3 class="text-start mt-4 footer_items">Terms of services</h3>
-        </div>
-        <div class="col-md-2">
-          <h3 class="text-start mt-4 footer_items">Privacy policy</h3>
-        </div>
-      </div>
-    </footer>
+      </footer>
     </main>
 
-  
-
     <!-- <img src="assets/imgs/logo/flotingpieces.png" alt=""> -->
-    <style>
-      .form-label input {
-        background-color: aliceblue;
-      }
-      /* Custom Styles */
-      .form-label {
-        color: #924600; /* Text color */
-      }
-      .form-control {
-        border-color: #924600; /* Input border color */
-        color: white; /* Input text color */
-      }
-      .btn-primary {
-        background-color: #924600; /* Button background color */
-      }
-      .form-control::placeholder {
-        color: #e19854; /* Placeholder text color */
-      }
-      a {
-        text-decoration: none;
-      }
-      .footer_items {
-        color: #757575;
-      }
-      section {
-        position: relative; /* Ensure positioning context for absolute positioning */
-      }
-
-      .bottom-left {
-        position: absolute;
-        bottom: -50px;
-        left: 50%;
-      }
-
-      .bottom-right {
-        position: absolute;
-        bottom: 120px;
-        right: -32px;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
 
     <script src="assets/js/scrollYanime.js"></script>
     <script src="assets/js/cardCarousal.js"></script>
@@ -1167,6 +1149,7 @@
     <!-- Required for hCaptcha -->
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="assets/js/cardCarousalTwo.js"></script>
     <script src="assets/js/formValidation.js"></script>
 
@@ -1180,6 +1163,16 @@
         loader.addEventListener("transitionend", () => {
           document.body.removeChild(loader);
         });
+      });
+    </script>
+
+    <script>
+      $(window).scroll(function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("glass");
+        } else {
+          $("nav").removeClass("glass");
+        }
       });
     </script>
   </body>
