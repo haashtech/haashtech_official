@@ -1,3 +1,12 @@
+:root {
+  --transition: 0.25s;
+  --spark: 1.8s;
+  --paracolor: #8c8c8c;
+  --theme:#FFBD6A;
+}
+.text-theme{
+  color: var(--theme);
+}
 .h-100vh {
   height: 100vh;
 }
@@ -7,6 +16,9 @@
 .h-50vh {
   height: 50vh;
 }
+.w-80{
+  width: 80%;
+}
 a {
   text-decoration: none;
 }
@@ -15,6 +27,16 @@ a {
 }
 .h-25vh {
   height: 25vh;
+}
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem/* 16px */ * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem/* 16px */ * var(--tw-space-y-reverse));
+}
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem/* 16px */ * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem/* 16px */ * var(--tw-space-y-reverse));
 }
 .navbar .sidebar a{
   position: relative;
@@ -82,6 +104,10 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   max-width: 50%;
+}
+.text-sm-size{
+  color: #8C8C8C;
+  font-size: 1.5rem;
 }
 footer a:hover{
   color: #ffbd6a;

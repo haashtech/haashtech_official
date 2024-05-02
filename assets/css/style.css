@@ -15,7 +15,7 @@ section {
 :root {
   --transition: 0.25s;
   --spark: 1.8s;
-  --paracolor: #8C8C8C
+  --paracolor: #8c8c8c;
 }
 
 .section-container {
@@ -162,7 +162,6 @@ section {
   opacity: 1;
 }
 /* ======== */
-
 
 /* service cards */
 .user-cards {
@@ -411,10 +410,10 @@ place-items:  center;
 .section-energy-hand_flex {
   display: flex;
 }
-.section-energy-hand_right{
+.section-energy-hand_right {
   width: 50%;
 }
-.section-energy-hand_left{
+.section-energy-hand_left {
   width: 50%;
 }
 /* =============== map ================== */
@@ -450,27 +449,26 @@ place-items:  center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; */
-  transition: background-color 0.3s, color 0.3s; 
-  
+  transition: background-color 0.3s, color 0.3s;
 }
-.design:hover{
+.design:hover {
   background: linear-gradient(101.64deg, #000000 3.1%, #151515 98.29%);
   color: white;
 }
-.design:hover small{
+.design:hover small {
   color: white;
 }
-.design small{
+.design small {
   font-size: 12px;
   font-weight: 300;
-  color: #A4A4A4;
+  color: #a4a4a4;
 }
-.design a{
+.design a {
   font-size: 13px;
   font-weight: 300;
-  color: #A4A4A4;
+  color: #a4a4a4;
 }
-.design h3{
+.design h3 {
   font-size: 2.3rem;
 }
 /* .design:hover::before {
@@ -484,7 +482,7 @@ place-items:  center;
   border-radius: inherit;
 } */
 
-.sec-map{
+.sec-map {
   display: flex;
   width: 100%;
   height: 400px;
@@ -494,19 +492,18 @@ place-items:  center;
   width: 40%;
   height: 100%;
 }
-.sec_map_l_child{
+.sec_map_l_child {
   height: 100%;
-
 }
 .sec_map_r {
   width: 60%;
   height: 100%;
 }
-.sec-map-container{
+.sec-map-container {
   margin-bottom: 15px;
 }
-@media (max-width:1024px) {
-  .sec-map-container{
+@media (max-width: 1024px) {
+  .sec-map-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -514,9 +511,8 @@ place-items:  center;
     align-items: center;
     margin-bottom: 50px;
     border-radius: 10px;
-
   }
-  .sec-map{
+  .sec-map {
     flex-direction: column;
     width: 95%;
     height: 100vh;
@@ -524,7 +520,7 @@ place-items:  center;
     align-items: center;
     justify-content: center;
   }
-  .sec_map_l{
+  .sec_map_l {
     width: 100%;
     height: 50%;
     padding: 1rem 0rem;
@@ -533,20 +529,18 @@ place-items:  center;
     height: 0;
   
   } */
-  .sec_map_r{
+  .sec_map_r {
     width: 100%;
     height: 50%;
     border-radius: 10px;
-
   }
-  .sec_map_r iframe{
+  .sec_map_r iframe {
     border-radius: 10px;
-
   }
 }
 /* service new changes /*********************** */
 .service_cards {
-  margin: 1em;
+  margin: 0.54em;
   cursor: pointer;
   width: calc(33.333% - 2em);
   font-weight: 100;
@@ -559,41 +553,38 @@ place-items:  center;
   border: 1px #555 solid;
   background: linear-gradient(101.64deg, #000000 3.1%, #151515 98.29%);
   transition: transform 0.5s ease;
-  
 }
-@media screen and (max-width:768px) {
-  .service_cards{
+@media screen and (max-width: 768px) {
+  .service_cards {
     width: calc(100% - 2em);
-
   }
 }
 .service_cards h2 {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   font-size: 24px;
 }
 
 .service_cards small {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   color: var(--paracolor);
-
 }
 
 .service_cards a {
   text-decoration: none;
-  display: block; 
-  margin-top: 27px; 
+  display: block;
+  margin-top: 27px;
   color: white;
   font-size: 13px;
 }
 .service_cards::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffbd6a;
   height: 1px;
   width: 0;
   left: 2em;
   right: 1.5em;
-  top: calc(100% - 180px); 
+  top: calc(100% - 180px);
   transition: all 0.5s;
 }
 
@@ -601,12 +592,22 @@ place-items:  center;
   /* width: 100%; */
   width: calc(100% - 80%);
 }
-.service_cards:hover{
+.service_cards:hover {
   transform: perspective(950px) translateY(-2%) rotateX(5deg) translateZ(0);
-  background: linear-gradient(101.64deg, #242424 3.1%, #2D2D2D 98.29%);
+  background: linear-gradient(101.64deg, #242424 3.1%, #2d2d2d 98.29%);
 }
 
 /* Rectangle 11 */
 
+/* Rectangle 27 */
 
-
+/* ***** about us ****** */
+.result {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px #555 solid;
+  background: #0d0d0d;
+  font-size: 2rem;
+  color: #ffbd6a;
+}
