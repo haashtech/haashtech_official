@@ -28,16 +28,28 @@ a {
 .h-25vh {
   height: 25vh;
 }
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem/* 16px */ * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem/* 16px */ * var(--tw-space-y-reverse));
+.space-y-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3rem/* 16px */ * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3rem/* 16px */ * var(--tw-space-y-reverse));
+.space-y-5 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+.space-y-6  {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width:768px) {
+  .space-y-6,.space-y-5,.space-y-4  {
+
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}
+
+
 .navbar .sidebar a{
   position: relative;
 }
@@ -82,6 +94,13 @@ a {
 }
 .text-sub {
   color: #8c8c8c;
+  width: 70%;
+}
+@media (max-width:786px) {
+  .text-sub{
+    width: 100%;
+    font-size: small;
+  }
 }
 .client-color {
   color: #6b6b6b;
@@ -112,6 +131,23 @@ a {
 footer a:hover{
   color: #ffbd6a;
 }
+.btn-all{
+  border: none;
+  outline: none;
+  padding: 1rem 3rem;
+  /* background: linear-gradient(101.64deg, #000000 3.1%, #151515 98.29%); */
+background: #1F1F1F;
+color: white;
+  border-radius: 20px;
+  transition: all 1s;
+}
+.btn-all:hover{
+  background: #FFBD6A;
+  color: #000000;
+}
+.btn-all:active{
+  transform: scale(0.9);
+}
 /* @media (max-width: 768px) {
   .text-head {
     width: calc(100% - 2rem);
@@ -122,8 +158,8 @@ footer a:hover{
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
-  font-size: clamp(10px, 6vw, 40px);
-  line-height: 135%;
+  font-size: clamp(15px, 6vw, 40px);
+  line-height: 100%;
   letter-spacing: -0.01em;
   text-transform: capitalize;
   background: linear-gradient(90deg, #ffbd6a 33.05%, #ffffff 100%);

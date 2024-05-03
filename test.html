@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider</title>
+<style>
+    #image-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+    .d-flex{
+        height: 100vh;
+    }
+
+    .figure{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+   figure img {
+        width:100%;
+    }
+</style>
+</head>
+<body>
+<!-- id="img_prev_1" -->
+<!-- <div id="image-container">
+    <img src="assets/imgs/cards/aboutbg.png" alt="Image 1" class="active">
+    <img src="assets/imgs/cards/cards1.png" alt="Image 2">
+    <img src="assets/imgs/cards/cards2.png" alt="Image 3">
+    <img src="assets/imgs/cards/cards3.png" alt="Image 4">
+    <img src="assets/imgs/cards/cards4.png" alt="Image 5">
+</div> -->
+<div class="d-flex">
+    <figure class="figure"></figure>
+    <figure class="figure"></figure>
+    <figure class="figure"></figure>
+    <figure class="figure"></figure>
+    <figure class="figure"></figure>
+</div>
+<script>
+    var images =[
+    "assets/imgs/cards/aboutbg.png",
+    "assets/imgs/cards/cards1.png",
+    "assets/imgs/cards/cards2.png",
+    "assets/imgs/cards/cards3.png",
+    "assets/imgs/cards/cards4.png"
+    ]
+    document.getElementsByClassName('figure')[0].innerHTML = '<img src="'+images[0]+'" id="img_prev">'
+    setInterval(() => {
+       changeImage() 
+    }, 2000);
+    function changeImage(){
+        index =parseInt((Math.random()*100)%images.length);
+        document.getElementById('img_prev').setAttribute('src',images[index])
+    }
+</script>
+
+</body>
+</html>
