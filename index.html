@@ -52,117 +52,8 @@
     <title>Haash || Home</title>
   </head>
   <body>
-    <style>
-      .form-label input {
-        background-color: aliceblue;
-      }
-      /* Custom Styles */
-      .form-label {
-        color: #924600; /* Text color */
-      }
-      .form-control {
-        border-color: #924600; /* Input border color */
-        color: white; /* Input text color */
-      }
-      .btn-primary {
-        background-color: #924600; /* Button background color */
-      }
-      .form-control::placeholder {
-        color: #e19854; /* Placeholder text color */
-      }
-
-      section {
-        position: relative; /* Ensure positioning context for absolute positioning */
-      }
-
-      .bottom-left {
-        position: absolute;
-        bottom: -50px;
-        left: 50%;
-      }
-
-      .bottom-right {
-        position: absolute;
-        bottom: 120px;
-        right: -32px;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
-    <!-- #Header Section -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-lg-3">
-      <div class="container">
-        <a class="navbar-brand" href="#Home">
-          <img
-            src="assets/imgs/logo/haashlogo.png"
-            alt="Haash Technologies"
-            class="w-50"
-          />
-        </a>
-      // toggle button 
-        <button
-          class="navbar-toggler shadow-none border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        // sidebar 
-        <div
-          class="sidebar offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          // sidebar header 
-          <div class="offcanvas-header">
-            <a href="/" class="offcanvas-title" id="offcanvasNavbarLabel">
-              <img
-                src="assets/imgs/logo/haashlogo.png"
-                alt="Haash Technologies"
-                class="w-50"
-              />
-            </a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-
-         // sidebar body 
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#About">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#Services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#Career">Career</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#Blog">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#Contact">Contact</a>
-              </li>
-             
-            </ul>
-           
-          </div>
-        </div>
-      </div>
-    </nav> -->
-
     <!-- ********preloader******** -->
+
     <div class="preloader"></div>
 
     <!-- ********Header******** -->
@@ -211,7 +102,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Home"
+                <a class="nav-link active" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
@@ -219,13 +110,13 @@
                 <a class="nav-link mx-2" href="aboutUs.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="#Services">Services</a>
+                <a class="nav-link mx-2" href="services.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="#Career">Career</a>
+                <a class="nav-link mx-2" href="career.html">Career</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="#Blog">Blog</a>
+                <a class="nav-link mx-2" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-2" href="contactUs.html">Contact</a>
@@ -238,7 +129,7 @@
     <main class="bg-black">
       <!-- #Section 1 -->
       <section
-        class="container section-container w-100 mx-auto vh-100"
+        class="container section-container w-100 mx-auto"
         style="height: 522px"
         id="Home"
       >
@@ -260,7 +151,7 @@
               camera-orbit="20deg 100deg 100m"
             ></model-viewer>
             <div
-              class="shadow_bubble shadow_bubble_2 position-absolute"
+              class="shadow_bubble shadow_bubble_2"
               style="top: 50%; left: 50%; width: 200px; height: 200px"
             ></div>
           </div>
@@ -556,77 +447,74 @@
         </div>
 
         <!--  ***** services cards ***** -->
-        <div
-          class="services-container d-flex  justify-content-center mt-5"
-        >
-        <div class="container text-center">
-          <div class="row row-cols-md-4 row-cols-1 text-white">
-            <div class="col service_cards">
-              <h2>Mobile App Development</h2>
-              <small class=""
-                >From enterprise to consumer apps that are specifically tailored
-                to meet your business needs</small
-              >
-              <a href="" class=""
-                >Read more <i class="fa-light fa fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="col service_cards">
-              <h2>Mobile App Development</h2>
-              <small class=""
-                >From enterprise to consumer apps that are specifically tailored
-                to meet your business needs</small
-              >
-              <a href="" class=""
-                >Read more <i class="fa-light fa fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="col service_cards">
-              <h2>Mobile App Development</h2>
-              <small class=""
-                >From enterprise to consumer apps that are specifically tailored
-                to meet your business needs</small
-              >
-              <a href="" class=""
-                >Read more <i class="fa-light fa fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="col service_cards">
-              <h2>Mobile App Development</h2>
-              <small class=""
-                >From enterprise to consumer apps that are specifically tailored
-                to meet your business needs</small
-              >
-              <a href="" class=""
-                >Read more <i class="fa-light fa fa-arrow-right"></i
-              ></a>
-            </div>
-            <!-- col 5 -->
-            <div class="col service_cards">
-              <h2>Mobile App Development</h2>
-              <small class=""
-                >From enterprise to consumer apps that are specifically tailored
-                to meet your business needs</small
-              >
-              <a href="" class=""
-                >Read more <i class="fa-light fa fa-arrow-right"></i
-              ></a>
-            </div>
-             <!-- col 6 -->
-             <div class="col service_cards">
-              <h2>Mobile App Development</h2>
-              <small class=""
-                >From enterprise to consumer apps that are specifically tailored
-                to meet your business needs</small
-              >
-              <a href="" class=""
-                >Read more <i class="fa-light fa fa-arrow-right"></i
-              ></a>
+        <div class="services-container d-flex justify-content-center mt-5">
+          <div class="container text-center">
+            <div class="row row-cols-md-4 row-cols-1 text-white">
+              <div class="col service_cards">
+                <h2>Mobile App Development</h2>
+                <small class=""
+                  >From enterprise to consumer apps that are specifically
+                  tailored to meet your business needs</small
+                >
+                <a href="" class=""
+                  >Read more <i class="fa-light fa fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="col service_cards">
+                <h2>Mobile App Development</h2>
+                <small class=""
+                  >From enterprise to consumer apps that are specifically
+                  tailored to meet your business needs</small
+                >
+                <a href="" class=""
+                  >Read more <i class="fa-light fa fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="col service_cards">
+                <h2>Mobile App Development</h2>
+                <small class=""
+                  >From enterprise to consumer apps that are specifically
+                  tailored to meet your business needs</small
+                >
+                <a href="" class=""
+                  >Read more <i class="fa-light fa fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="col service_cards">
+                <h2>Mobile App Development</h2>
+                <small class=""
+                  >From enterprise to consumer apps that are specifically
+                  tailored to meet your business needs</small
+                >
+                <a href="" class=""
+                  >Read more <i class="fa-light fa fa-arrow-right"></i
+                ></a>
+              </div>
+              <!-- col 5 -->
+              <div class="col service_cards">
+                <h2>Mobile App Development</h2>
+                <small class=""
+                  >From enterprise to consumer apps that are specifically
+                  tailored to meet your business needs</small
+                >
+                <a href="" class=""
+                  >Read more <i class="fa-light fa fa-arrow-right"></i
+                ></a>
+              </div>
+              <!-- col 6 -->
+              <div class="col service_cards">
+                <h2>Mobile App Development</h2>
+                <small class=""
+                  >From enterprise to consumer apps that are specifically
+                  tailored to meet your business needs</small
+                >
+                <a href="" class=""
+                  >Read more <i class="fa-light fa fa-arrow-right"></i
+                ></a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- ============== -->
-       
+          <!-- ============== -->
         </div>
       </section>
 
@@ -704,55 +592,50 @@
 
       <section class="container w-100 py-24 reveal">
         <div class="w-100 d-flex justify-content-center align-content-center">
-          <div class="card  mb-3 w-80" style="background-color: transparent;">
+          <div class="card mb-3 w-80" style="background-color: transparent">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="assets/imgs/cards/aboutbg.png" class="img-fluid h-100 rounded-start" alt="about page">
+                <img
+                  src="assets/imgs/cards/aboutbg.png"
+                  class="img-fluid h-100 rounded-start"
+                  alt="about page"
+                />
               </div>
-              <div class="col-md-7 ">
+              <div class="col-md-7">
                 <div class="card-body space-y-6 px-4">
                   <h5 class="card-title text-style">About Us</h5>
                   <span
                     class="card-text text-white"
-                    style="
-                      
-                      font-weight: initial;
-                      
-                    "
+                    style="font-weight: initial"
                   >
-                    At <span class="text-theme" >Haashtech</span> , we are committed to
-                    driving innovation and delivering excellence. With a dedicated
-                    team of experts, we specialize in creating cutting-edge
-                    software solutions that meet and exceed the needs of our
-                    clients. Our mission is to provide high-quality, tailored
-                    services that propel businesses to success in the digital
-                    world. Backed by a passion for technology and a drive for
-                    innovation, we are your trusted partner on the journey to
-                    achieving your goals. Let's embark on this journey together."
+                    At <span class="text-theme">Haashtech</span> , we are
+                    committed to driving innovation and delivering excellence.
+                    With a dedicated team of experts, we specialize in creating
+                    cutting-edge software solutions that meet and exceed the
+                    needs of our clients. Our mission is to provide
+                    high-quality, tailored services that propel businesses to
+                    success in the digital world. Backed by a passion for
+                    technology and a drive for innovation, we are your trusted
+                    partner on the journey to achieving your goals. Let's embark
+                    on this journey together."
                   </span>
-                  
-                    <button class="sparkle-button_2">
-                      <span class=" button-hacks fs-5 "
-                        >Discover more <i class="fa-light fa fa-arrow-right"></i
-                      ></span>
-                    </button>
-               
-                  <div class="d-flex gap-3 pt-sm-5 ">
-                    <div
-                      class="flex-center flex-column lh-base result"
-                    >
+
+                  <button class="sparkle-button_2">
+                    <span class="button-hacks fs-5"
+                      >Discover more <i class="fa-light fa fa-arrow-right"></i
+                    ></span>
+                  </button>
+
+                  <div class="d-flex gap-3 pt-sm-5">
+                    <div class="flex-center flex-column lh-base result">
                       <span>100+</span>
                       <span>Clients</span>
                     </div>
-                    <div
-                      class="flex-center flex-column result"
-                    >
+                    <div class="flex-center flex-column result">
                       <span>100+</span>
                       <span>Projects</span>
                     </div>
-                    <div
-                      class="flex-center flex-column result"
-                    >
+                    <div class="flex-center flex-column result">
                       <span>50+</span>
                       <span>Strength</span>
                     </div>
@@ -761,13 +644,8 @@
               </div>
             </div>
           </div>
-              </div>
-            </div>
-          </div>
         </div>
-    </section>
-    
-    
+      </section>
 
       <!-- #section 5 -->
       <section class="container section-container w-100 mx-auto py-5 reveal">
@@ -1152,7 +1030,7 @@
         <div class="sec-map">
           <div class="sec_map_l bg-white d-flex flex-column align-items-center">
             <div
-              class="sec_map_l_child d-md-flex flex-column align-items-center justify-content-md-between "
+              class="sec_map_l_child d-md-flex flex-column align-items-center justify-content-md-between"
             >
               <div class="d-flex flex-column">
                 <span style="color: #ff8a00; font-size: clamp(10px, 6vw, 40px)"
@@ -1181,23 +1059,21 @@
                   </li>
                   <li>
                     <ul
-                      class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2"
+                      class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2 fa-brands_home"
                     >
                       <li>
                         <a href="https://www.instagram.com/odio_fashion/"
-                          ><i class="fa-brands fa-square-instagram" ></i></a>
+                          ><i class="fa-brands fa-square-instagram"></i
+                        ></a>
                       </li>
                       <li>
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        
                       </li>
                       <li>
                         <a href=""> <i class="fa-brands fa-x-twitter"></i></a>
-                       
                       </li>
                       <li>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        
                       </li>
                     </ul>
                   </li>
@@ -1221,12 +1097,24 @@
 
       <!-- section 9 -->
       <section class="container text-center py-25 mx-auto">
-        <h3 class=" text-gray-600 font-bold  text-style tracking-wider" style="font-size: clamp(10px, 6vw, 60px);;">Get started now!</h3>
-        <small class="text-sm-size">It takes less than a minute of your time.</small> <br>
-<div class="w-100 d-flex align-items-center justify-content-center">
-  <a href="contactUs.html" class="p-3 px-4 d-flex align-items-center justify-content-center gap-3 text-black btn mt-4 text-sm-size" style="background-color: #fabd64;">Request a quote  <i class="fa-light fa fa-arrow-right"></i></a>
-
-</div>
+        <h3
+          class="text-gray-600 font-bold text-style tracking-wider"
+          style="font-size: clamp(10px, 6vw, 60px)"
+        >
+          Get started now!
+        </h3>
+        <small class="text-sm-size"
+          >It takes less than a minute of your time.</small
+        >
+        <br />
+        <div class="w-100 d-flex align-items-center justify-content-center">
+          <a
+            href="contactUs.html"
+            class="p-3 px-4 d-flex align-items-center justify-content-center gap-3 text-black btn mt-4 text-sm-size"
+            style="background-color: #fabd64"
+            >Request a quote <i class="fa-light fa fa-arrow-right"></i
+          ></a>
+        </div>
       </section>
 
       <!-- #footer -->
@@ -1337,11 +1225,8 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="assets/js/cardCarousalTwo.js"></script>
-    <script src="assets/js/formValidation.js"></script>
 
     <!-- sweet alert -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script>
       window.addEventListener("load", () => {
         const loader = document.querySelector(".preloader");

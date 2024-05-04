@@ -1,28 +1,27 @@
-.slider{
-    height: 250px;
-    margin: auto;
-    /* position: relative; */
-    width: 100%;
-    /* display: grid; */
-    /* place-items: center; */
+.slider {
+  height: 250px;
+  margin: auto;
+  /* position: relative; */
+  width: 100%;
+  /* display: grid; */
+  /* place-items: center; */
 }
 
-.slider_track{
-    /* display: flex; */
-    width: 100%;
-    overflow: hidden;
+.slider_track {
+  /* display: flex; */
+  width: 100%;
+  overflow: hidden;
 }
 
-.slide{
-    height: 260px;
-    /* width: calc(100% / 5); */
-    /* display: flex;
+.slide {
+  height: 260px;
+  /* width: calc(100% / 5); */
+  /* display: flex;
     align-items: center; */
-    /* transition: all 0.5s ease; */
-    /* position: relative; */
-    cursor: pointer;
-    /* animation: rotate 5s linear infinite; */
-
+  /* transition: all 0.5s ease; */
+  /* position: relative; */
+  cursor: pointer;
+  /* animation: rotate 5s linear infinite; */
 }
 /* .slide::after{
     content: '';
@@ -60,31 +59,72 @@
     /* transform: rotateX(260deg); 
     transform: perspective(800px)rotateY(180deg) translateZ(0);
 } */
-.slider img{
-    width: 100%;
-    height: 100%;
+.slider img {
+  width: 100%;
+  height: 100%;
 }
 /* @keyframes rotate {
     0% {
         transform: perspective(800px) rotateY(0deg) translateZ(0); 
-    }
+    }sec-map
     100% {
         transform: perspective(800px) rotateY(180deg) translateZ(0); 
     }
 } */
-.section-about h1{
-    width: 60%;
+
+.section-service {
+  height: 100vh;
+}
+
+.section-about img {
+  /* width: 40px; */
+  max-height: 90%;
+}
+.section-about .section-about_costom h1{
+  color: white;
+}
+.section-about .section-about_costom img{
+  max-height: 4rem;
+}
+@media (max-height: 768px) {
+  .section-about .section-about-our img {
+    max-width: 30%;
   }
-  .section-about img{
-    /* width: 40px; */
-    max-height: 90%;
+  .section-service{
+    
   }
-@media (max-height:768px) {
-    /* .section-about .section-about-our img{
-        max-width: 10%;
-    } */
-    .section-about .section-about-our h3{
-        font-size: 1rem;
+}
+/* ===== services.html page  ======= */
+.flotingimage {
+  width: 150px;
+  height: 150px;
+}
+.flotingimage_1 {
+  top: 50%;
+  left: 10%;
+}
+.flotingimage_2 {
+  top: 50%;
+  right: 10%;
+}
+.flotingimage img {
+  width: 50px;
+}
+.ourServices-page_cards{
+ 
+}
+.ourServices-page_cards .ourServices-page_cards_right{
+    width: 70%;
+}
+
+@media (max-width:768px) {
+  .ourServices-page_cards_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ourServices-page_cards .ourServices-page_cards_right{
+    width: 90%;
+    margin-bottom: 2rem;
 }
 }
-/* ============ */
