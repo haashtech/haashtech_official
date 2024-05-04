@@ -18,8 +18,14 @@ section {
   --paracolor: #8c8c8c;
 }
 .glass {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)); /* Adjust the opacity values to make it darker */
-  backdrop-filter: blur(20px); /* Increase the blur radius for a darker effect */
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1)
+  ); /* Adjust the opacity values to make it darker */
+  backdrop-filter: blur(
+    20px
+  ); /* Increase the blur radius for a darker effect */
   -webkit-backdrop-filter: blur(20px);
   transition: all 2s;
 }
@@ -503,12 +509,12 @@ place-items:  center;
 } */
 .fa-brands {
   margin-top: 1rem;
-  color: #000000; 
+  color: #000000;
   font-size: 2rem;
   transition: all 0.5s;
 }
 .fa-brands:hover {
-  color: #e98200; 
+  color: #e98200;
 }
 
 .sec_map_l_child {
@@ -589,13 +595,19 @@ place-items:  center;
 }
 .service_cards::before {
   content: "";
+  background: linear-gradient(#292727, #292727) 50% 50% / calc(100% - 2px)
+      calc(100% - 2px) no-repeat,
+    linear-gradient(
+      151deg,
+      transparent 38%,
+      rgba(225, 231, 233, 0.111) 76%,
+      #e1e7e9 97%
+    );
   /* background: linear-gradient(#292727, #292727) 50% 50%/calc(100% - 2px) calc(100% - 2px) no-repeat,
-            linear-gradient(151deg, transparent 38%, rgba(225, 231, 233, 0.111) 76%, #e1e7e9 97%); */
-            background: linear-gradient(#292727, #292727) 50% 50%/calc(100% - 2px) calc(100% - 2px) no-repeat,
-            radial-gradient(#7a7676 24%, rgba(225,231,233,0.12) 72%, rgba(226, 231, 234, 0.855) 83%, #e1e7e9 88%, rgba(225,232,233,0.92) 89%);
-border-radius: 0px;
-padding: 4px;
-box-sizing: content-box;
+            radial-gradient(#7a7676 24%, rgba(225,231,233,0.12) 72%, rgba(226, 231, 234, 0.855) 83%, #e1e7e9 88%, rgba(225,232,233,0.92) 89%); */
+  border-radius: 0px;
+  padding: 4px;
+  box-sizing: content-box;
   padding: 5px;
   box-sizing: border-box;
   border-radius: 0px;
@@ -607,7 +619,7 @@ box-sizing: content-box;
   z-index: -1;
   margin: -2px;
 }
-.service_cards:hover::before{
+.service_cards:hover::before {
   margin: 0;
 }
 .service_cards:hover {

@@ -4,6 +4,9 @@
   --paracolor: #8c8c8c;
   --theme:#FFBD6A;
 }
+.text-main{
+  color: #FFBE6C;
+}
 .text-theme{
   color: var(--theme);
 }
