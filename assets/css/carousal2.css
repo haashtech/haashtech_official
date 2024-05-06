@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
   html {
     zoom: 1.5;
   }
@@ -38,7 +38,7 @@ html {
   html {
     zoom: 2.5;
   }
-}
+} */
 
 ::-webkit-scrollbar {
   width: 1rem;

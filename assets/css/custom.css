@@ -60,13 +60,7 @@ a {
   margin-bottom: 4rem;
 }
 
-@media (max-width:768px) {
-  .space-y-6,.space-y-5,.space-y-4  {
 
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-}
 
 
 .navbar .sidebar a{
@@ -126,12 +120,7 @@ a {
   color: #8c8c8c;
   width: 70%;
 }
-@media (max-width:786px) {
-  .text-sub{
-    width: 100%;
-    font-size: small;
-  }
-}
+
 .client-color {
   color: #6b6b6b;
 }
@@ -154,11 +143,7 @@ a {
   background-clip: text;
   max-width: 50%;
 }
-@media (max-width:768px) {
-  .text-head-sm {
-    max-width: 90%;
-  }
-}
+
 .text-sm-size{
   color: #8C8C8C;
   font-size: 1.5rem;
@@ -183,7 +168,7 @@ color: white;
 .btn-all:active{
   transform: scale(0.9);
 }
-/* @media (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .text-head {
     width: calc(100% - 2rem);
   }
@@ -210,34 +195,11 @@ color: white;
   margin: 1em auto;
   width: 100%;
 }
-@media (max-width: 1330px) {
-  .text-style {
-    /* width: 100%; */
-  }
-  .section-service {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .section-service {
-    width: 50%;
-    text-align: center;
-  }
-}
-@media (min-width: 768px) {
-  .card-bg {
-    width: calc(50% - 2rem);
-  }
-}
+
 .accordion-part {
   width: 50%;
 }
-@media (max-width: 768px) {
-  .accordion-part {
-    width: 100%;
-    padding: 1rem 0 2rem 0;
-  }
-}
+
 .accordion-item {
   background: transparent;
   border-bottom: 1px white solid;
@@ -390,4 +352,39 @@ color: white;
 .reel-button{
   background: var(--background);
 
+}
+
+/* meadia query */
+@media only screen and (max-width: 1330px) {
+  .text-style {
+    /* width: 100%; */
+  }
+  .section-service {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section-service {
+    width: 50%;
+    text-align: center;
+  }
+  .card-bg {
+    width: calc(50% - 2rem);
+  }
+  .space-y-6,.space-y-5,.space-y-4  {
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .text-sub{
+    width: 100%;
+    font-size: small;
+  }
+  .text-head-sm {
+    max-width: 90%;
+  }
+  .accordion-part {
+    width: 100%;
+    padding: 1rem 0 2rem 0;
+  }
 }

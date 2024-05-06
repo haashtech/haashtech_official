@@ -89,13 +89,7 @@
 .section-about .section-about_costom img {
   max-height: 4rem;
 }
-@media (max-height: 768px) {
-  .section-about .section-about-our img {
-    max-width: 30%;
-  }
-  .section-service {
-  }
-}
+
 /* ===== services.html page  ======= */
 .flotingimage {
   width: 150px;
@@ -127,17 +121,7 @@
  font-size: 1.7rem;
   font-weight: 100;
 }
-@media (max-width: 768px) {
-  .ourServices-page_cards_col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .ourServices-page_cards .ourServices-page_cards_right {
-    width: 90%;
-    margin-bottom: 2rem;
-  }
-}
+
 
 /* contact.html */
 .glassbg {
@@ -168,12 +152,25 @@
   width: 150px;
   height: 150px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .shadow_bubble_contact {
   opacity: 0.3;
     top: 90%;
   left: 50%;
   width: 100px;
   height: 100px;
+  }
+  .section-about .section-about-our img {
+    max-width: 30%;
+  }
+  
+  .ourServices-page_cards_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ourServices-page_cards .ourServices-page_cards_right {
+    width: 90%;
+    margin-bottom: 2rem;
   }
 }
