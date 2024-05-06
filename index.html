@@ -154,7 +154,7 @@
 
           <!-- first -->
           <div class="text-white right-Side position-relative Innovate">
-            <div class="position-absolute bottom-" style="bottom: 25px">
+            <div class="position-absolute bottom-" style="bottom: 25px; padding: 0 2rem;">
               <p class="text-style">
                 Innovate with Us: Welcome to Our World of Digital Solutions
               </p>
@@ -1260,7 +1260,8 @@
     </main>
 
     <!-- <img src="assets/imgs/logo/flotingpieces.png" alt=""> -->
-
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="assets/js/download.js"></script>
     <script src="assets/js/scrollYanime.js"></script>
     <script src="assets/js/cardCarousal.js"></script>
 
@@ -1269,7 +1270,6 @@
     <!-- Required for hCaptcha -->
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="assets/js/cardCarousalTwo.js"></script>
 
     <!-- sweet alert -->
@@ -1291,7 +1291,21 @@
       //     $("nav").removeClass("glass");
       //   }
       // });
-  
+      $(window).scroll(function () {
+  const navbar = $(".navbar");
+
+  // Add glass effect to navbar when scrolling
+  if ($(window).scrollTop()) {
+    navbar.addClass("glass");
+  } else {
+    navbar.removeClass("glass");
+  }
+});
+
+$("#offcanvasNavbar").on("show.bs.offcanvas", function () {
+  const navbar = $(".navbar");
+  navbar.removeClass("glass");
+});
     </script>
   </body>
 </html>
