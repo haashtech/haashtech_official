@@ -3,6 +3,18 @@
   --spark: 1.8s;
   --paracolor: #8c8c8c;
   --theme:#FFBD6A;
+  --active: 0;
+  --background: radial-gradient(
+      40% 50% at center 100%,
+      hsl(270 calc(var(--active) * 97%) 72% / var(--active)),
+      transparent
+    ),
+    radial-gradient(
+      80% 100% at center 120%,
+      hsl(260 calc(var(--active) * 97%) 70% / var(--active)),
+      transparent
+    ),
+    hsl(260 calc(var(--active) * 97%) calc((var(--active) * 44%) + 12%));
 }
 .text-main{
   color: #FFBE6C;
@@ -90,15 +102,19 @@ a {
 }
 
 .btn_custom_1{
-  font-size: 18px !important;
+  font-size: 15px !important;
   line-height: 36/18 = 2 !important;
-  letter-spacing: -0.02em;
-  color:#fff;
+  letter-spacing: 0.12em;
+  background: linear-gradient(90deg, #ffffff 0%, #6c6c6c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   border: none;
-  text-transform: uppercase;
-  background: transparent;
+  text-transform: capitalize;
+  /* background: transparent; */
   border: 1px white solid;
-  padding: 5px 2em;
+  padding: 5px 1.5em;
 }
 .flex {
   display: flex;
@@ -138,6 +154,11 @@ a {
   background-clip: text;
   max-width: 50%;
 }
+@media (max-width:768px) {
+  .text-head-sm {
+    max-width: 90%;
+  }
+}
 .text-sm-size{
   color: #8C8C8C;
   font-size: 1.5rem;
@@ -169,6 +190,7 @@ color: white;
 } */
 .text-style {
   font-family: "Share Tech";
+  /* width: 60%; */
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
@@ -190,7 +212,7 @@ color: white;
 }
 @media (max-width: 1330px) {
   .text-style {
-    width: 100%;
+    /* width: 100%; */
   }
   .section-service {
     width: 100%;
@@ -230,6 +252,12 @@ color: white;
   background-clip: text;
   text-fill-color: transparent;
 }
+.accordion-header .accordion-button:is(.collapsed){
+  font-size: 1.3rem;
+}
+.accordion-header .accordion-button:not(.collapsed){
+  font-size: 1.2rem;
+}
 .accordion-button:not(.collapsed) {
   background-color: transparent;
   outline: none;
@@ -245,20 +273,9 @@ color: white;
   box-shadow: none;
 }
 
-/* costome button */
+/* costome button  ======================================================== */
 .button {
-  --active: 0;
-    --background: radial-gradient(
-      40% 50% at center 100%,
-      hsl(270 calc(var(--active) * 97%) 72% / var(--active)),
-      transparent
-    ),
-    radial-gradient(
-      80% 100% at center 120%,
-      hsl(260 calc(var(--active) * 97%) 70% / var(--active)),
-      transparent
-    ),
-    hsl(260 calc(var(--active) * 97%) calc((var(--active) * 44%) + 12%));
+    
   color: #8c8c8c;
   background: var(--bg);
     --text: #fff;
@@ -267,8 +284,8 @@ color: white;
     display: flex;
     outline: none;
     border: 0;
-    padding: 0 22px 0 16px;
-    min-width: 147px;
+    padding: 0 16px 0 16px;
+    min-width: 100px;
     overflow: hidden;
     cursor: pointer;
     border-radius: 50px;
@@ -301,6 +318,25 @@ color: white;
                 --t: 115px;
             }
         }
+    }
+    .icon-right{
+      width: 24px;
+        height: 24px;
+        position: relative;
+        display: inline-block;
+        margin: 17px 0 0 10px ;
+        vertical-align: top;
+        transform: translateY(calc(var(--y, 0) * 1px));
+        svg {
+          width: var(--w, 14px);
+          height: var(--h, 15px);
+          display: block;
+          fill: none;
+          stroke: var(--s, var(--icon));
+          stroke-width: var(--sw, 2);
+          stroke-linejoin: round;
+          stroke-linecap: round;
+      }
     }
     .icon {
         width: 24px;
@@ -349,22 +385,9 @@ color: white;
             --sw: 1.5;
         }
     }
-    &.loading {
-        ul {
-            animation: text 1750ms linear forwards 100ms;
-        }
-        &.complete {
-            .icon {
-                svg {
-                    line {
-                        --o: 12px;
-                    }
-                    polyline {
-                        --o: 0;
-                        --s: var(--icon-success);
-                    }
-                }
-            }
-        }
-    }
+}
+
+.reel-button{
+  background: var(--background);
+
 }

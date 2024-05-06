@@ -80,6 +80,9 @@
   /* width: 40px; */
   max-height: 90%;
 }
+.section-about_costom{
+  width: 60%;
+}
 .section-about .section-about_costom h1 {
   color: white;
 }
@@ -113,8 +116,17 @@
 }
 .ourServices-page_cards .ourServices-page_cards_right {
   width: 70%;
-}
+  padding-left: 2rem;
 
+}
+.ourServices-page_cards .ourServices-page_cards_right h3{
+  font-size: 2.5rem;
+
+}
+.ourServices-page_cards .ourServices-page_cards_right span {
+ font-size: 1.7rem;
+  font-weight: 100;
+}
 @media (max-width: 768px) {
   .ourServices-page_cards_col {
     display: flex;

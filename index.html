@@ -58,7 +58,7 @@
 
     <!-- ********Header******** -->
     <nav
-      class="navbar navbar-expand-lg vw-100 navbar-dark fixed-top py-3 px-md-0 px-3"
+      class="navbar navbar-expand-lg navbar-dark fixed-top py-3 px-md-0 px-3"
     >
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -102,9 +102,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-2" href="aboutUs.html">About Us</a>
@@ -156,7 +154,7 @@
 
           <!-- first -->
           <div class="text-white right-Side position-relative Innovate">
-            <div class="position-absolute bottom-" style="bottom: 25px;">
+            <div class="position-absolute bottom-" style="bottom: 25px">
               <p class="text-style">
                 Innovate with Us: Welcome to Our World of Digital Solutions
               </p>
@@ -166,10 +164,10 @@
                 ut enim condimentum varius. Libero mauris tellus sit varius sem
                 viverra non mi. Vulputate amet nullam id vulputate.</small
               >
-
+              <br />
               <!-- button  group -->
-              <div class="sparkle-button my-3 d-flex gap-2">
-                <button class="sparkle-button_1">
+              <div class="sparkle-button my-3 d-inline-flex gap-3">
+                <!-- <button class="sparkle-button_1">
                   <span
                     class="text d-flex gap-2 justify-content-end align-items-center w-100 fs-4"
                     >Reel
@@ -186,12 +184,43 @@
                         style="color: #fabd64"
                       ></i></span
                   ></span>
+                </button> -->
+                <button
+                  class="button mt-5 align-items-center gap-3 d-flex reel-button"
+                >
+                  <span class="text-white">Reel</span>
+                  <span
+                    class="h-50 rounded-5 bg-black d-inline-flex align-items-center justify-content-center"
+                    style="min-width: 30px; min-height: 30px"
+                  >
+                    <i class="fa-solid fa-play" style="color: #fabd64"></i>
+                  </span>
                 </button>
                 <!-- ====== -->
-                <button class="sparkle-button_2">
+                <!-- <button class="sparkle-button_2">
                   <span class="text button-hacks fs-4"
                     >Get Started <i class="fa-light fa fa-arrow-right"></i
                   ></span>
+                </button> -->
+                <button class="button mt-5">
+                  <ul>
+                    <li>Get Started</li>
+                  </ul>
+                  <div class="icon-right">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-arrow-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </div>
                 </button>
               </div>
               <!-- button  group ends-->
@@ -244,7 +273,7 @@
 
             <div
               class="shadow_bubble shadow_bubble_2 position-absolute"
-              style="top: 50%; left: 50%; width: 300px; height: 300px "
+              style="top: 50%; left: 50%; width: 300px; height: 300px"
             ></div>
           </div>
         </div>
@@ -617,10 +646,30 @@
                     on this journey together."
                   </span>
 
-                  <button class="sparkle-button_2">
+                  <!-- <button class="sparkle-button_2">
                     <span class="button-hacks fs-5"
                       >Discover more <i class="fa-light fa fa-arrow-right"></i
                     ></span>
+                  </button> -->
+                  <button class="button my-5" id="Discovermore ">
+                    <ul>
+                      <li>Discover more</li>
+                    </ul>
+                    <div class="icon-right">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                        />
+                      </svg>
+                    </div>
                   </button>
 
                   <div class="d-flex gap-3 pt-sm-5">
@@ -652,7 +701,7 @@
             <h2 class="text-style">Transforming Visions into Realities</h2>
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
-                <h2 class="accordion-header">
+                <h2 class="accordion-header fs-1">
                   <button
                     class="accordion-button collapsed"
                     type="button"
@@ -1235,13 +1284,14 @@
     </script>
 
     <script>
-      $(window).scroll(function () {
-        if ($(window).scrollTop()) {
-          $("nav").addClass("glass");
-        } else {
-          $("nav").removeClass("glass");
-        }
-      });
+      // $(window).scroll(function () {
+      //   if ($(window).scrollTop()) {
+      //     $("nav").addClass("glass");
+      //   } else {
+      //     $("nav").removeClass("glass");
+      //   }
+      // });
+  
     </script>
   </body>
 </html>
