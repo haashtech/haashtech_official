@@ -195,7 +195,7 @@ color: white;
   margin: 1em auto;
   width: 100%;
 }
-
+/* 
 .accordion-part {
   width: 50%;
 }
@@ -233,7 +233,7 @@ color: white;
 }
 .accordion-button:focus {
   box-shadow: none;
-}
+} */
 
 /* costome button  ======================================================== */
 /* .button {
@@ -435,8 +435,8 @@ color: white;
   .text-head-sm {
     max-width: 90%;
   }
-  .accordion-part {
+  /* .accordion-part {
     width: 100%;
     padding: 1rem 0 2rem 0;
-  }
+  } */
 }

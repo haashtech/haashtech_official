@@ -33,6 +33,9 @@ section {
 .section-container {
   width: 100%;
 }
+footer{
+  padding: 0 2rem;
+}
 .shadow_bubble {
   border-radius: 50%;
   background: #e98200;
@@ -639,6 +642,9 @@ place-items:  center;
   color: #ffbd6a;
 }
 /* index.html */
+.transforming-vision{
+  width: 50%;
+}
 
 
 /* about page/************************ */
@@ -694,6 +700,10 @@ place-items:  center;
     right: 1.5em;
     top: calc(100% - 150px);
   }
+  .transforming-vision{
+    width: 100%;
+  }
+  
 }
 @media only screen and (max-width: 425px) {
   .cards {

@@ -173,11 +173,11 @@
           <!-- icons -->
         </div>
         <div
-          class="d-flex justify-content-md-between justify-content-start align-items-center mt-md-5 flex-wrap gap-md-3 gap-5 section-about_costom mt-4"
+          class="d-flex justify-content-md-between justify-content-center align-items-center mt-md-5 flex-wrap gap-md-3 gap-5 section-about_costom mt-4"
           style="margin-top: 2rem;"
         >
           <span
-            class="d-flex align-items-center justify-content-center me-md-4"
+            class="d-md-flex align-items-center justify-content-center me-md-4"
           >
             <img
               src="assets/imgs/icons/groupclients.png"
@@ -186,12 +186,12 @@
             <h1>100+ clients</h1>
           </span>
           <span
-            class="d-flex align-items-center justify-content-center me-md-4"
+            class="d-md-flex align-items-center justify-content-center me-md-4"
           >
             <img src="assets/imgs/icons/trust.png" alt="trust" />&nbsp;
             <h1>Trust guarateed</h1>
           </span>
-          <span class="d-flex align-items-center justify-content-center">
+          <span class="d-md-flex align-items-center justify-content-center">
             <img src="assets/imgs/icons/tick.png" alt="tick" />&nbsp;
             <h1>Expert team</h1>
           </span>
@@ -200,18 +200,27 @@
           class="shadow_bubble shadow_bubble_1 d-md-block d-none"
           style="top: 40%; left: 20%; width: 150px; height: 150px"
         ></div>
+        <div
+        class="shadow_bubble shadow_bubble_1 d-md-none d-block"
+        style="top: 40%; left: 20%; width: 150px; height: 150px"
+      ></div>
         <!-- #shadow_bubble_1 -->
         <div
           class="shadow_bubble shadow_bubble_1 d-md-block d-none"
           style="top: 70%; right: 15%; width: 150px; height: 150px"
         ></div>
-        <div class="position-absolute flotingimage flotingimage_1">
+        <div class="position-absolute flotingimage flotingimage_1"
+        style="z-index: -1;"
+        >
           <img
             src="assets/imgs/icons/flotingpieces.png"
             alt="floating images"
+           
           />
         </div>
-        <div class="position-absolute flotingimage flotingimage_2">
+        <div class="position-absolute flotingimage flotingimage_2"
+        style="z-index: -1;"
+        >
           <img
             src="assets/imgs/icons/flotingpieces2.png"
             alt="floating images"
@@ -220,14 +229,14 @@
       </section>
 
       <!-- sec 2 -->
-      <div class="py-24 my-auto reveal">
+      <div class="py-24 my-auto ">
         <div
           class="text-center d-flex justify-content-center align-items-center"
         >
           <div
-            class="row row-cols-lg-5 row-cols-md-4 row-cols-1 slider_track g-sm-0 h-100"
+            class="row row-cols-lg-5 row-cols-md-4 row-cols-1 slider_auto_track g-sm-0 h-100"
           >
-            <div class="col img-fluid slide">
+            <div class="col img-fluid slide_auto">
               <img
                 src="assets/imgs/cards/cards1.png"
                 alt=""
@@ -235,7 +244,7 @@
                 class="w-100 h-100"
               />
             </div>
-            <div class="col img-fluid slide">
+            <div class="col d-sm-block d-none img-fluid slide_auto">
               <img
                 src="assets/imgs/cards/cards2.png"
                 alt=""
@@ -243,7 +252,7 @@
                 class="w-100 h-100"
               />
             </div>
-            <div class="col img-fluid slide">
+            <div class="col d-sm-block d-none img-fluid slide_auto">
               <img
                 src="assets/imgs/cards/cards3.png"
                 alt=""
@@ -251,7 +260,7 @@
                 class="w-100 h-100"
               />
             </div>
-            <div class="col img-fluid slide">
+            <div class="col d-sm-block d-none img-fluid slide_auto">
               <img
                 src="assets/imgs/cards/cards4.png"
                 alt=""
@@ -259,7 +268,7 @@
                 class="w-100 h-100"
               />
             </div>
-            <div class="col img-fluid slide d-md-block d-none">
+            <div class="col d-sm-block d-none img-fluid slide_auto d-md-block d-none">
               <img
                 src="assets/imgs/cards/cards5.png"
                 alt=""
@@ -406,7 +415,7 @@
       </section>
 
         <!-- #footer -->
-        <footer class="py-24 container">
+        <footer class="container"  style="padding: 3rem 3rem;">
           <div class="row">
             <div class="col-md-1">
               <img
