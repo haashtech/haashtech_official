@@ -8,6 +8,7 @@ body {
   font-family: "Share Tech", sans-serif;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  background-color: black;
 }
 section {
   scroll-snap-align: start;
@@ -77,9 +78,9 @@ nav.scrolled a{
 
 /* button group starts*/
 /* Updated CSS with background color #FFBD6A */
-.sparkle-button_1 {
+/* .sparkle-button_1 {
   --active: 0;
-  --bg: #ffbd6a; /* Set background color to #FFBD6A */
+  --bg: #ffbd6a; 
   color: black;
   background: var(--bg);
   font-size: 1.1rem;
@@ -101,14 +102,14 @@ nav.scrolled a{
   transition: box-shadow var(--transition), scale var(--transition),
     background var(--transition);
   scale: calc(1 + (var(--active) * 0.1));
-}
+} */
 
-.sparkle-button_1:hover {
-  transform: scale(1.05); /* Scale up the button on hover */
+/* .sparkle-button_1:hover {
+  transform: scale(1.05); 
   transition: transform 0.5s ease;
-}
+} */
 
-.sparkle-button_2 {
+/* .sparkle-button_2 {
   --cut: 0.1em;
   --active: 0;
   --bg: radial-gradient(
@@ -143,27 +144,27 @@ nav.scrolled a{
   transition: box-shadow var(--transition), scale var(--transition),
     background var(--transition);
   scale: calc(1 + (var(--active) * 0.1));
-}
+} */
 
 /* button:active {
   transform: scale(5);
   transition: all 3s;
 } */
 /* CSS for button hover effect */
-.sparkle-button button:hover {
-  transform: scale(1.05); /* Adjust the scale factor as needed */
+/* .sparkle-button button:hover {
+  transform: scale(1.05); 
   transition: transform 0.5s ease;
 }
 
 .button-hacks:hover .text {
-  transform: translateX(20px); /* Adjust the value as needed */
+  transform: translateX(20px); 
   transition: transform 0.5s ease;
-}
+} */
 
-.button-hacks:hover i {
-  transform: translateX(10px); /* Adjust the value as needed */
+/* .button-hacks:hover i {
+  transform: translateX(10px); 
   transition: transform 0.5s ease;
-}
+} */
 
 /* scroll effects */
 .reveal {
@@ -637,6 +638,8 @@ place-items:  center;
   font-size: 2rem;
   color: #ffbd6a;
 }
+/* index.html */
+
 
 /* about page/************************ */
 @media only screen and (max-width: 1024px) {
@@ -686,6 +689,11 @@ place-items:  center;
   .service_cards {
     width: calc(100% - 2em);
   }
+  .service_cards::after{
+    left: 2em;
+    right: 1.5em;
+    top: calc(100% - 150px);
+  }
 }
 @media only screen and (max-width: 425px) {
   .cards {
@@ -693,5 +701,18 @@ place-items:  center;
   }
   .user-cards {
     padding: 0px 0rem;
+  }
+  .service_cards::after{
+    left: 2em;
+    right: 1.5em;
+    top: calc(100% - 190px);
+  }
+}
+@media only screen and (max-width: 320px) {
+  
+  .service_cards::after{
+    left: 2em;
+    right: 1.5em;
+    top: calc(100% - 230px);
   }
 }

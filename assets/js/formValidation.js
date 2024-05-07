@@ -31,6 +31,7 @@ function validationForm(event) {
       isValid = false;
     } else {
       error_fname.innerHTML = "";
+      error_lname.innerHTML ="";
       Firstname.style.outline = ''; 
       Lastname.style.outline = ''; 
       error_fname.style.margin = "";
@@ -43,6 +44,7 @@ function validationForm(event) {
       error_cbname.style.margin = "5px";
       isValid = false;
     } else {
+      error_cbname.innerHTML = "";
       cbname.style.outline = ''; 
       error_cbname.style.margin = "";
     }

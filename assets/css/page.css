@@ -89,7 +89,13 @@
 .section-about .section-about_costom img {
   max-height: 4rem;
 }
-
+.para{
+  width: 70%;
+  font-weight: 100;
+}
+.sction-missions .para{
+  text-align: justify;
+}
 /* ===== services.html page  ======= */
 .flotingimage {
   width: 150px;
@@ -106,8 +112,7 @@
 .flotingimage img {
   width: 50px;
 }
-.ourServices-page_cards {
-}
+
 .ourServices-page_cards .ourServices-page_cards_right {
   width: 70%;
   padding-left: 2rem;
@@ -163,7 +168,11 @@
   .section-about .section-about-our img {
     max-width: 30%;
   }
-  
+  .para{
+    width: 90%;
+  }
+
+
   .ourServices-page_cards_col {
     display: flex;
     justify-content: center;

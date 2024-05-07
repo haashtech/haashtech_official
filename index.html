@@ -51,7 +51,7 @@
     />
     <title>Haash || Home</title>
   </head>
-  <body>
+  <body class="bg-black">
     <!-- ********preloader******** -->
 
     <div class="preloader"></div>
@@ -121,10 +121,10 @@
         </div>
       </div>
     </nav>
-    <main class="bg-black">
+    <main>
       <!-- #Section 1 -->
       <section
-        class="container section-container w-100 mx-auto "
+        class="container section-container w-100 vh-100 mx-auto"
         style="height: 522px"
         id="Home"
       >
@@ -154,7 +154,10 @@
 
           <!-- first -->
           <div class="text-white right-Side position-relative Innovate">
-            <div class="position-absolute bottom-" style="bottom: 25px; padding: 0 2rem;">
+            <div
+              class="position-absolute bottom-"
+              style="bottom: 25px; padding: 0 2rem"
+            >
               <p class="text-style">
                 Innovate with Us: Welcome to Our World of Digital Solutions
               </p>
@@ -166,64 +169,84 @@
               >
               <br />
               <!-- button  group -->
-              <div class="sparkle-button my-3 d-inline-flex gap-3">
-                <!-- <button class="sparkle-button_1">
-                  <span
-                    class="text d-flex gap-2 justify-content-end align-items-center w-100 fs-4"
-                    >Reel
-                    <span
-                      style="
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 100%;
-                        background: #000;
-                      "
-                      class="text-center d-flex align-items-center justify-content-center"
-                      ><i
-                        class="fa-solid fa-play"
-                        style="color: #fabd64"
-                      ></i></span
-                  ></span>
-                </button> -->
+              <div class="d-flex align-items-center gap-3 mt-5">
                 <button
-                  class="button mt-5 align-items-center gap-3 d-flex reel-button"
+                  type="button"
+                  class="button reel-button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 >
-                  <span class="text-white">Reel</span>
-                  <span
-                    class="h-50 rounded-5 bg-black d-inline-flex align-items-center justify-content-center"
-                    style="min-width: 30px; min-height: 30px"
-                  >
-                    <i class="fa-solid fa-play" style="color: #fabd64"></i>
+                  <span class="text fs-4 d-flex align-items-center gap-3">
+                    Reel
+                    <i
+                      class="fa-solid fa-play bg-black d-flex align-items-center justify-content-center"
+                      style="color: #fabd64"
+                    ></i>
                   </span>
                 </button>
-                <!-- ====== -->
-                <!-- <button class="sparkle-button_2">
-                  <span class="text button-hacks fs-4"
-                    >Get Started <i class="fa-light fa fa-arrow-right"></i
-                  ></span>
-                </button> -->
-                <button class="button mt-5">
-                  <ul>
-                    <li>Get Started</li>
-                  </ul>
-                  <div class="icon-right">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-arrow-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                      />
-                    </svg>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-fullscreen-xxl-down">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Reel</h1> -->
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body p-0">
+                        <video
+                          id="modalVideo"
+                          src="assets/vids/WhatsApp Video 2024-05-07 at 12.35.07_f058213e.mp4"
+                          autoplay
+                          loop
+                          controls
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+                      <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div> -->
+                    </div>
                   </div>
+                </div>
+                <!-- <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    var video = document.getElementById("modalVideo");
+
+                    // Listen for the 'ended' event
+                    video.addEventListener("ended", function () {
+                      // Restart the video
+                      this.currentTime = 0;
+                      this.play();
+                    });
+                  });
+                </script> -->
+
+                <!-- Full screen modal -->
+
+                <!-- ====== -->
+                <a href="contactUs.html">
+                   <button class="button">
+                  <span class="text fs-4"></span>
+                    Get Started <i class="fa-light fa fa-arrow-right ms-4"></i
+                  ></span>
                 </button>
+                </a>
+               
               </div>
-              <!-- button  group ends-->
             </div>
             <!-- #shadow_bubble_1 -->
             <div
@@ -464,7 +487,7 @@
             <h1 class="text-style">Our Services</h1>
           </div>
           <div class="text-center w-100 text-head-sm">
-            <small class="">
+            <small class="w-75">
               We're dedicated to exceeding your expectations. Explore our
               comprehensive range of services tailored to meet your specific
               requirements. Let's innovate together.
@@ -487,30 +510,28 @@
                 ></a>
               </div>
               <div class="col service_cards">
-                <h2>Mobile App Development</h2>
+                <h2>Web App Development</h2>
                 <small class=""
-                  >From enterprise to consumer apps that are specifically
-                  tailored to meet your business needs</small
+                  >Transform your ideas into functional web apps with our expert development services.
+                  </small
                 >
                 <a href="" class=""
                   >Read more <i class="fa-light fa fa-arrow-right"></i
                 ></a>
               </div>
               <div class="col service_cards">
-                <h2>Mobile App Development</h2>
+                <h2>Branding</h2>
                 <small class=""
-                  >From enterprise to consumer apps that are specifically
-                  tailored to meet your business needs</small
+                  >Craft a standout brand identity with our strategic branding solutions.</small
                 >
                 <a href="" class=""
                   >Read more <i class="fa-light fa fa-arrow-right"></i
                 ></a>
               </div>
               <div class="col service_cards">
-                <h2>Mobile App Development</h2>
+                <h2>UI/UX Design</h2>
                 <small class=""
-                  >From enterprise to consumer apps that are specifically
-                  tailored to meet your business needs</small
+                  >Embracing UI/UX in crafting seamless experiences, keeping up with efficiency and elegance.</small
                 >
                 <a href="" class=""
                   >Read more <i class="fa-light fa fa-arrow-right"></i
@@ -518,10 +539,9 @@
               </div>
               <!-- col 5 -->
               <div class="col service_cards">
-                <h2>Mobile App Development</h2>
+                <h2>E-commerce</h2>
                 <small class=""
-                  >From enterprise to consumer apps that are specifically
-                  tailored to meet your business needs</small
+                  >Unlock global markets with our seamless e-commerce solutions.</small
                 >
                 <a href="" class=""
                   >Read more <i class="fa-light fa fa-arrow-right"></i
@@ -529,10 +549,9 @@
               </div>
               <!-- col 6 -->
               <div class="col service_cards">
-                <h2>Mobile App Development</h2>
+                <h2>Digital marketing</h2>
                 <small class=""
-                  >From enterprise to consumer apps that are specifically
-                  tailored to meet your business needs</small
+                  >Boost your online presence with our digital marketing expertise.</small
                 >
                 <a href="" class=""
                   >Read more <i class="fa-light fa fa-arrow-right"></i
@@ -694,10 +713,11 @@
       </section>
 
       <!-- #section 5 -->
+      <!-- auto slider -->
       <section class="container section-container w-100 mx-auto py-5 reveal">
         <div class="d-md-flex">
           <!-- left side -->
-          <div class="accordion-part">
+          <!-- <div class="accordion-part">
             <h2 class="text-style">Transforming Visions into Realities</h2>
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
@@ -782,9 +802,28 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- right side -->
-          <div class="slider">
+          <div class="w-50">
+            <h2 class="text-style">Transforming Visions into Realities</h2>
+            <p class="my-5 w-75" style="color: #A1A1A1;">
+              Meet the Haashtech team: visionaries turning dreams into reality.
+              With expertise spanning engineering, design, marketing, and
+              project management, we're dedicated to exceeding expectations.
+              Together, we pioneer solutions, transforming aspirations into
+              achievements. Welcome to innovation without limits.
+            </p>
+             <!-- ====== -->
+             <a href="career.html">
+                  <button class="button">
+              <span class="text fs-4"></span>
+              Explore Opportunities <i class="fa-light fa fa-arrow-right ms-4"></i
+              ></span>
+            </button>
+             </a>
+         
+          </div>
+          <div class="slider w-50">
             <div
               class="item img-fluid"
               style="background-image: url(assets/imgs/cards/card1.png)"
@@ -943,40 +982,55 @@
             Unveiling Success Stories: Our Client Gallery of Innovation
           </span>
         </div>
-        <div class="section-clintes_slider">
-          <div class="section-clintes_slidertrack">
-            <div class="section-clintes_card">
-              <span class="fs-1 client-color client_spotify">Spotify</span>
-              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-            </div>
-            <div class="section-clintes_card">
-              <span class="fs-1 client-color client_meta">Meta</span>
-              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-            </div>
-            <div class="section-clintes_card">
-              <span class="fs-1 client-color client_microsoft">MicroSoft</span>
-              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-            </div>
-            <div class="section-clintes_card">
-              <span class="fs-1 client-color client_google">Google</span>
-              <span id="google" class="fs-1">
-                <span id="G-1">G</span>
-                <span id="o-1">o</span>
-                <span id="o-2">o</span>
-                <span id="G-2">g</span>
-                <span id="L">l</span>
-                <span id="E">e</span>
-              </span>
-
-              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-            </div>
-            <div class="section-clintes_card">
-              <span class="fs-1 client-color client_netflix">Netflix</span>
-              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
-            </div>
-            <div class="section-clintes_card">
-              <span class="fs-1 client-color client_disney">Disney +</span>
-              <!-- <img src="assets/imgs/cards/carosal1.png" alt=""> -->
+        <div class="">
+          <div class="slider_brands">
+            <div class="slider_track">
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 474.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 475.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 476.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/image 10.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Layer_1-1.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Layer_1.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Rectangle.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 474.svg" alt="" />
+              </div>
+              <!-- repeat 8  -->
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 475.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 476.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/image 10.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Layer_1-1.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Layer_1.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Rectangle.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 474.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -1087,25 +1141,30 @@
                 >
               </div>
               <div class="w-100 text-start">
-                <span class="mb-4 text-black fw-bold">Company</span>
-                <ul class="list-unstyled">
+                <span class="mb-4 text-black fw-bold">Contact</span>
+                <ul class="list-unstyled my-1">
                   <li>
                     <a
-                      href="tel:6520 125 154"
+                      href="tel:9846 012 078"
                       class="text-decoration-none footer_items"
-                      >6520 125 154</a
+                      >9846 012 078</a
+                    >
+                    <a
+                      href="tel:+971566494903"
+                      class="text-decoration-none footer_items"
+                      >, +97 1566 494 903</a
                     >
                   </li>
                   <li>
                     <a
-                      href="mailto:abcs@gmail.com"
+                      href="mailto:info@haash.tech"
                       class="text-decoration-none footer_items"
-                      >abcs@gmail.com</a
+                      >info@haash.tech</a
                     >
                   </li>
                   <li>
                     <ul
-                      class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2 fa-brands_home"
+                      class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2"
                     >
                       <li>
                         <a href="https://www.instagram.com/odio_fashion/"
@@ -1230,15 +1289,6 @@
                   >E-commerce</a
                 >
               </li>
-              <!-- <li>
-              <ul
-                class="list-unstyled d-flex gap-4 justify-content-start align-items-center"
-              >
-                <li><a href="https://www.instagram.com/odio_fashion/"><img src="assets/imgs/logo/Vector-1.png" alt="" /></a></li>
-                <li><img src="assets/imgs/logo/Vector.png" alt="" /></li>
-                <li><img src="assets/imgs/logo/prime_twitter.png" alt="" /></li>
-              </ul>
-            </li> -->
             </ul>
           </div>
         </div>
@@ -1292,20 +1342,20 @@
       //   }
       // });
       $(window).scroll(function () {
-  const navbar = $(".navbar");
+        const navbar = $(".navbar");
 
-  // Add glass effect to navbar when scrolling
-  if ($(window).scrollTop()) {
-    navbar.addClass("glass");
-  } else {
-    navbar.removeClass("glass");
-  }
-});
+        // Add glass effect to navbar when scrolling
+        if ($(window).scrollTop()) {
+          navbar.addClass("glass");
+        } else {
+          navbar.removeClass("glass");
+        }
+      });
 
-$("#offcanvasNavbar").on("show.bs.offcanvas", function () {
-  const navbar = $(".navbar");
-  navbar.removeClass("glass");
-});
+      $("#offcanvasNavbar").on("show.bs.offcanvas", function () {
+        const navbar = $(".navbar");
+        navbar.removeClass("glass");
+      });
     </script>
   </body>
 </html>
