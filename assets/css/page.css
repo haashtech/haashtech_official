@@ -165,7 +165,9 @@
     width: 90%;
   }
 
-
+  .section-service {
+    height: 70vh;
+  }
   .ourServices-page_cards_col {
     display: flex;
     justify-content: center;

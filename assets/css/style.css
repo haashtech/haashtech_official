@@ -35,9 +35,7 @@ section {
 .section-container {
   width: 100%;
 }
-footer {
-  padding: 0 2rem;
-}
+
 .shadow_bubble {
   border-radius: 50%;
   background: #e98200;
@@ -710,6 +708,18 @@ place-items:  center;
     width: 350px;
     height: 350px;
   }
+  footer .row{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+  }
+  .map-sec{
+    height: 300px;
+          padding: 2rem;
+   }
+   .map-sec iframe{
+    border-radius: 15px;
+  
+   }
 }
 @media only screen and (max-width: 425px) {
   .cards {
@@ -723,6 +733,7 @@ place-items:  center;
     right: 1.5em;
     top: calc(100% - 190px);
   }
+ 
 }
 @media only screen and (max-width: 320px) {
   .service_cards::after {
