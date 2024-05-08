@@ -24,16 +24,18 @@ section {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.1)
   ); /* Adjust the opacity values to make it darker */
-  backdrop-filter: blur(
-    20px
-  ); 
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   transition: all 2s;
+}
+.modai-viewer-tag{
+  width: 100%;
+  height: 100%;
 }
 .section-container {
   width: 100%;
 }
-footer{
+footer {
   padding: 0 2rem;
 }
 .shadow_bubble {
@@ -45,7 +47,13 @@ footer{
   transform: translate(-50%, -50%); /* Center the bubble */
   filter: blur(65px);
 }
-
+.nav-item {
+  margin: 0 0.5rem;
+}
+.section-container .right-Side {
+  bottom: -111px;
+  padding: 0 2rem;
+}
 /* Ellipse 1 */
 
 /* @media (min-width: 1280px) {
@@ -67,17 +75,14 @@ footer{
     width: 50%;
 } */
 /* ========================== header =================== */
-nav.scrolled{
+nav.scrolled {
   background-color: white;
-    /* backdrop-filter: blur(10px); */
+  /* backdrop-filter: blur(10px); */
   /* opacity: 0.1; */
 }
-nav.scrolled a{
+nav.scrolled a {
   /* color: black !important; */
-
-
 }
-
 
 /* button group starts*/
 /* Updated CSS with background color #FFBD6A */
@@ -596,7 +601,6 @@ place-items:  center;
   background: linear-gradient(101.64deg, #242424 3.1%, #2d2d2d 98.29%);
 }
 
-
 .service_cards h2 {
   margin-bottom: 10px;
   font-size: 24px;
@@ -642,10 +646,9 @@ place-items:  center;
   color: #ffbd6a;
 }
 /* index.html */
-.transforming-vision{
+.transforming-vision {
   width: 50%;
 }
-
 
 /* about page/************************ */
 @media only screen and (max-width: 1024px) {
@@ -695,15 +698,18 @@ place-items:  center;
   .service_cards {
     width: calc(100% - 2em);
   }
-  .service_cards::after{
+  .service_cards::after {
     left: 2em;
     right: 1.5em;
     top: calc(100% - 150px);
   }
-  .transforming-vision{
+  .transforming-vision {
     width: 100%;
   }
-  
+  .modai-viewer-tag{
+    width: 350px;
+    height: 350px;
+  }
 }
 @media only screen and (max-width: 425px) {
   .cards {
@@ -712,15 +718,14 @@ place-items:  center;
   .user-cards {
     padding: 0px 0rem;
   }
-  .service_cards::after{
+  .service_cards::after {
     left: 2em;
     right: 1.5em;
     top: calc(100% - 190px);
   }
 }
 @media only screen and (max-width: 320px) {
-  
-  .service_cards::after{
+  .service_cards::after {
     left: 2em;
     right: 1.5em;
     top: calc(100% - 230px);

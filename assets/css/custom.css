@@ -31,7 +31,12 @@
 .h-50vh {
   height: 50vh;
 }
-
+.h-100-res{
+  max-height: 100vh;
+}
+.h-100-min{
+  min-height: 100vh;
+}
 .w-80{
   width: 80%;
 }
@@ -90,8 +95,8 @@ a {
   padding-bottom: 7rem /* 96px */;
 }
 .py-large {
-  padding-top: 15rem /* 96px */;
-  padding-bottom: 15rem /* 96px */;
+  padding-top: 12rem /* 96px */;
+  padding-bottom: 12rem /* 96px */;
 }
 .flex-center {
   display: flex;
@@ -439,6 +444,9 @@ color: white;
   }
   .text-head-sm {
     max-width: 90%;
+  }
+  .h-100-res{
+    min-height: 70vh;
   }
   /* .accordion-part {
     width: 100%;
