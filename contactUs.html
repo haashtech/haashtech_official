@@ -51,20 +51,21 @@
   </head>
   <body>
     <style>
-      .form-label input {
-        background-color: aliceblue;
-      }
-      /* Custom Styles */
 
       .form-control {
-        border-color: #924600; /* Input border color */
-        color: white; /* Input text color */
+        background-color: #6a6a6a;
+        border: none;
+        color: white; 
+        &&:focus{
+          outline: none !important;
+          box-shadow: none !important;
+          background-color: #6a6a6a;
+        color: white; 
+        }
       }
-      .btn-primary {
-        background-color: #924600; /* Button background color */
-      }
+      
       .form-control::placeholder {
-        color: #6a6a6a; /* Placeholder text color */
+        color: #8E8E8E; /* Placeholder text color */
       }
       .submit-button {
         color: white;
@@ -173,7 +174,7 @@
           <br />
         </div>
         <div class="row ">
-          <div class="col-md-5 mb-md-0 mb-5" 
+          <div class="col-lg-5 mb-md-0 mb-5 d-flex justify-content-lg-start  justify-content-center  align-items-lg-start align-items-center flex-column" 
          >
             <span class="text-white text-center text-md-start">
               <p>Get a quote;</p>
@@ -192,7 +193,7 @@
             </button>
 
             <div
-              class="d-flex email-message gap-5 justify-content- h-25 mt-5 mb-5"
+              class="d-flex email-message gap-5 justify-content-center align-items-end h-25 mt-5 mb-5"
             >
               <div class="d-md-flex align-items-center gap-3">
                 <img src="assets/imgs/icons/message.png" alt="" />
@@ -207,14 +208,14 @@
                 <div class="">
                   <span class="fs-4 text-sub-color">Whatsapp only</span>
                   <h3 class="text-main fs-3">
-                    <a href="tel:+971566494903" class="" style="color: #FFBE6C;">+97 1566 494 903</a>
+                    <a href="tel:+971566494903" class="" style="color: #FFBE6C;">+971 1566 494 903</a>
                   </h3>
                 </div>
               </div>
             </div>
           </div>
           <!-- <div class="col-md-2"></div>  2nd col -->
-          <div class="col-md-7">
+          <div class="col-lg-7">
             <!-- bubbles ended -->
             <form
               id="contact"
@@ -234,7 +235,7 @@
                   <input
                     type="text"
                     class="form-control fs-4"
-                    style="outline: none; color: #6a6a6a; padding: 1.3rem"
+                    style="outline: none;  padding: 1.3rem"
                     id="Firstname"
                     name="Firstname"
                     placeholder="First Name"
@@ -246,7 +247,7 @@
                   <input
                     type="text"
                     class="form-control fs-4"
-                    style="outline: none; color: #6a6a6a; padding: 1.3rem"
+                    style="outline: none;  padding: 1.3rem"
                     id="Lastname"
                     name="Lastname"
                     placeholder="Last Name"
@@ -257,7 +258,7 @@
               <!-- =========================================================================== -->
 
               <!-- phone -->
-              <div class="mb-3 d-md-flex gap-2">
+              <div class="mb-3 d-md-flex flex-grow-1 gap-2">
                 <div class="flex-grow-1 flex-column d-flex">
                   <label for="phone" class="text-white">Phone*</label>
                   <input
@@ -265,7 +266,6 @@
                     class="form-control fs-4 w-100"
                     style="
                       outline: none;
-                      color: #6a6a6a;
                       padding: 1.3rem 0rem 1.3rem 5rem;
                     "
                     name="phone"
@@ -280,7 +280,7 @@
                   <input
                     type="email"
                     class="form-control fs-4 w-100"
-                    style="outline: none; color: #6a6a6a; padding: 1.3rem"
+                    style="outline: none;  padding: 1.3rem"
                     id="email"
                     name="Email"
                     placeholder="Email"
@@ -294,7 +294,7 @@
                 <input
                   type="text"
                   class="form-control fs-4"
-                  style="outline: none; color: #6a6a6a; padding: 1.3rem"
+                  style="outline: none;  padding: 1.3rem"
                   id="cbname"
                   name="Company Name"
                   placeholder="Company Name"
@@ -306,7 +306,6 @@
                 <label for="message" class="text-white">Message</label>
                 <textarea
                   class="form-control p-3 fs-4"
-                  style="color: #6a6a6a"
                   id="message"
                   rows="4"
                   name="Message"

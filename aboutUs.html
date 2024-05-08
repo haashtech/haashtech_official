@@ -124,57 +124,52 @@
       </div>
     </nav>
 
-    <main >
+    <main>
       <!-- section 1 -->
       <section
-        class="container section-about text-center py-24 w-100 d-flex flex-column justify-content-center align-items-center"
+        class="container section-about text-center py-24 vh-100 w-100 d-flex flex-column justify-content-center align-items-center"
       >
         <div
           class="h-100 text-center section-about-div-1 d-flex justify-content-center align-items-center flex-column"
           style=""
         >
-          <span class="text-white text-capitalize fs-3 mb-4">Services</span>
-          <div class="w-100 text-center d-flex justify-content-center">
-            <h1 class="text-style space-y-4">
+          <span class="text-white text-capitalize fs-3 mb-4">About Us</span>
+          <div class="d-flex flex-column gap-4 justify-content-center align-items-center mb-3">
+            <!-- main div starts ^ -->
+              <div class="w-100 text-center ">
+            <h1 class="text-style">
               Discovering Haashtech: Pioneering <br />
               Innovation in IT Solutions
             </h1>
           </div>
-          <p class="text-white space-y-4 para">
-            At Haashtech, we are committed to driving innovation and delivering
-            excellence. With a dedicated team of experts, we specialize in
-            creating cutting-edge software solutions that meet and exceed the
-            needs of our clients. Our mission is to provide high-quality,
-            tailored services that propel businesses to success in the digital
-            world. Backed by a passion for technology and a drive for
-            innovation, we are your trusted partner on the journey to achieving
-            your goals. Let's embark on this journey together."
-          </p>
-          <!-- <button class="button mt-5" id="downloadButton">
-            <div class="icon">
-              <svg viewBox="0 0 14 15">
-                <line x1="5" y1="13" x2="5" y2="1"></line>
-                <polyline id="tick" points="1 9.5 5 13.5 13 5.5"></polyline>
-                <polyline id="normal" points="1 9.5 5 13.5 9 9.5"></polyline>
-              </svg>
-              <div>
-                <svg viewBox="0 0 24 24"></svg>
-              </div>
-            </div>
-            <ul>
-              <li>&#68;ownload company profile</li>
-            </ul>
-          </button> -->
-          <button class="button mt-5" id="downloadButton">
-            <span class="text fs-4"
-              >&#68;ownload company profile <i class="bi bi-download"></i></span>
-          </button>
-            <br>
+          <div class="w-100 d-flex justify-content-center">
+            <p class="text-white para">
+              At Haashtech, we are committed to driving innovation and
+              delivering excellence. With a dedicated team of experts, we
+              specialize in creating cutting-edge software solutions that meet
+              and exceed the needs of our clients. Our mission is to provide
+              high-quality, tailored services that propel businesses to success
+              in the digital world. Backed by a passion for technology and a
+              drive for innovation, we are your trusted partner on the journey
+              to achieving your goals. Let's embark on this journey together."
+            </p>
+          </div>
+
+          <div class="">
+            <button class="button" id="downloadButton">
+              <span class="text fs-4"
+                >&#68;ownload company profile <i class="bi bi-download"></i
+              ></span>
+            </button>
+          </div>
+          </div>
+        
+
           <!-- icons -->
         </div>
         <div
           class="d-flex justify-content-md-between justify-content-center align-items-center mt-md-5 flex-wrap gap-md-3 gap-5 section-about_costom mt-4"
-          style="margin-top: 2rem;"
+          style="margin-top: 2rem"
         >
           <span
             class="d-md-flex align-items-center justify-content-center me-md-4"
@@ -201,25 +196,26 @@
           style="top: 40%; left: 20%; width: 150px; height: 150px"
         ></div>
         <div
-        class="shadow_bubble shadow_bubble_1 d-md-none d-block"
-        style="top: 40%; left: 20%; width: 150px; height: 150px"
-      ></div>
+          class="shadow_bubble shadow_bubble_1 d-md-none d-block"
+          style="top: 40%; left: 20%; width: 150px; height: 150px"
+        ></div>
         <!-- #shadow_bubble_1 -->
         <div
           class="shadow_bubble shadow_bubble_1 d-md-block d-none"
           style="top: 70%; right: 15%; width: 150px; height: 150px"
         ></div>
-        <div class="position-absolute flotingimage flotingimage_1"
-        style="z-index: -1;"
+        <div
+          class="position-absolute flotingimage flotingimage_1"
+          style="z-index: -1"
         >
           <img
             src="assets/imgs/icons/flotingpieces.png"
             alt="floating images"
-           
           />
         </div>
-        <div class="position-absolute flotingimage flotingimage_2"
-        style="z-index: -1;"
+        <div
+          class="position-absolute flotingimage flotingimage_2"
+          style="z-index: -1"
         >
           <img
             src="assets/imgs/icons/flotingpieces2.png"
@@ -229,7 +225,7 @@
       </section>
 
       <!-- sec 2 -->
-      <div class="py-24 my-auto ">
+      <div class="py-24 my-auto">
         <div
           class="text-center d-flex justify-content-center align-items-center"
         >
@@ -268,7 +264,9 @@
                 class="w-100 h-100"
               />
             </div>
-            <div class="col d-sm-block d-none img-fluid slide_auto d-md-block d-none">
+            <div
+              class="col d-sm-block d-none img-fluid slide_auto d-md-block d-none"
+            >
               <img
                 src="assets/imgs/cards/cards5.png"
                 alt=""
@@ -317,8 +315,31 @@
       </section>
 
       <!-- ===== -->
-      <!-- #section 8 -->
-      <section class="w-100 sec-map-container bg-white mx-auto reveal">
+
+      <!-- section 8 -->
+      <section class="container text-center py-25 mx-auto reveal">
+        <h3
+          class="text-gray-600 font-bold text-style tracking-wider"
+          style="font-size: clamp(10px, 6vw, 60px)"
+        >
+          Get started now!
+        </h3>
+        <small class="text-sm-size"
+          >It takes less than a minute of your time.</small
+        >
+        <br />
+        <div class="w-100 d-flex align-items-center justify-content-center">
+          <a
+            href="contactUs.html"
+            class="p-3 px-4 d-flex align-items-center justify-content-center gap-3 text-black btn mt-4 text-sm-size"
+            style="background-color: #fabd64"
+            >Request a quote <i class="fa-light fa fa-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- #section 9 -->
+      <section class="w-100 sec-map-container bg-white mx-auto">
         <div class="sec-map">
           <div class="sec_map_l bg-white d-flex flex-column align-items-center">
             <div
@@ -392,134 +413,111 @@
         </div>
       </section>
 
-      <!-- section 9 -->
-      <section class="container text-center py-25 mx-auto reveal">
-        <h3
-          class="text-gray-600 font-bold text-style tracking-wider"
-          style="font-size: clamp(10px, 6vw, 60px)"
-        >
-          Get started now!
-        </h3>
-        <small class="text-sm-size"
-          >It takes less than a minute of your time.</small
-        >
-        <br />
-        <div class="w-100 d-flex align-items-center justify-content-center">
-          <a
-            href="contactUs.html"
-            class="p-3 px-4 d-flex align-items-center justify-content-center gap-3 text-black btn mt-4 text-sm-size"
-            style="background-color: #fabd64"
-            >Request a quote <i class="fa-light fa fa-arrow-right"></i
-          ></a>
-        </div>
-      </section>
+      <!-- #footer -->
+      <footer class="container" style="padding: 3rem 3rem">
+        <div class="row">
+          <div class="col-md-1">
+            <img
+              src="assets/imgs/logo/haashlogofooter.png"
+              alt="footer logo"
+              class="mx-auto mb-5"
+              width="100"
+            />
+          </div>
+          <div class="col-md-3"></div>
+          <!-- <div class="col-md-4"></div> -->
+          <div class="col-md-3 g-0">
+            <!-- <h3 class="text-start mb-4">Address</h3> -->
+            <address class="footer_items">
+              <span> Odio cradle 1, kambanimukku <br /></span>
+              <span>koduvally Road Exit-2, <br /></span>
+              <span>Malayamma PO, NIT Campus, <br /></span>
+              <span>Kozhikode, Kerala - 673601</span>
+            </address>
+          </div>
+          <div class="col-md-2 g-0">
+            <!-- <h3 class="text-start mb-4">Address</h3> -->
+            <address class="footer_items">
+              <span>603, -D Block - <br /></span>
+              <span>Horizon Towers <br /></span>
+              <span>Al Rashidiya 1, <br /></span>
+              <span>Ajman, UAE</span>
+            </address>
+          </div>
 
-        <!-- #footer -->
-        <footer class="container"  style="padding: 3rem 3rem;">
-          <div class="row">
-            <div class="col-md-1">
-              <img
-                src="assets/imgs/logo/haashlogofooter.png"
-                alt="footer logo"
-                class="mx-auto mb-5"
-                width="100"
-              />
-            </div>
-            <div class="col-md-3"></div>
-            <!-- <div class="col-md-4"></div> -->
-            <div class="col-md-3  g-0">
-              <!-- <h3 class="text-start mb-4">Address</h3> -->
-              <address class="footer_items">
-                <span> Odio cradle 1, kambanimukku <br></span>
-                <span>koduvally Road Exit-2, <br></span>
-                <span>Malayamma PO, NIT Campus, <br></span>
-                <span>Kozhikode, Kerala - 673601</span>
-              </address>
-            </div>
-            <div class="col-md-2 g-0">
-              <!-- <h3 class="text-start mb-4">Address</h3> -->
-              <address class="footer_items">
-                <span>603, -D Block - <br></span>
-                <span>Horizon Towers <br></span>
-                <span>Al Rashidiya 1, <br></span>
-                <span>Ajman, UAE</span>
-              </address>
-            </div>
-  
-            <div class="col-md-1  ">
-              <h3 class="text-start mb-4 text-white">Company</h3>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    href="index.html"
-                    class="text-decoration-none footer_items"
-                    >Home</a
-                  >
-                </li>
-               
-                <li>
-                  <a href="services.html" class="text-decoration-none footer_items"
-                    >Services</a
-                  >
-                </li>
-  
-                <li>
-                  <a
-                    href="career.html"
-                    class="text-decoration-none footer_items"
-                    >Career</a
-                  >
-                </li>
-                <li>
-                  <a href="contactUs.html" class="text-decoration-none footer_items"
-                    >Contact Us</a
-                  >
-                </li>
-                
-              </ul>
-            </div>
-  
-            <div class="col-md-2">
-              <h3 class="text-start mb-4 text-white">Services</h3>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="text-decoration-none footer_items"
-                    >Ui/ux design</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-decoration-none footer_items"
-                    >Web development</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-decoration-none footer_items"
-                    >App development</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-decoration-none footer_items"
-                    >E-commerce</a
-                  >
-                </li>
-              </ul>
-            </div>
+          <div class="col-md-1">
+            <h3 class="text-start mb-4 text-white">Company</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-decoration-none footer_items"
+                  >Home</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="services.html"
+                  class="text-decoration-none footer_items"
+                  >Services</a
+                >
+              </li>
+
+              <li>
+                <a href="career.html" class="text-decoration-none footer_items"
+                  >Career</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contactUs.html"
+                  class="text-decoration-none footer_items"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
           </div>
-          <!-- foot -->
-          <div class="row">
-            <div class="col-md-2">
-              <span class="text-start mt-4 footer_items fs-5">
-                @2024 all rights are reserved
-              </span>
-            </div>
-  
-            <div class="col-md">
-              <span class="text-start mt-4 footer_items fs-5"
-                >Terms of services | Privacy policy</span
-              >
-            </div>
+
+          <div class="col-md-2">
+            <h3 class="text-start mb-4 text-white">Services</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none footer_items"
+                  >Ui/ux design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none footer_items"
+                  >Web development</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none footer_items"
+                  >App development</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none footer_items"
+                  >E-commerce</a
+                >
+              </li>
+            </ul>
           </div>
-        </footer>
+        </div>
+        <!-- foot -->
+        <div class="row">
+          <div class="col-md-2">
+            <span class="text-start mt-4 footer_items fs-5">
+              @2024 all rights are reserved
+            </span>
+          </div>
+
+          <div class="col-md">
+            <span class="text-start mt-4 footer_items fs-5"
+              >Terms of services | Privacy policy</span
+            >
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script>

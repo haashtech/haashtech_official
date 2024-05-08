@@ -31,6 +31,7 @@
 .h-50vh {
   height: 50vh;
 }
+
 .w-80{
   width: 80%;
 }
@@ -87,6 +88,10 @@ a {
 .py-25 {
   padding-top: 7rem /* 96px */;
   padding-bottom: 7rem /* 96px */;
+}
+.py-large {
+  padding-top: 15rem /* 96px */;
+  padding-bottom: 15rem /* 96px */;
 }
 .flex-center {
   display: flex;
