@@ -56,8 +56,6 @@
 
     <div class="preloader"></div>
 
-
-    some changes from pc chnage user config
     <!-- ********Header******** -->
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top py-4 px-md-0 px-3"
@@ -67,7 +65,7 @@
           <img
             src="assets/imgs/logo/haashlogo.png"
             alt="Haash Technologies"
-            class="w-50"
+            class=""
           />
         </a>
         <button
@@ -124,88 +122,135 @@
       </div>
     </nav>
     <main>
-      <section class="container section-container vh-100 d-flex justify-content-center align-items-center">
+      <section
+        class="container section-container vh-100 d-flex justify-content-center align-items-center"
+      >
         <div class="row w-100 h-100 align-items-lg-stretch">
-            <div class="col-lg-6 order-lg-1 order-2 g-0 d-flex flex-column justify-content-end pb-5 align-items-start">
-                <div class="d-flex flex-column justify-content-center gap-3 align-items-start mb-md-5" style="margin-bottom: 5rem;">
-                    <!-- main div starts ^ -->
-                    <div class="w-100">
-                        <h1 class="text-style">
-                            Innovate with Us: Welcome to Our World of Digital Solutions
-                        </h1>
-                    </div>
-                    <div class="w-100 d-flex justify-content-center">
-                        <p class="text-white para">
-                            Welcome to our world of digital solutions, where innovation meets imagination. At Haashtech, we're dedicated to exceeding your expectations. Let's innovate together.
-                        </p>
-                    </div>
+          <div
+            class="col-lg-6 order-lg-1 order-2 g-0 d-flex flex-column justify-content-end pb-5 align-items-start"
+          >
+            <div
+              class="d-flex flex-column justify-content-center gap-3 align-items-start mb-md-5"
+              style="margin-bottom: 5rem"
+            >
+              <!-- main div starts ^ -->
+              <div class="w-100">
+                <h1 class="text-style">
+                  Innovate with Us: Welcome to Our World of Digital Solutions
+                </h1>
+              </div>
+              <div class="w-100 d-flex justify-content-center">
+                <p class="text-white para-home">
+                  Welcome to our world of digital solutions, where innovation
+                  meets imagination. At Haashtech, we're dedicated to exceeding
+                  your expectations. Let's innovate together.
+                </p>
+              </div>
 
-                    <div class="d-flex align-items-center gap-3 ">
-                        <button type="button" class="button reel-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <span class="text fs-4 d-flex align-items-center gap-3">
-                                Reel
-                                <i class="fa-solid fa-play bg-black d-flex align-items-center justify-content-center" style="color: #fabd64"></i>
-                            </span>
-                        </button>
+              <div class="d-flex align-items-center gap-3">
+                <button
+                  type="button"
+                  class="button reel-button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <span class="text para-home d-flex align-items-center gap-3">
+                    Reel
+                    <i
+                      class="fa-solid fa-play bg-black d-flex align-items-center justify-content-center"
+                      style="color: #fabd64"
+                    ></i>
+                  </span>
+                </button>
 
-                        <a href="contactUs.html">
-                            <button class="button">
-                                <span class="text fs-4">Get Started <i class="fa-light fa fa-arrow-right ms-4"></i></span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
+                <a href="contactUs.html">
+                  <button class="button">
+                    <span class="text para-home"
+                      >Get Started
+                      <i class="fa-light fa fa-arrow-right ms-4"></i
+                    ></span>
+                  </button>
+                </a>
+              </div>
             </div>
-            <!-- modal viewer -->
-            <div class="col-lg-6 order-lg-2 order-1 g-0 d-flex justify-content-center align-items-center position-relative ">
-              <img
+          </div>
+          <!-- modal viewer -->
+          <div
+            class="col-lg-6 order-lg-2 order-1 g-0 d-flex justify-content-center align-items-center position-relative"
+          >
+            <img
               src="assets/imgs/cards/sphereaquare.png"
               alt=""
               class="position-absolute"
-              style="top: 50px; width: 120px ; left: 0;"
+              style="top: 20%; width: 120px; left: 0"
             />
             <img
               src="assets/imgs/cards/sphereaquare.png"
               alt=""
               class="position-absolute"
-              style="left: 50%; bottom: 0; width: 120px"
+              style="right: 0; bottom: 20px; width: 120px"
             />
-                <model-viewer
-                class="modai-viewer-tag"
-                    style=" z-index: 0"
-                    src="untitled.glb"
-                    alt="A 3D model"
-                    camera-controls
-                    disable-zoom
-                    max-field-of-view="40deg"
-                    min-field-of-view="40deg"
-                    autoplay
-                    auto-rotate
-                    camera-orbit="20deg 100deg 100m"
-                    shadow-intensity="0.9"
-                ></model-viewer>
-                <div
-                class="shadow_bubble shadow_bubble_2 position-absolute"
-                style="top: 50%; left: 50%; width: 300px; height: 300px; z-index: -1;"
-              ></div>
-            </div>
+            <model-viewer
+              class="modai-viewer-tag"
+              style="z-index: 0"
+              src="untitled.glb"
+              alt="A 3D model"
+              camera-controls
+              disable-zoom
+              max-field-of-view="40deg"
+              min-field-of-view="40deg"
+              autoplay
+              auto-rotate
+              camera-orbit="20deg 100deg 100m"
+              shadow-intensity="0.9"
+            ></model-viewer>
+            <div
+              class="shadow_bubble shadow_bubble_2 position-absolute"
+              style="
+                top: 50%;
+                left: 50%;
+                width: 300px;
+                height: 300px;
+                z-index: -1;
+              "
+            ></div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog modal-fullscreen-xxl-down">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Reel</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0">
-                    <video id="modalVideo" src="assets/vids/WhatsApp Video 2024-05-07 at 12.35.07_f058213e.mp4" autoplay loop controls width="100%" height="100%"></video>
-                </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Reel</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
+            <div class="modal-body p-0">
+              <video
+                id="modalVideo"
+                src="assets/vids/WhatsApp Video 2024-05-07 at 12.35.07_f058213e.mp4"
+                autoplay
+                loop
+                controls
+                width="100%"
+                height="100%"
+              ></video>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
       <!-- #Section 1 -->
       <!-- <section
         class="container section-container w-100 h-100-res mx-auto"
@@ -575,11 +620,11 @@ first
           <!-- ***** service header ***** -->
           <div class="container-auto flex-center bg-transparent">
             <h2 class="text-center text-style">Our Services</h2>
-            <small class="" style="color: #ffff">
+            <p class="para-home" style="color: #ffff">
               We're dedicated to exceeding your expectations. Explore our
               comprehensive range of services tailored to meet your specific
               requirements. Let's innovate together.
-            </small>
+            </p>
           </div>
           <!--  ***** services cards ***** -->
 
@@ -727,7 +772,7 @@ first
         </div>
       </section> -->
 
-      <section class="container w-100 reveal position-relative">
+      <section class="bg-white w-100 py-24 reveal position-relative">
         <!-- ====== shadow about -->
         <div
           class="shadow_bubble position-absolute overflow-hidden"
@@ -752,26 +797,25 @@ first
         </div>
         <!-- ====== shadow about -->
 
-      
-          <div class="card mb-3 " style="background-color: transparent">
-            <div class="row g-0 w">
-              <div class="col-md-5 col-12">
-                <img
-                  src="assets/imgs/cards/aboutbg.png"
-                  class="img-fluid h-100 rounded-start"
-                  alt="about page"
-                />
-              </div>
-              <div class="col-md-7 g-0 ps-md-3  d-flex flex-column justify-content-between ">
-             
-                  <!-- ==================== -->
-                <div class="d-flex flex-column gap-3">
-                  <div class=""><h5 class="card-title text-style">About Us</h5></div>
-                  <div class="">
-                    <span
-                    class=" text-white para"
-                    style="font-weight: initial"
-                  >
+        <div class=" mb-3 container" style="background-color: transparent">
+          <div class="row g-0 w">
+            <div class="col-md-5 col-12">
+              <img
+                src="assets/imgs/cards/aboutbg.png"
+                class="img-fluid h-100 rounded-start"
+                alt="about page"
+              />
+            </div>
+            <div
+              class="col-md-7 g-0 ps-md-5 d-flex flex-column justify-content-between"
+            >
+              <!-- ==================== -->
+              <div class="d-flex flex-column gap-3">
+                <div class="">
+                  <h5 class="card-title text-style-custom">About Us</h5>
+                </div>
+                <div class="">
+                  <span class="text-black para-home" style="font-weight: initial">
                     At <span class="text-theme">Haashtech</span> , we are
                     committed to driving innovation and delivering excellence.
                     With a dedicated team of experts, we specialize in creating
@@ -783,46 +827,114 @@ first
                     partner on the journey to achieving your goals. Let's embark
                     on this journey together."
                   </span>
-                  </div>
+                </div>
                 <div class="">
-                  
                   <a href="aboutUs.html" class="">
                     <button class="button my-5">
-                      <span class="text fs-4">
+                      <span class="text para-home">
                         Get Started
                         <i class="fa-light fa fa-arrow-right ms-4"></i
                       ></span>
                     </button>
                   </a>
                 </div>
-
+              </div>
+              <!-- ====================== -->
+              <div class="d-flex gap-3 pt-sm-5">
+                <div class="flex-center flex-column lh-base result">
+                  <span>100+</span>
+                  <span>Clients</span>
                 </div>
-                <!-- ====================== -->
-                  <div class="d-flex gap-3 pt-sm-5">
-                    <div class="flex-center flex-column lh-base result">
-                      <span>100+</span>
-                      <span>Clients</span>
-                    </div>
-                    <div class="flex-center flex-column result">
-                      <span>100+</span>
-                      <span>Projects</span>
-                    </div>
-                    <div class="flex-center flex-column result">
-                      <span>50+</span>
-                      <span>Strength</span>
-                    </div>
-                  </div>
-              
+                <div class="flex-center flex-column result">
+                  <span>100+</span>
+                  <span>Projects</span>
+                </div>
+                <div class="flex-center flex-column result">
+                  <span>50+</span>
+                  <span>Strength</span>
+                </div>
               </div>
             </div>
           </div>
-       
+        </div>
+      </section>
+
+      <!-- Abpout Us -->
+      <section class="section-clintes reveal py-large position-relative overflow-hidden">
+        <div
+          class="shadow_bubble shadow_bubble_1 position-absolute"
+          style="
+            top: 50%;
+            right: -10%;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+          "
+        ></div>
+        <div class="flex-center">
+          <span class="text-style flex-center text-center">
+            Unveiling Success Stories: <br />
+            Our Client Gallery of Innovation
+          </span>
+        </div>
+        <div class="">
+          <div class="slider_brands">
+            <div class="slider_track">
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 474.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 475.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 476.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/image 10.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Layer_1-1.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Layer_1.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Rectangle.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 474.svg" alt="" />
+              </div>
+              <!-- repeat 8  -->
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 475.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 476.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/image 10.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Layer_1-1.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Layer_1.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Rectangle.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/imgs/brands/Group 474.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- #section 5 -->
       <!-- auto slider -->
       <section
-        class="container section-container w-100 mx-auto py position-relative py-large reveal"
+        class="bg-white section-container w-100 mx-auto position-relative py-large reveal"
       >
         <!-- ====== shadow about -->
         <div
@@ -850,7 +962,7 @@ first
           />
         </div>
         <!-- ====== shadow about -->
-        <div class="d-md-flex">
+       
           <!-- left side -->
           <!-- <div class="accordion-part">
             <h2 class="text-style">Transforming Visions into Realities</h2>
@@ -939,12 +1051,13 @@ first
             </div>
           </div> -->
           <!-- right side -->
-          <div class="transforming-vision container">
-            <div
-              class="d-flex flex-column justify-content-center align-items-md-start align-items-center my-md-0 my-4"
+          <div class="container ">
+            <div class="row">
+                <div
+              class="col-md-6 d-flex flex-column justify-content-center align-items-md-start align-items-center my-md-0 my-4"
             >
-              <h2 class="text-style">Transforming Visions into Realities</h2>
-              <p class="my-5" style="color: #a1a1a1">
+              <h2 class="text-style-custom">Transforming Visions into Realities</h2>
+              <p class="my-5 para-home " style="color: #a1a1a1">
                 Meet the Haashtech team: visionaries turning dreams into
                 reality. With expertise spanning engineering, design, marketing,
                 and project management, we're dedicated to exceeding
@@ -955,65 +1068,69 @@ first
               <!-- ====== -->
               <a href="career.html">
                 <button class="button">
-                  <span class="text fs-4">
+                  <span class="text para-home">
                     Explore Opportunities
                     <i class="fa-light fa fa-arrow-right ms-4"></i
                   ></span>
                 </button>
               </a>
             </div>
+            <!-- 2 nd -->
+            <div class="slider mt-md-0 mt-5 col-md-6 ">
+              <div
+                class="item img-fluid"
+                style="background-image: url(assets/imgs/cards/card1.png)"
+              ></div>
+              <div
+                class="item img-fluid"
+                style="background-image: url(assets/imgs/cards/card2.png)"
+              ></div>
+              <div
+                class="item img-fluid"
+                style="background-image: url(assets/imgs/cards/card3.png)"
+              ></div>
+              <div
+                class="item img-fluid"
+                style="background-image: url(assets/imgs/cards/carosal1.png)"
+              ></div>
+              <div
+                class="item img-fluid"
+                style="background-image: url(assets/imgs/cards/aboutbg.png)"
+              ></div>
+              <div
+                class="item img-fluid"
+                style="background-image: url(assets/imgs/cards/carosal1.png)"
+              ></div>
+              <div
+                class="item img-fluid"
+                style="background-image: url(assets/imgs/cards/aboutbg.png)"
+              ></div>
+              <!-- <button id="next">></button>
+          <button id="prev"><</button> -->
+            </div>
+            </div>
+          
           </div>
-          <div class="slider transforming-vision">
-            <div
-              class="item img-fluid"
-              style="background-image: url(assets/imgs/cards/card1.png)"
-            ></div>
-            <div
-              class="item img-fluid"
-              style="background-image: url(assets/imgs/cards/card2.png)"
-            ></div>
-            <div
-              class="item img-fluid"
-              style="background-image: url(assets/imgs/cards/card3.png)"
-            ></div>
-            <div
-              class="item img-fluid"
-              style="background-image: url(assets/imgs/cards/carosal1.png)"
-            ></div>
-            <div
-              class="item img-fluid"
-              style="background-image: url(assets/imgs/cards/aboutbg.png)"
-            ></div>
-            <div
-              class="item img-fluid"
-              style="background-image: url(assets/imgs/cards/carosal1.png)"
-            ></div>
-            <div
-              class="item img-fluid"
-              style="background-image: url(assets/imgs/cards/aboutbg.png)"
-            ></div>
-            <!-- <button id="next">></button>
-        <button id="prev"><</button> -->
-          </div>
-        </div>
+          
+        
       </section>
 
       <!-- #section 6 -->
 
       <section id="tranding" class="position-relative reveal">
         <!-- heaad texts -->
-        <div class="container-auto flex-center bg-transparent">
+        <div class="container-auto flex-center space-y-6 bg-transparent">
           <h2 class="text-center text-style">What people say</h2>
-          <small class="text-center" style="color: #ffff">
+          <p class="text-center para-home" style="color: #ffff">
             Et quis lacus eros pellentesque sed maecenas nulla faucibus
             facilisis. Interdum faucibus sit venenatis id ac enim. Habitasse ut
             enim condimentum varius. Libero mauris tellus sit
-          </small>
+          </p>
         </div>
         <!-- heaad texts ends-->
 
         <div class="d-flex justify-content-center align-items-center">
-          <div class="overflow-hidden" style="width: 1170px">
+          <div class="overflow-hidden" style="width: 1199px">
             <div class="swiper tranding-slider">
               <div class="swiper-wrapper position-relative">
                 <!-- Slide-start -->
@@ -1096,10 +1213,10 @@ first
               </div>
 
               <div class="tranding-slider-control">
-                <div class="swiper-button-prev slider-arrow">
+                <div class="swiper-button-prev slider-arrow d-md-block d-none">
                   <i class="bi bi-caret-left"></i>
                 </div>
-                <div class="swiper-button-next slider-arrow">
+                <div class="swiper-button-next slider-arrow d-md-block d-none">
                   <i class="bi bi-caret-right"></i>
                 </div>
 
@@ -1135,76 +1252,7 @@ first
 
       <!-- #section 7 -->
 
-      <section class="section-clintes reveal position-relative overflow-hidden">
-        <div
-          class="shadow_bubble shadow_bubble_1 position-absolute"
-          style="
-            top: 50%;
-            right: -10%;
-            width: 150px;
-            height: 150px;
-            overflow: hidden;
-          "
-        ></div>
-        <div class="flex-center">
-          <span class="text-style flex-center text-center">
-            Unveiling Success Stories: <br />
-            Our Client Gallery of Innovation
-          </span>
-        </div>
-        <div class="">
-          <div class="slider_brands">
-            <div class="slider_track">
-              <div class="slide">
-                <img src="assets/imgs/brands/Group 474.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Group 475.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Group 476.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/image 10.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Layer_1-1.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Layer_1.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Rectangle.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Group 474.svg" alt="" />
-              </div>
-              <!-- repeat 8  -->
-              <div class="slide">
-                <img src="assets/imgs/brands/Group 475.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Group 476.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/image 10.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Layer_1-1.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Layer_1.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Rectangle.svg" alt="" />
-              </div>
-              <div class="slide">
-                <img src="assets/imgs/brands/Group 474.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       <!-- #section 8 -->
       <section class="py-5 container w-100 mx-auto position-relative reveal">
@@ -1229,35 +1277,35 @@ first
               style="padding: 2rem 5rem text-head-sm"
             >
               <!-- design card 1 -->
-              <div class="design text-start fw-lighter">
-                <div class="mb-3"><h3>Meet Our Team</h3></div>
+              <div class="design text-start ">
+                <div class="mb-3 para-head"><p>Meet Our Team</p></div>
                 <div class="mb-3">
-                  <small class="" style=""
+                  <p class="" style=""
                     >At [Startup Name], we're driven by a shared commitment to
                     innovation, integrity, and making a positive impact on the
-                    world." "</small
+                    world." "</p
                   >
                 </div>
                 <div>
-                  <a href=""
+                  <a href="contactUs.html" class="para-home"
                     >Learn more <i class="fa-light fa fa-arrow-right"></i
                   ></a>
                 </div>
               </div>
 
               <!-- design card 2  -->
-              <div class="design text-start fw-lighter">
-                <div class="mb-3"><h3>Our expertise</h3></div>
+              <div class="design text-start ">
+                <div class="mb-3 para-head"><p>Our expertise</p></div>
                 <div class="mb-3">
-                  <small
+                  <p
                     >At [Startup Name], we're driven by a shared commitment to
                     innovation, integrity, and making a positive impact on the
-                    world." "</small
+                    world." "</p
                   >
                 </div>
                 <!-- Added mb-3 class for bottom margin -->
                 <div>
-                  <a href=""
+                  <a href="contactUs.html" class="para-home"
                     >Learn more <i class="fa-light fa fa-arrow-right"></i
                   ></a>
                 </div>
@@ -1265,38 +1313,38 @@ first
 
               <!-- design card 3  -->
 
-              <div class="design text-start fw-lighter">
-                <div class="mb-3"><h3>Join our team</h3></div>
+              <div class="design text-start ">
+                <div class="mb-3 para-head"><p>Join our team</p></div>
                 <!-- Added mb-3 class for bottom margin -->
                 <div class="mb-3">
-                  <small class="fw-lighter"
+                  <p class=""
                     >At [Startup Name], we're driven by a shared commitment to
                     innovation, integrity, and making a positive impact on the
-                    world."</small
+                    world."</p
                   >
                 </div>
                 <!-- Added mb-3 class for bottom margin -->
                 <div>
-                  <a href=""
+                  <a href="contactUs.html" class="para-home"
                     >Learn more <i class="fa-light fa fa-arrow-right"></i
                   ></a>
                 </div>
               </div>
 
               <!-- design card 4  -->
-              <div class="design text-start fw-lighter">
-                <div class="mb-3"><h3>Our Purpose & Values</h3></div>
+              <div class="design text-start ">
+                <div class="mb-3"><p>Our Purpose & Values</p></div>
                 <!-- Added mb-3 class for bottom margin -->
                 <div class="mb-3">
-                  <small class="fw-lighter"
+                  <p class=""
                     >At [Startup Name], we're driven by a shared commitment to
                     innovation, integrity, and making a positive impact on the
-                    world."</small
+                    world."</p
                   >
                 </div>
                 <!-- Added mb-3 class for bottom margin -->
                 <div>
-                  <a href=""
+                  <a href="contactUs.html" class="para-home"
                     >Learn more <i class="fa-light fa fa-arrow-right"></i
                   ></a>
                 </div>
@@ -1336,17 +1384,18 @@ first
             <div class="d-flex flex-column">
               <div class="">
                 <span style="color: #ff8a00; font-size: clamp(10px, 6vw, 40px)"
-                >Where to Find Us:</span>
+                  >Where to Find Us:</span
+                >
               </div>
               <!-- ============= -->
-              <div class="">
+              <div class="mb-4">
                 <span style="color: #ff8a00; font-size: clamp(10px, 6vw, 40px)"
-                >Navigate Your Way?</span
-              >
+                  >Navigate Your Way?</span
+                >
               </div>
               <!-- ============= -->
               <div class="d-flex flex-column">
-                <span class="mb-4 text-black fw-bold">Contact</span>
+                <span class=" text-black fw-bold">Contact</span>
               </div>
               <div class="">
                 <ul class="list-unstyled my-1">
@@ -1395,38 +1444,36 @@ first
             </div>
           </div>
           <!-- map section starts -->
-          <div class="col-md-7  g-0 map-sec">
+          <div class="col-md-7 g-0 map-sec">
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.154298471097!2d75.934691074095!3d11.32940824875246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba643000c7d3771%3A0x9463d4507015c114!2sHaash%20india%20exports%20private%20limited!5e1!3m2!1sen!2sin!4v1714564975445!5m2!1sen!2sin"
-            width="100%"
-            height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.154298471097!2d75.934691074095!3d11.32940824875246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba643000c7d3771%3A0x9463d4507015c114!2sHaash%20india%20exports%20private%20limited!5e1!3m2!1sen!2sin!4v1714564975445!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-
         </div>
-  </section>
+      </section>
 
       <!-- #footer -->
       <!-- #footer -->
-      <footer class="container footer" >
+      <footer class="container footer">
         <div class="row">
-          <div class="col-md-1">
+          <div class="col-md-1 footer_image">
             <img
               src="assets/imgs/logo/haashlogofooter.png"
               alt="footer logo"
               class="mx-auto mb-5"
-              width="100"
             />
           </div>
           <div class="col-md-3"></div>
           <!-- <div class="col-md-4"></div> -->
           <div class="col-md-3 g-0">
             <!-- <h3 class="text-start mb-4">Address</h3> -->
-            <address class="footer_items">
+            <address class="footer_items ">
               <span> Odio cradle 1, kambanimukku <br /></span>
               <span>koduvally Road Exit-2, <br /></span>
               <span>Malayamma PO, NIT Campus, <br /></span>
@@ -1435,7 +1482,7 @@ first
           </div>
           <div class="col-md-2 g-0">
             <!-- <h3 class="text-start mb-4">Address</h3> -->
-            <address class="footer_items">
+            <address class="footer_items ">
               <span>603, -D Block - <br /></span>
               <span>Horizon Towers <br /></span>
               <span>Al Rashidiya 1, <br /></span>
@@ -1447,7 +1494,7 @@ first
             <h3 class="text-start mb-4 text-white">Company</h3>
             <ul class="list-unstyled">
               <li>
-                <a href="aboutUs.html" class="text-decoration-none footer_items"
+                <a href="aboutUs.html" class="text-decoration-none footer_items "
                   >About Us</a
                 >
               </li>
@@ -1455,20 +1502,20 @@ first
               <li>
                 <a
                   href="services.html"
-                  class="text-decoration-none footer_items"
+                  class="text-decoration-none footer_items "
                   >Services</a
                 >
               </li>
 
               <li>
-                <a href="career.html" class="text-decoration-none footer_items"
+                <a href="career.html" class="text-decoration-none footer_items "
                   >Career</a
                 >
               </li>
               <li>
                 <a
                   href="contactUs.html"
-                  class="text-decoration-none footer_items"
+                  class="text-decoration-none footer_items "
                   >Contact Us</a
                 >
               </li>
@@ -1479,22 +1526,22 @@ first
             <h3 class="text-start mb-4 text-white">Services</h3>
             <ul class="list-unstyled">
               <li>
-                <a href="#" class="text-decoration-none footer_items"
+                <a href="#" class="text-decoration-none footer_items "
                   >Ui/ux design</a
                 >
               </li>
               <li>
-                <a href="#" class="text-decoration-none footer_items"
+                <a href="#" class="text-decoration-none footer_items "
                   >Web development</a
                 >
               </li>
               <li>
-                <a href="#" class="text-decoration-none footer_items"
+                <a href="#" class="text-decoration-none footer_items "
                   >App development</a
                 >
               </li>
               <li>
-                <a href="#" class="text-decoration-none footer_items"
+                <a href="#" class="text-decoration-none footer_items "
                   >E-commerce</a
                 >
               </li>
@@ -1504,13 +1551,13 @@ first
         <!-- foot -->
         <div class="row">
           <div class="col-md-2">
-            <span class="text-start mt-4 footer_items fs-5">
+            <span class="text-start mt-4 footer_items  fs-5">
               @2024 all rights are reserved
             </span>
           </div>
 
           <div class="col-md">
-            <span class="text-start mt-4 footer_items fs-5"
+            <span class="text-start mt-4 footer_items  fs-5"
               >Terms of services | Privacy policy</span
             >
           </div>
