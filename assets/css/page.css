@@ -91,8 +91,9 @@
 }
 /* ===== services.html page  ======= */
 .flotingimage {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
+  z-index: -1;
 }
 .flotingimage_1 {
   top: 50%;
@@ -165,9 +166,9 @@
     width: 90%;
   }
 
-  .section-service {
-    height: 70vh;
-  }
+  /* .section-service {
+    height: 100%;
+  } */
   .ourServices-page_cards_col {
     display: flex;
     justify-content: center;
@@ -176,5 +177,13 @@
   .ourServices-page_cards .ourServices-page_cards_right {
     width: 90%;
     margin-bottom: 2rem;
+  }
+  .flotingimage_1 {
+    top: 20%;
+    left: 0;
+  }
+  .flotingimage_2 {
+    top: 60%;
+    right: 0;
   }
 }

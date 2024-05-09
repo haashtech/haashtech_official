@@ -683,6 +683,12 @@ place-items:  center;
     border-radius: 10px;
   }
 }
+footer .row{
+  padding-left: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+ 
+}
 
 @media only screen and (max-width: 991px) {
   .sidebar {
@@ -708,9 +714,12 @@ place-items:  center;
     width: 350px;
     height: 350px;
   }
+  
   footer .row{
     padding-left: 2rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
+   
   }
   .map-sec{
     height: 300px;
