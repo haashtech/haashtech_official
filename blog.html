@@ -35,15 +35,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- md modal -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <link rel="stylesheet" href="assets/css/cardCarousal.css" />
-    <link rel="stylesheet" href="assets/css/carousal2.css" />
     <link rel="stylesheet" href="assets/css/preloader.css" />
+    <link rel="stylesheet" href="assets/css/page.css" />
     <link
       rel="icon"
       href="assets/imgs/logo/haashlogo.png"
@@ -56,145 +55,250 @@
     <div class="preloader"></div>
 
     <!-- ********Header******** -->
-    <nav
-      class="navbar navbar-expand-lg vw-100 navbar-dark fixed-top py-3 px-md-0 px-3"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="assets/imgs/logo/haashlogo.png"
-            alt="Haash Technologies"
-            class="w-50"
-          />
-        </a>
-        <button
-          class="navbar-toggler shadow-none border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas sidebar offcanvas-start"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <a href="/" class="offcanvas-title" id="offcanvasNavbarLabel">
+    <div id="navbar_include"></div>
+    <script>
+      $("#navbar_include").load("navbar.html");
+    </script>
+    <style>
+      .card {
+        border-radius: 15px;
+        border: none;
+      }
+      .card-img-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .card-footer {
+        border-top: none;
+        background-color: white;
+      }
+      .btn {
+        border-radius: 0;
+        padding: 0.7rem 1rem;
+      }
+      /* Add this CSS to your custom stylesheet */
+      .btn:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    </style>
+    <main>
+      <!-- blog cards section -->
+      <section class="container" style="margin-top: 13rem">
+        <div class="my-5 text-center text-white">
+          <h1>Blog</h1>
+        </div>
+        <div class="row listBlog row-cols-1 row-cols-md-3 row-cols-sm-2 g-4">
+          <!-- <div class="col">
+            <div class="card h-100">
               <img
-                src="assets/imgs/logo/haashlogo.png"
-                alt="Haash Technologies"
-                class="w-50"
+                src="assets/imgs/blogs/Rectangle 111.svg"
+                class="card-img-top"
+                alt="blog-cards"
               />
-            </a>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
+
+              <div class="card-body pb-0">
+               
+                <div class="my-2 d-flex gap-3">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-person-fill"></i> Name
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-calendar-fill"></i> Date ago
+                  </div>
+                </div>
+                <div class="my-4">
+                  <h5 class="card-title para-head">
+                    Top Mobile app development trends 2024
+                  </h5>
+                  <p class="card-text para-home text-sub-color">
+                    Elevate your digital presence with us. Explore UI/UX design,
+                    software development, and branding services tailored to your
+                    needs.
+                  </p>
+                </div>
+              </div>
+             
+              <div
+                class="card-body pt-0 d-flex justify-content-between align-items-center"
+              >
+                <button
+                  class="btn bg-black text-white d-flex align-items-center gap-2"
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="aboutUs.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="career.html">Career</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="contactUs.html">Contact</a>
-              </li>
-            </ul>
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </button>
+                <button class="border-0 bg-transparent">
+                  <i class="bi bi-share-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          -->
+
+          <!-- 2nd 3 cards below -->
+         
+        </div>
+      </section>
+
+      <section class="container text-center py-25 mx-auto reveal">
+        <h3
+          class="text-gray-600 font-bold text-style tracking-wider"
+          style="font-size: clamp(10px, 6vw, 60px)"
+        >
+          Get started now!
+        </h3>
+        <p class="para-home">It takes less than a minute of your time.</p>
+        <br />
+        <div class="w-100 d-flex align-items-center justify-content-center">
+          <a
+            href="contactUs.html"
+            class="p-3 px-4 d-flex align-items-center justify-content-center gap-3 text-black btn mt-4 para-home"
+            style="background-color: #fabd64"
+            >Request a quote <i class="fa-light fa fa-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- #section 9 -->
+      <section class="bg-white my-2 w-100 overflow-hidden">
+        <div class="row overflow-hidden">
+          <div class="col-md-1"></div>
+          <div class="col-md-4 py-5 ms-md-0 ms-5">
+            <div class="d-flex flex-column">
+              <div class="">
+                <span style="color: #ff8a00; font-size: clamp(10px, 6vw, 40px)"
+                  >Where to Find Us:</span
+                >
+              </div>
+              <!-- ============= -->
+              <div class="mb-4">
+                <span style="color: #ff8a00; font-size: clamp(10px, 6vw, 40px)"
+                  >Navigate Your Way?</span
+                >
+              </div>
+              <!-- ============= -->
+              <div class="d-flex flex-column">
+                <span class="text-black fw-bold">Contact</span>
+              </div>
+              <div class="">
+                <ul class="list-unstyled my-1">
+                  <li>
+                    <a
+                      href="tel:9846 012 078"
+                      class="text-decoration-none footer_items"
+                      >9846 012 078</a
+                    >
+                    <a
+                      href="tel:+971566494903"
+                      class="text-decoration-none footer_items"
+                      >, +97 1566 494 903</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:info@haash.tech"
+                      class="text-decoration-none footer_items"
+                      >info@haash.tech</a
+                    >
+                  </li>
+                  <li>
+                    <ul
+                      class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2"
+                    >
+                      <li>
+                        <a href="https://www.instagram.com/odio_fashion/"
+                          ><i class="fa-brands fa-square-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href=""> <i class="fa-brands fa-x-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- ================= -->
+            </div>
+          </div>
+          <!-- map section starts -->
+          <div class="col-md-7 g-0 map-sec">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.154298471097!2d75.934691074095!3d11.32940824875246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba643000c7d3771%3A0x9463d4507015c114!2sHaash%20india%20exports%20private%20limited!5e1!3m2!1sen!2sin!4v1714564975445!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
-      </div>
-    </nav>
+      </section>
 
-
-
-
-        <main class="bg-black">
-
-
-
-
-
-
-          <section class="container text-center py-25 mx-auto">
-            <h3
-              class="text-gray-600 font-bold text-style tracking-wider"
-              style="font-size: clamp(10px, 6vw, 60px)"
-            >
-              Get started now!
-            </h3>
-            <small class="text-sm-size"
-              >It takes less than a minute of your time.</small
-            >
-            <br />
-            <div class="w-100 d-flex align-items-center justify-content-center">
-              <a
-                href="contactUs.html"
-                class="p-3 px-4 d-flex align-items-center justify-content-center gap-3 text-black btn mt-4 text-sm-size"
-                style="background-color: #fabd64"
-                >Request a quote <i class="fa-light fa fa-arrow-right"></i
-              ></a>
-            </div>
-          </section>
-                 <!-- #footer -->
-      <footer class="container pb-3 py-24">
+      <!-- #footer -->
+      <footer class="container footer">
         <div class="row">
-          <div class="col-md-1">
+          <div class="col-md-1 footer_image">
             <img
               src="assets/imgs/logo/haashlogofooter.png"
               alt="footer logo"
               class="mx-auto mb-5"
             />
           </div>
-          <div class="col-md-4"></div>
-          <div class="col-md-3">
+          <div class="col-md-3"></div>
+          <!-- <div class="col-md-4"></div> -->
+          <div class="col-md-3 g-0">
             <!-- <h3 class="text-start mb-4">Address</h3> -->
             <address class="footer_items">
-              <span>Haashtech Private Limited,</span><br />
-              <span>#208, 2nd Floor,</span><br />
-              <span>Nit Calicut West,</span><br />
-              <span>Shankar Nagar Road, Kattangal,</span><br />
-              <span>Kozhikode, Kerala,</span><br />
-              <span>India - 682304</span>
+              <span> Odio cradle 1, kambanimukku <br /></span>
+              <span>koduvally Road Exit-2, <br /></span>
+              <span>Malayamma PO, NIT Campus, <br /></span>
+              <span>Kozhikode, Kerala - 673601</span>
+            </address>
+          </div>
+          <div class="col-md-2 g-0">
+            <!-- <h3 class="text-start mb-4">Address</h3> -->
+            <address class="footer_items">
+              <span>603, -D Block - <br /></span>
+              <span>Horizon Towers <br /></span>
+              <span>Al Rashidiya 1, <br /></span>
+              <span>Ajman, UAE</span>
             </address>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-1">
             <h3 class="text-start mb-4 text-white">Company</h3>
             <ul class="list-unstyled">
               <li>
-                <a href="aboutUs.html" class="text-decoration-none footer_items"
-                  >About</a
+                <a href="index.html" class="text-decoration-none footer_items"
+                  >Home</a
                 >
               </li>
+
               <li>
-                <a href="#Contact" class="text-decoration-none footer_items"
-                  >Contact Us</a
-                >
-              </li>
-              <li>
-                <a href="#Services" class="text-decoration-none footer_items"
+                <a
+                  href="services.html"
+                  class="text-decoration-none footer_items"
                   >Services</a
+                >
+              </li>
+
+              <li>
+                <a href="career.html" class="text-decoration-none footer_items"
+                  >Career</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contactUs.html"
+                  class="text-decoration-none footer_items"
+                  >Contact Us</a
                 >
               </li>
             </ul>
@@ -227,7 +331,7 @@
           </div>
         </div>
         <!-- foot -->
-        <div class="row py-5 pb-5">
+        <div class="row">
           <div class="col-md-2">
             <span class="text-start mt-4 footer_items fs-5">
               @2024 all rights are reserved
@@ -241,31 +345,93 @@
           </div>
         </div>
       </footer>
-        </main>
+    </main>
 
+    <!--  *** scripts **** -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scrollYanime.js"></script>
+    <!-- <script src="assets/js/blogCards.js"></script> -->
 
-      <!--  *** scripts **** -->
-      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/scrollYanime.js"></script>
-  
-      <script>
-        window.addEventListener("load", () => {
-          const loader = document.querySelector(".preloader");
-          loader.classList.add("preloader-hidden");
-          loader.addEventListener("transitionend", () => {
-            document.body.removeChild(loader);
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".preloader");
+        loader.classList.add("preloader-hidden");
+        loader.addEventListener("transitionend", () => {
+          document.body.removeChild(loader);
+        });
+      });
+    </script>
+    <script>
+      $(window).scroll(function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("glass");
+        } else {
+          $("nav").removeClass("glass");
+        }
+      });
+    </script>
+    <script>
+      let blogs = null;
+      fetch("blog.json")
+        .then((res) => res.json())
+        .then((data) => {
+          blogs = data;
+          console.log(blogs);
+          addDataToHTML();
+        });
+        // addd data to html
+        let listBlog = document.querySelector('.listBlog');
+        function addDataToHTML(){
+          blogs.forEach(blog => {
+            let newBlog = document.createElement('a')
+            newBlog.href = '/details.html?id=' + blog.id;
+            newBlog.classList.add('col');
+            newBlog.innerHTML = `
+            <div class="card h-100">
+              <img
+                src="${blog.image}"
+                class="card-img-top"
+                alt="${blog.title}"
+              />
+
+              <div class="card-body pb-0">
+                <!-- card top -->
+                <div class="my-2 d-flex gap-3">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-person-fill"></i> ${blog.name}
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-calendar-fill"></i> ${blog.date}
+                  </div>
+                </div>
+                <div class="my-4">
+                  <h5 class="card-title para-head">
+                    ${blog.title}
+                  </h5>
+                  <p class="card-text para-home text-sub-color  text-truncate ">
+                    ${blog.topic}
+                  </p>
+                </div>
+              </div>
+              <!-- card footer -->
+              <div
+                class="card-body pt-0 d-flex justify-content-between align-items-center"
+              >
+                <button
+                  class="btn bg-black text-white d-flex align-items-center gap-2"
+                >
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </button>
+                <button class="border-0 bg-transparent">
+                  <i class="bi bi-share-fill"></i>
+                </button>
+              </div>
+            </div>
+            `
+            listBlog.appendChild(newBlog);
           });
-        });
-      </script>
-      <script>
-        $(window).scroll(function () {
-          if ($(window).scrollTop()) {
-            $("nav").addClass("glass");
-          } else {
-            $("nav").removeClass("glass");
-          }
-        });
-      </script>
-    </body>
-  </html>
+        }
+    </script>
+  </body>
+</html>

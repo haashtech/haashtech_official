@@ -31,6 +31,8 @@
       href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
@@ -48,25 +50,30 @@
       type="image/x-icon"
     />
     <title>Haash || Contact Us</title>
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".preloader");
+        loader.classList.add("preloader-hidden");
+        loader.addEventListener("transitionend", () => {
+          document.body.removeChild(loader);
+        });
+      });
+    </script>
   </head>
   <body>
     <style>
-
       .form-control {
-        background-color: #6a6a6a;
+        background-color: #6a6a6a !important;
         border: none;
-        color: white; 
-        &&:focus{
-          outline: none !important;
-          box-shadow: none !important;
-          background-color: #6a6a6a;
-        color: white; 
-        }
+        color: white;
+        outline: none !important;
+        box-shadow: none !important;
       }
-      
+
       .form-control::placeholder {
-        color: #8E8E8E; /* Placeholder text color */
+        color: #8e8e8e; /* Placeholder text color */
       }
+
       .submit-button {
         color: white;
         padding: 1rem 5rem;
@@ -93,77 +100,18 @@
     <div class="preloader"></div>
 
     <!-- ********Header******** -->
-    <nav
-    class="navbar navbar-expand-lg vw-100 navbar-dark fixed-top py-3 px-md-0 px-3"
-  >
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img
-          src="assets/imgs/logo/haashlogo.png"
-          alt="Haash Technologies"
-          class=""
-        />
-      </a>
-      <button
-        class="navbar-toggler shadow-none border-0"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="offcanvas sidebar offcanvas-start"
-        tabindex="-1"
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-      >
-        <div class="offcanvas-header">
-          <a href="/" class="offcanvas-title" id="offcanvasNavbarLabel">
-            <img
-              src="assets/imgs/logo/haashlogo.png"
-              alt="Haash Technologies"
-              class="w-50"
-            />
-          </a>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="aboutUs.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="career.html">Career</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="contactUs.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
+    <div id="navbar_include"></div>
+    <script>
+      $("#navbar_include").load("navbar.html");
+    </script>
 
-    <main >
+    <main>
       <!-- #section 1 -->
 
-      <section class="container py-25 position-relative h-100-min"  id="contact-section">
+      <section
+        class="container py-25 position-relative h-100-min"
+        id="contact-section"
+      >
         <div class="shadow_bubble_contact shadow_bubble_contact_1"></div>
         <div
           class="shadow_bubble shadow_bubble_contact d-md-block d-none overflow-hidden"
@@ -173,23 +121,25 @@
           <h3 class="fs-3">Contact Us</h3>
           <br />
         </div>
-        <div class="row ">
-          <div class="col-lg-5 mb-md-0 mb-5 d-flex justify-content-lg-start  justify-content-center  align-items-lg-start align-items-center flex-column" 
-         >
-            <span class="text-white text-center text-md-start">
-              <p>Get a quote;</p>
-            </span>
+        <div class="row">
+          <div
+            class="col-lg-5 mb-md-0 mb-5 d-flex justify-content-lg-start justify-content-center align-items-lg-start align-items-center flex-column"
+          >
+            <p class="text-white text-center text-md-start">
+              <p class="para-home">Get a quote;</p>
+            </p>
             <h3 class="text-style space-y-5">
               Discover Digital Transformation
             </h3>
-            <span class="text-sub-color w-75 mb-5">
+            <p class="text-sub-color para-home w-75 mb-5">
               Elevate your digital presence with us. Explore UI/UX <br />
               design, software development, and branding services tailored to
               your needs.
-            </span>
+            </p>
             <button class="button mt-5" id="downloadButton">
-              <span class="text fs-4"
-                >&#68;ownload company profile <i class="bi bi-download"></i></span>
+              <span class="text fs-4 para-home"
+                >&#68;ownload company profile <i class="bi bi-download"></i
+              ></span>
             </button>
 
             <div
@@ -199,7 +149,11 @@
                 <img src="assets/imgs/icons/message.png" alt="" />
                 <div class="">
                   <span class="fs-4 text-sub-color">Email</span>
-                  <h3 class="text-main fs-3"><a href="mailto:info@haash.tech" style="color: #FFBE6C;">info@haash.tech</a></h3>
+                  <h3 class="text-main fs-3">
+                    <a href="mailto:info@haash.tech" style="color: #ffbe6c"
+                      >info@haash.tech</a
+                    >
+                  </h3>
                 </div>
               </div>
               <!-- 2nd -->
@@ -208,7 +162,9 @@
                 <div class="">
                   <span class="fs-4 text-sub-color">Whatsapp only</span>
                   <h3 class="text-main fs-3">
-                    <a href="tel:+971566494903" class="" style="color: #FFBE6C;">+971 1566 494 903</a>
+                    <a href="tel:+971566494903" class="" style="color: #ffbe6c"
+                      >+971 1566 494 903</a
+                    >
                   </h3>
                 </div>
               </div>
@@ -222,7 +178,7 @@
               method="POST"
               class="container glassbg p-"
               novalidate
-              style="padding: 3.5rem 2rem;"
+              style="padding: 3.5rem 2rem"
             >
               <input
                 type="hidden"
@@ -234,8 +190,8 @@
                   <label for="Firstname" class="text-white">First Name</label>
                   <input
                     type="text"
-                    class="form-control fs-4"
-                    style="outline: none;  padding: 1.3rem"
+                    class="form-control fs-4 text-white"
+                    style="outline: none; padding: 1.3rem"
                     id="Firstname"
                     name="Firstname"
                     placeholder="First Name"
@@ -247,7 +203,7 @@
                   <input
                     type="text"
                     class="form-control fs-4"
-                    style="outline: none;  padding: 1.3rem"
+                    style="outline: none; padding: 1.3rem"
                     id="Lastname"
                     name="Lastname"
                     placeholder="Last Name"
@@ -264,10 +220,7 @@
                   <input
                     type="tel"
                     class="form-control fs-4 w-100"
-                    style="
-                      outline: none;
-                      padding: 1.3rem 0rem 1.3rem 5rem;
-                    "
+                    style="outline: none; padding: 1.3rem 0rem 1.3rem 5rem"
                     name="phone"
                     id="phone"
                     placeholder="Phone Number"
@@ -280,7 +233,7 @@
                   <input
                     type="email"
                     class="form-control fs-4 w-100"
-                    style="outline: none;  padding: 1.3rem"
+                    style="outline: none; padding: 1.3rem"
                     id="email"
                     name="Email"
                     placeholder="Email"
@@ -294,7 +247,7 @@
                 <input
                   type="text"
                   class="form-control fs-4"
-                  style="outline: none;  padding: 1.3rem"
+                  style="outline: none; padding: 1.3rem"
                   id="cbname"
                   name="Company Name"
                   placeholder="Company Name"
@@ -330,17 +283,18 @@
                 >
                   Submit
                 </button> -->
-                 <!-- ====== -->
-                 <button  class="submit-button fs-3 button"
-                 id="form-submit"
-                 type="submit">
+                <!-- ====== -->
+                <button
+                  class="submit-button fs-3 button"
+                  id="form-submit"
+                  type="submit"
+                >
                   <span class="text fs-4"></span>
-                  Submit </span>
+                  Submit
                 </button>
-                <br>
-                
+                <br />
               </div>
-              <div id="result" class="text-success mt-2 float-end "></div>
+              <div id="result" class="text-success mt-2 float-end"></div>
             </form>
           </div>
         </div>
@@ -364,7 +318,7 @@
               </div>
               <!-- ============= -->
               <div class="d-flex flex-column">
-                <span class=" text-black fw-bold">Contact</span>
+                <span class="text-black fw-bold">Contact</span>
               </div>
               <div class="">
                 <ul class="list-unstyled my-1">
@@ -438,32 +392,30 @@
           </div>
           <div class="col-md-3"></div>
           <!-- <div class="col-md-4"></div> -->
-          <div class="col-md-3  g-0">
+          <div class="col-md-3 g-0">
             <!-- <h3 class="text-start mb-4">Address</h3> -->
             <address class="footer_items">
-              <span> Odio cradle 1, kambanimukku <br></span>
-              <span>koduvally Road Exit-2, <br></span>
-              <span>Malayamma PO, NIT Campus, <br></span>
+              <span> Odio cradle 1, kambanimukku <br /></span>
+              <span>koduvally Road Exit-2, <br /></span>
+              <span>Malayamma PO, NIT Campus, <br /></span>
               <span>Kozhikode, Kerala - 673601</span>
             </address>
           </div>
           <div class="col-md-2 g-0">
             <!-- <h3 class="text-start mb-4">Address</h3> -->
             <address class="footer_items">
-              <span>603, -D Block - <br></span>
-              <span>Horizon Towers <br></span>
-              <span>Al Rashidiya 1, <br></span>
+              <span>603, -D Block - <br /></span>
+              <span>Horizon Towers <br /></span>
+              <span>Al Rashidiya 1, <br /></span>
               <span>Ajman, UAE</span>
             </address>
           </div>
 
-          <div class="col-md-1  ">
+          <div class="col-md-1">
             <h3 class="text-start mb-4 text-white">Company</h3>
             <ul class="list-unstyled">
               <li>
-                <a
-                  href="index.html"
-                  class="text-decoration-none footer_items"
+                <a href="index.html" class="text-decoration-none footer_items"
                   >Home</a
                 >
               </li>
@@ -472,21 +424,20 @@
                   >About</a
                 >
               </li>
-             
+
               <li>
-                <a href="services.html" class="text-decoration-none footer_items"
+                <a
+                  href="services.html"
+                  class="text-decoration-none footer_items"
                   >Services</a
                 >
               </li>
 
               <li>
-                <a
-                  href="career.html"
-                  class="text-decoration-none footer_items"
+                <a href="career.html" class="text-decoration-none footer_items"
                   >Career</a
                 >
               </li>
-              
             </ul>
           </div>
 
@@ -534,25 +485,15 @@
     </main>
 
     <!--  *** scripts **** -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/download.js"></script>
     <script src="phone-number-validation/build-valid/js/intlTelInput.js"></script>
     <script src="assets/js/download.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/js/scrollYanime.js"></script>
     <script src="assets/js/formValidation.js"></script>
-    
 
     <script>
-      window.addEventListener("load", () => {
-        const loader = document.querySelector(".preloader");
-        loader.classList.add("preloader-hidden");
-        loader.addEventListener("transitionend", () => {
-          document.body.removeChild(loader);
-        });
-      });
-
       // window.addEventListener("resize", () => {
       //   adjustSectionHeight();
       // });
@@ -575,6 +516,5 @@
         preferredCountries: ["us", "gb", "in", "au"], // Specify the preferred countries
       });
     </script>
-
   </body>
 </html>

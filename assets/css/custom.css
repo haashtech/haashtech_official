@@ -136,8 +136,7 @@ a {
 }
 .para-home{
   font-weight: 100;
-  font-size: clamp(7px, 3vw, 20px);
-  color: white;
+  font-size: clamp(9px, 3vw, 20px);
 }
 .para-head{
   font-weight: 500;
@@ -146,8 +145,7 @@ a {
 .para{
   width: 70%;
   font-weight: 100;
-  font-size: clamp(7px, 3vw, 20px);
-  color: white;
+  font-size: clamp(9px, 3vw, 20px);
 }
 .sction-missions .para{
   text-align: justify;
@@ -210,7 +208,7 @@ color: white;
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
-  font-size: clamp(40px, 6vw, 60px);
+  font-size: clamp(30px, 6vw, 60px);
   /* line-height: 100%; */
   letter-spacing: -0.01em;
   text-transform: capitalize;
@@ -225,7 +223,7 @@ color: white;
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
-  font-size: clamp(40px, 6vw, 60px);
+  font-size: clamp(30px, 6vw, 60px);
   /* line-height: 100%; */
   letter-spacing: -0.01em;
   text-transform: capitalize;
@@ -491,6 +489,10 @@ color: white;
     padding-top: 5rem /* 96px */;
   padding-bottom: 5rem 
   }
+  
+.navbar .navbar-brand img{
+  width: 50%;
+}
   /* .accordion-part {
     width: 100%;
     padding: 1rem 0 2rem 0;
