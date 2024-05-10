@@ -1,56 +1,96 @@
 [
-    {
-        "id":1,
-        "image":"/assets/imgs/blogs/Rectangle 111.svg",
-        "name":"Name",
-        "date":"date",
-        "title":" 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
-        "topic":"The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
-        
-    },
-    {
-        "id":2,
-        "image":"/assets/imgs/blogs/Rectangle 111.svg",
-        "name":"Name",
-        "date":"date",
-        "title":" 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
-        "topic":"The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
-        
-    },
-    {
-        "id":3,
-        "image":"/assets/imgs/blogs/Rectangle 111.svg",
-        "name":"Name",
-        "date":"date",
-        "title":" 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
-        "topic":"The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
-        
-    },
-    {
-        "id":4,
-        "image":"/assets/imgs/blogs/Rectangle 111.svg",
-        "name":"Name",
-        "date":"date",
-        "title":" 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
-        "topic":"The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
-        
-    },
-    {
-        "id":5,
-        "image":"/assets/imgs/blogs/Rectangle 111.svg",
-        "name":"Name",
-        "date":"date",
-        "title":" 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
-        "topic":"The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
-        
-    },
-    {
-        "id":6,
-        "image":"/assets/imgs/blogs/Rectangle 111.svg",
-        "name":"Name",
-        "date":"date",
-        "title":" 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
-        "topic":"The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
-        
-    }
+  {
+    "id": 1,
+    "image": "/assets/imgs/blogs/Rectangle 111.svg",
+    "name": "Name",
+    "date": "date",
+    "title": " 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
+    "content": "The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results.",
+    "topics": [
+      {
+        "no": 1,
+        "subtitle": "Prioritizing User Experience (UX)",
+        "discription": "UX is no longer a trend; it's the foundation of successful websites.  In 2024, expect to see an even greater emphasis on creating intuitive and user-friendly experiences. Here's what this translates to:",
+        "subTopics":[
+            {
+                "h3":"Simple and Clean Layouts:",
+                "paragraph":"Clean layouts with clear navigation and uncluttered visuals are paramount. It should be easy and quick for users to find what they're looking for. Mobile-First Design: With the ever-growing dominance of mobile browsing, a responsive design that adapts seamlessly across devices (desktops, tablets, and smartphones) is absolutely essential."
+            },
+            {
+                "h3":"Microinteractions: ",
+                "paragraph":"Subtle animations and interactions that respond to user input, like hover effects or smooth scrolling transitions, enhance the user experience and make the website feel more engaging."
+            }
+            ,
+            {
+                "h3":"SEO Benefits:",
+                "paragraph":"A website optimized for UX is also likely to be favored by search engines. Google prioritizes mobile-friendliness and user experience in its ranking algorithms."
+            }
+        ]
+      },
+      {
+        "no": 2,
+        "subtitle": "Storytelling Through Design",
+        "discription": "Websites are no longer just about displaying information. They are powerful storytelling tools. Here's how to leverage this potential:",
+        "subTopics":[
+            {
+                "h3":"Hero Images and Videos: ",
+                "paragraph":"Captivating visuals that evoke emotions and tell a story are key to grabbing attention in the first few seconds. Think high-quality photos, engaging videos, or even interactive elements."
+            },
+            {
+                "h3":"Compelling Content: ",
+                "paragraph":"Write clear, concise, and engaging content that speaks directly to your target audience. Use storytelling techniques to connect with users on an emotional level."
+            }
+            ,
+            {
+                "h3":"Interactive Elements: ",
+                "paragraph":"Incorporate interactive elements like quizzes, polls, or calculators to keep users engaged and actively participating in the experience."
+            },
+            {
+                "h3":"SEO Benefits: ",
+                "paragraph":"Compelling content that tells a story is more likely to be shared and linked to, boosting your website's search engine ranking."
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "/assets/imgs/blogs/Rectangle 111.svg",
+    "name": "Name",
+    "date": "date",
+    "title": " 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
+    "content": "The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
+  },
+  {
+    "id": 3,
+    "image": "/assets/imgs/blogs/Rectangle 111.svg",
+    "name": "Name",
+    "date": "date",
+    "title": " 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
+    "content": "The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
+  },
+  {
+    "id": 4,
+    "image": "/assets/imgs/blogs/Rectangle 111.svg",
+    "name": "Name",
+    "date": "date",
+    "title": " 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
+    "content": "The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
+  },
+  {
+    "id": 5,
+    "image": "/assets/imgs/blogs/Rectangle 111.svg",
+    "name": "Name",
+    "date": "date",
+    "title": " 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
+    "content": "The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
+  },
+  {
+    "id": 6,
+    "image": "/assets/imgs/blogs/Rectangle 111.svg",
+    "name": "Name",
+    "date": "date",
+    "title": " 2024 Website Design: Must-Haves for an Engaging and Future-Proof Online Presence",
+    "content": "The digital landscape is ever-evolving, and staying ahead of the curve in website design is crucial for businesses of all sizes. In 2024, user experience (UX), immersive storytelling, and a focus on accessibility are taking center stage. Here, we'll delve into the must-haves for crafting a website that not only looks stunning but also engages visitors and drives results."
+  }
 ]

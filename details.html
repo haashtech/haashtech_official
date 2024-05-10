@@ -48,7 +48,7 @@
       href="assets/imgs/logo/haashlogo.png"
       type="image/x-icon"
     />
-    <title>Haash || Blog</title>
+    <title></title>
     <script>
       window.addEventListener("load", () => {
         const loader = document.querySelector(".preloader");
@@ -60,6 +60,52 @@
     </script>
   </head>
   <body>
+    <style>
+      ol li::marker {
+        font-size: 30px;
+        color: white;
+      }
+      ul li {
+        list-style: none;
+      }
+      ol li ul {
+        padding-left: 0; /* Remove default padding from the left side of <ul> inside <li> */
+        margin-top: 0; /* Remove default margin from the top of <ul> inside <li> */
+      }
+      .title {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+      .subheading {
+        color: #ffd39c;
+      }
+      .discription {
+        color: #aaaaaa;
+      }
+      .subtitle {
+        color: white;
+      }
+      .detail {
+        position: relative;
+      }
+      .fixed {
+        position: fixed;
+        right: 2rem;
+        height: 100vh;
+      }
+      a{
+        color: white;
+      }
+      @media only screen and (max-width: 991px) {
+        .fixed {
+          position: unset; /* Remove fixed positioning */
+          right: auto; /* Remove right positioning */
+          height: auto; /* Reset height */
+        }
+      }
+    </style>
     <!-- ********preloader******** -->
     <div class="preloader"></div>
 
@@ -71,14 +117,12 @@
 
     <section class="container" style="margin-top: 13rem">
       <div class="row detail">
-        <div class="col-md-8 g-0 bg-info d-flex flex-column gap-3">
+        <div class="col-lg-8 g-0 d-flex flex-column gap-3">
           <div class="">
-            <h1>
-             
-            </h1>
+            <h1 class="title"></h1>
           </div>
           <!-- ============== -->
-          <div class="my-2 d-flex gap-3">
+          <div class="d-flex gap-3">
             <div class="d-flex gap-2">
               <i class="bi bi-person-fill"></i>
               <p class="name"></p>
@@ -94,10 +138,13 @@
           </div>
           <!-- ============ -->
           <div class="">
-            <p class="topic"></p>
+            <p class="content"></p>
+          </div>
+          <div class="">
+            <ol class="subTopic"></ol>
           </div>
         </div>
-        <div class="col-md-4 bg-primary">djfsdfksdkjfkj</div>
+        <div class="col-lg-4 bg-primary fixed otherTopics"></div>
       </div>
     </section>
 
@@ -116,6 +163,8 @@
 
       function showDetails() {
         let detail = document.querySelector(".detail");
+        let subTopicDiv = document.querySelector(".subTopic");
+
         let blogId = new URLSearchParams(window.location.search).get("id");
         let thisBlog = blogs.filter((value) => {
           return value.id == blogId;
@@ -126,10 +175,44 @@
         if (!thisBlog) {
           window.location.href = "/blog.html";
         }
+        document.title = "Haash ||" + thisBlog.title;
+        detail.querySelector(".title").innerHTML = thisBlog.title;
         detail.querySelector(".image img").src = thisBlog.image;
         detail.querySelector(".name").innerHTML = thisBlog.name;
         detail.querySelector(".date").innerHTML = thisBlog.date;
-        detail.querySelector(".topic").innerHTML = thisBlog.topic;
+        detail.querySelector(".content").innerHTML = thisBlog.content;
+        thisBlog.topics.forEach((topic) => {
+          let newSubTopic = document.createElement("li");
+          let subTopicsHTML = topic.subTopics
+            .map(
+              (sub) => `
+        <li>
+            <h3 class="subheading">${sub.h3}</h3>
+            <p>${sub.paragraph}</p>
+        </li>
+    `
+            )
+            .join(""); // Join the array of subtopics HTML strings
+
+          newSubTopic.innerHTML = `
+        <h2 class="subtitle">${topic.subtitle}</h2>
+        <p class="discription">${topic.discription}</p>
+        <ul>
+            ${subTopicsHTML}
+        </ul>
+    `;
+          subTopicDiv.appendChild(newSubTopic);
+        });
+        // ====================
+        let otherTopics = document.querySelector(".otherTopics");
+        blogs
+          .filter((value) => value.id != blogId)
+          .forEach((other) => {
+            let nextTopic = document.createElement("a");
+            nextTopic.href = "/details.html?id=" + other.id; // Change blog to other here
+            nextTopic.textContent = other.title; // Add text content to the link
+            otherTopics.appendChild(nextTopic);
+          });
       }
     </script>
   </body>

@@ -136,7 +136,6 @@
           -->
 
           <!-- 2nd 3 cards below -->
-         
         </div>
       </section>
 
@@ -380,14 +379,14 @@
           console.log(blogs);
           addDataToHTML();
         });
-        // addd data to html
-        let listBlog = document.querySelector('.listBlog');
-        function addDataToHTML(){
-          blogs.forEach(blog => {
-            let newBlog = document.createElement('a')
-            newBlog.href = '/details.html?id=' + blog.id;
-            newBlog.classList.add('col');
-            newBlog.innerHTML = `
+      // addd data to html
+      let listBlog = document.querySelector(".listBlog");
+      function addDataToHTML() {
+        blogs.forEach((blog) => {
+          let newBlog = document.createElement("a");
+          newBlog.href = "/details.html?id=" + blog.id;
+          newBlog.classList.add("col");
+          newBlog.innerHTML = `
             <div class="card h-100">
               <img
                 src="${blog.image}"
@@ -410,7 +409,7 @@
                     ${blog.title}
                   </h5>
                   <p class="card-text para-home text-sub-color  text-truncate ">
-                    ${blog.topic}
+                    ${blog.content}
                   </p>
                 </div>
               </div>
@@ -428,10 +427,10 @@
                 </button>
               </div>
             </div>
-            `
-            listBlog.appendChild(newBlog);
-          });
-        }
+            `;
+          listBlog.appendChild(newBlog);
+        });
+      }
     </script>
   </body>
 </html>
