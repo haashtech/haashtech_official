@@ -10,9 +10,6 @@ body {
   overflow-y: scroll;
   background-color: black;
 }
-section {
-  scroll-snap-align: start;
-}
 ::-webkit-scrollbar {
   width: 1rem;
 }
@@ -32,6 +29,9 @@ section {
 ::-webkit-scrollbar-track {
   /* background: #797979; */
 
+}
+section {
+  scroll-snap-align: start;
 }
 :root {
   --transition: 0.25s;

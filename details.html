@@ -94,9 +94,15 @@
         color: white;
       }
       .fixed {
-        position: fixed;
+        position: sticky;
+        top: 13rem;
         right: 2rem;
         height: 100vh;
+        border-left: 1px solid #fff;
+      }
+      .fixed h2{
+        font-size: 1rem;
+        color: white;
       }
       a {
         color: white;
@@ -126,7 +132,7 @@
 
     <section class="container" style="margin-top: 13rem">
       <div class="row detail">
-        <div class="col-lg-8 g-0 d-flex flex-column gap-3">
+        <div class="col-lg-8 d-flex flex-column gap-3">
           <div class="">
             <h1 class="title"></h1>
           </div>
@@ -153,6 +159,7 @@
           <!-- ============ -->
           <div class="">
             <p class="content"></p>
+            <p class="secContent"></p>
           </div>
           <div class="">
             <ol class="subTopic"></ol>
@@ -162,7 +169,10 @@
             <p class="conclusion-text"></p>
           </div>
         </div>
-        <div class="col-lg-4 bg- fixed otherTopics"></div>
+        <!-- other topics -->
+          <div class="col-lg-4 fixed otherTopics">
+             <h3 class="pt-3 pb-5">Other topics</h3>
+          </div>
       </div>
     </section>
 
