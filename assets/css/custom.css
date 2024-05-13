@@ -45,7 +45,8 @@ a {
 }
 .footer_items {
   color: #757575;
-  font-size: 2rem;
+  font-size: clamp(10px, 3vw, 20px);
+
 }
 
 .h-25vh {
@@ -136,7 +137,7 @@ a {
 }
 .para-home{
   font-weight: 100;
-  font-size: clamp(9px, 3vw, 20px);
+  font-size: clamp(10px, 3vw, 20px);
 }
 .para-head{
   font-weight: 500;
@@ -145,7 +146,7 @@ a {
 .para{
   width: 70%;
   font-weight: 100;
-  font-size: clamp(9px, 3vw, 20px);
+  font-size: clamp(10px, 3vw, 20px);
 }
 .sction-missions .para{
   text-align: justify;

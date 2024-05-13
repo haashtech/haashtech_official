@@ -90,19 +90,28 @@
       .detail {
         position: relative;
       }
+      .bi{
+        color: white;
+      }
       .fixed {
         position: fixed;
         right: 2rem;
         height: 100vh;
       }
-      a{
+      a {
+        color: white;
+      }
+      .conclusion {
+        padding-left: 2rem;
+      }
+      .conclusion-head {
         color: white;
       }
       @media only screen and (max-width: 991px) {
         .fixed {
-          position: unset; /* Remove fixed positioning */
-          right: auto; /* Remove right positioning */
-          height: auto; /* Reset height */
+          position: unset;
+          right: auto;
+          height: auto;
         }
       }
     </style>
@@ -122,15 +131,20 @@
             <h1 class="title"></h1>
           </div>
           <!-- ============== -->
-          <div class="d-flex gap-3">
-            <div class="d-flex gap-2">
-              <i class="bi bi-person-fill"></i>
-              <p class="name"></p>
+          <div class="d-flex gap-3 justify-content-between">
+            <div class="d-flex gap-3">
+              <div class="d-flex gap-2">
+                <i class="bi bi-person-fill"></i>
+                <p class="name"></p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-calendar-fill"></i>
+                <p class="date"></p>
+              </div>
             </div>
-            <div class="d-flex gap-2">
-              <i class="bi bi-calendar-fill"></i>
-              <p class="date"></p>
-            </div>
+            <button class="border-0 bg-transparent view-modal">
+              <i class="bi bi-share-fill "></i>
+            </button>
           </div>
           <!-- =========== -->
           <div class="image w-100">
@@ -143,16 +157,230 @@
           <div class="">
             <ol class="subTopic"></ol>
           </div>
+          <div class="conclusion">
+            <h3 class="conclusion-head"></h3>
+            <p class="conclusion-text"></p>
+          </div>
         </div>
-        <div class="col-lg-4 bg-primary fixed otherTopics"></div>
+        <div class="col-lg-4 bg- fixed otherTopics"></div>
       </div>
     </section>
+
+    <!-- ================= -->
+      <section class="container text-center py-25 mx-auto">
+        <h3
+          class="text-gray-600 font-bold text-style tracking-wider"
+          style="font-size: clamp(10px, 6vw, 60px)"
+        >
+          Get started now!
+        </h3>
+        <small class="text-sm-size"
+          >It takes less than a minute of your time.</small
+        >
+        <br />
+        <div class="w-100 d-flex align-items-center justify-content-center">
+          <a
+            href="contactUs.html"
+            class="p-3 px-4 d-flex align-items-center justify-content-center gap-3 text-black btn mt-4 text-sm-size"
+            style="background-color: #fabd64"
+            >Request a quote <i class="fa-light fa fa-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+
+
+    <section class="bg-white my-5 w-100 overflow-hidden">
+      <div class="row overflow-hidden">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 py-5 ms-md-0 ms-5">
+          <div class="d-flex flex-column">
+            <div class="">
+              <span style="color: #ff8a00; font-size: clamp(10px, 6vw, 40px)"
+                >Where to Find Us:</span
+              >
+            </div>
+            <!-- ============= -->
+            <div class="mb-4">
+              <span style="color: #ff8a00; font-size: clamp(10px, 6vw, 40px)"
+                >Navigate Your Way?</span
+              >
+            </div>
+            <!-- ============= -->
+            <div class="d-flex flex-column">
+              <span class="text-black fw-bold">Contact</span>
+            </div>
+            <div class="">
+              <ul class="list-unstyled my-1">
+                <li>
+                  <a
+                    href="tel:9846 012 078"
+                    class="text-decoration-none footer_items"
+                    >9846 012 078</a
+                  >
+                  <a
+                    href="tel:+971566494903"
+                    class="text-decoration-none footer_items"
+                    >, +97 1566 494 903</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@haash.tech"
+                    class="text-decoration-none footer_items"
+                    >info@haash.tech</a
+                  >
+                </li>
+                <li>
+                  <ul
+                    class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2"
+                  >
+                    <li>
+                      <a href="https://www.instagram.com/odio_fashion/"
+                        ><i class="fa-brands fa-square-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href=""> <i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- ================= -->
+          </div>
+        </div>
+        <!-- map section starts -->
+        <div class="col-md-7 g-0 map-sec">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.154298471097!2d75.934691074095!3d11.32940824875246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba643000c7d3771%3A0x9463d4507015c114!2sHaash%20india%20exports%20private%20limited!5e1!3m2!1sen!2sin!4v1714564975445!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ -->
+    
+    <!-- #footer -->
+    <footer class="container footer">
+      <div class="row">
+        <div class="col-md-1">
+          <img
+            src="assets/imgs/logo/haashlogofooter.png"
+            alt="footer logo"
+            class="mx-auto mb-5"
+          />
+        </div>
+        <div class="col-md-3"></div>
+        <!-- <div class="col-md-4"></div> -->
+        <div class="col-md-3 g-md-0">
+          <!-- <h3 class="text-start mb-4">Address</h3> -->
+          <address class="footer_items">
+            <span> Odio cradle 1, kambanimukku <br /></span>
+            <span>koduvally Road Exit-2, <br /></span>
+            <span>Malayamma PO, NIT Campus, <br /></span>
+            <span>Kozhikode, Kerala - 673601</span>
+          </address>
+        </div>
+        <div class="col-md-2 g-md-0">
+          <!-- <h3 class="text-start mb-4">Address</h3> -->
+          <address class="footer_items">
+            <span>603, -D Block - <br /></span>
+            <span>Horizon Towers <br /></span>
+            <span>Al Rashidiya 1, <br /></span>
+            <span>Ajman, UAE</span>
+          </address>
+        </div>
+
+        <div class="col-md-1">
+          <h3 class="text-start mb-4 text-white">Company</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="index.html" class="text-decoration-none footer_items"
+                >Home</a
+              >
+            </li>
+
+            <li>
+              <a href="aboutUs.html" class="text-decoration-none footer_items"
+                >About Us</a
+              >
+            </li>
+
+            <li>
+              <a href="services.html" class="text-decoration-none footer_items"
+                >Services</a
+              >
+            </li>
+
+            <li>
+              <a href="contactUs.html" class="text-decoration-none footer_items"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h3 class="text-start mb-4 text-white">Services</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-decoration-none footer_items"
+                >Ui/ux design</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none footer_items"
+                >Web development</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none footer_items"
+                >App development</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none footer_items"
+                >E-commerce</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- foot -->
+      <div class="row">
+        <div class="col-md-2">
+          <span class="text-start mt-4 footer_items fs-5">
+            @2024 all rights are reserved
+          </span>
+        </div>
+
+        <div class="col-md">
+          <span class="text-start mt-4 footer_items fs-5"
+            >Terms of services | Privacy policy</span
+          >
+        </div>
+      </div>
+    </footer>
 
     <!--  *** scripts **** -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/blogCards.js"></script>
+
     <script src="assets/js/scrollYanime.js"></script>
-    <script>
+    <!-- <script>
       let blogs = null;
       fetch("/blog.json")
         .then((res) => res.json())
@@ -176,27 +404,33 @@
           window.location.href = "/blog.html";
         }
         document.title = "Haash ||" + thisBlog.title;
-        detail.querySelector(".title").innerHTML = thisBlog.title;
-        detail.querySelector(".image img").src = thisBlog.image;
-        detail.querySelector(".name").innerHTML = thisBlog.name;
-        detail.querySelector(".date").innerHTML = thisBlog.date;
-        detail.querySelector(".content").innerHTML = thisBlog.content;
+        detail.querySelector(".title").innerHTML = thisBlog?.title;
+        detail.querySelector(".image img").src = thisBlog?.image;
+        detail.querySelector(".name").innerHTML = thisBlog?.name;
+        detail.querySelector(".date").innerHTML = thisBlog?.date;
+        detail.querySelector(".content").innerHTML = thisBlog?.content;
+        detail.querySelector(".conclusion-head").innerHTML =
+          thisBlog?.conclusion;
+        detail.querySelector(".conclusion-text").innerHTML =
+          thisBlog?.conclusiontext;
+        // topic starting from here
         thisBlog.topics.forEach((topic) => {
           let newSubTopic = document.createElement("li");
           let subTopicsHTML = topic.subTopics
             .map(
               (sub) => `
         <li>
-            <h3 class="subheading">${sub.h3}</h3>
-            <p>${sub.paragraph}</p>
+            ${sub.h3 ? `<h3 class="subheading">${sub?.h3}</h3>` : ""}
+            ${sub.paragraph ? `<p>${sub?.paragraph}</p>` : ""}
+            ${sub.src ? `<img src="${sub.src}" class="w-100" alt="" />` : ""}
         </li>
     `
             )
             .join(""); // Join the array of subtopics HTML strings
 
           newSubTopic.innerHTML = `
-        <h2 class="subtitle">${topic.subtitle}</h2>
-        <p class="discription">${topic.discription}</p>
+        <h2 class="subtitle">${topic?.subtitle}</h2>
+        <p class="discription">${topic?.discription}</p>
         <ul>
             ${subTopicsHTML}
         </ul>
@@ -209,11 +443,14 @@
           .filter((value) => value.id != blogId)
           .forEach((other) => {
             let nextTopic = document.createElement("a");
-            nextTopic.href = "/details.html?id=" + other.id; // Change blog to other here
-            nextTopic.textContent = other.title; // Add text content to the link
+            nextTopic.href = "/details.html?id=" + other?.id; // Change blog to other here
+            // nextTopic.classList.add('')
+            nextTopic.innerHTML = `
+            <h2 class="text-truncate">${other?.title}</h2>
+            `;
             otherTopics.appendChild(nextTopic);
           });
       }
-    </script>
+    </script> -->
   </body>
 </html>

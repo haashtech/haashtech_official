@@ -13,6 +13,26 @@ body {
 section {
   scroll-snap-align: start;
 }
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  /* border-radius: 1rem; */
+  /* background: #ec994b; */
+  background: linear-gradient(90deg, #ffbd6a 33.05%, #ffffff 100%);
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* background: #222224; */
+  background: linear-gradient(90deg, #ffffff 0%, #6c6c6c 100%);
+}
+
+::-webkit-scrollbar-track {
+  /* background: #797979; */
+
+}
 :root {
   --transition: 0.25s;
   --spark: 1.8s;

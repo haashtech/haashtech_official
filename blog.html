@@ -89,52 +89,6 @@
           <h1>Blog</h1>
         </div>
         <div class="row listBlog row-cols-1 row-cols-md-3 row-cols-sm-2 g-4">
-          <!-- <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/imgs/blogs/Rectangle 111.svg"
-                class="card-img-top"
-                alt="blog-cards"
-              />
-
-              <div class="card-body pb-0">
-               
-                <div class="my-2 d-flex gap-3">
-                  <div class="d-flex gap-2">
-                    <i class="bi bi-person-fill"></i> Name
-                  </div>
-                  <div class="d-flex gap-2">
-                    <i class="bi bi-calendar-fill"></i> Date ago
-                  </div>
-                </div>
-                <div class="my-4">
-                  <h5 class="card-title para-head">
-                    Top Mobile app development trends 2024
-                  </h5>
-                  <p class="card-text para-home text-sub-color">
-                    Elevate your digital presence with us. Explore UI/UX design,
-                    software development, and branding services tailored to your
-                    needs.
-                  </p>
-                </div>
-              </div>
-             
-              <div
-                class="card-body pt-0 d-flex justify-content-between align-items-center"
-              >
-                <button
-                  class="btn bg-black text-white d-flex align-items-center gap-2"
-                >
-                  Learn More <i class="bi bi-arrow-right"></i>
-                </button>
-                <button class="border-0 bg-transparent">
-                  <i class="bi bi-share-fill"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          -->
-
           <!-- 2nd 3 cards below -->
         </div>
       </section>
@@ -378,12 +332,13 @@
           blogs = data;
           console.log(blogs);
           addDataToHTML();
+          setupShareButton() 
         });
       // addd data to html
       let listBlog = document.querySelector(".listBlog");
       function addDataToHTML() {
         blogs.forEach((blog) => {
-          let newBlog = document.createElement("a");
+          let newBlog = document.createElement("div");
           newBlog.href = "/details.html?id=" + blog.id;
           newBlog.classList.add("col");
           newBlog.innerHTML = `
@@ -394,7 +349,7 @@
                 alt="${blog.title}"
               />
 
-              <div class="card-body pb-0">
+              <a href="/details.html?id=${blog.id}" class="card-body pb-0">
                 <!-- card top -->
                 <div class="my-2 d-flex gap-3">
                   <div class="d-flex gap-2">
@@ -412,7 +367,7 @@
                     ${blog.content}
                   </p>
                 </div>
-              </div>
+              </a>
               <!-- card footer -->
               <div
                 class="card-body pt-0 d-flex justify-content-between align-items-center"
@@ -422,15 +377,40 @@
                 >
                   Learn More <i class="bi bi-arrow-right"></i>
                 </button>
-                <button class="border-0 bg-transparent">
+                <button class="border-0 bg-transparent view-modal">
                   <i class="bi bi-share-fill"></i>
                 </button>
+
               </div>
             </div>
             `;
           listBlog.appendChild(newBlog);
         });
       }
+
+      function setupShareButton() {
+    const viewBtns = document.querySelectorAll(".view-modal");
+    viewBtns.forEach((viewBtn, index) => {
+        viewBtn.addEventListener("click", () => {
+            const blog = blogs[index]; // Get the corresponding blog for this button
+            if (navigator.share && blog) {
+                const shareText = `${blog.title}\n${window.location.origin}/details.html?id=${blog.id}`;
+                navigator
+                    .share({
+                        title: blog.title,
+                        text: shareText,
+                    })
+                    .then(() => {
+                        console.log("Sharing successful");
+                    })
+                    .catch((error) => {
+                        console.error("Error sharing:", error);
+                    });
+            }
+        });
+    });
+}
+
     </script>
   </body>
 </html>
