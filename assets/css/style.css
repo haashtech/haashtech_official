@@ -636,7 +636,7 @@ place-items:  center;
   width: 0;
   left: 2em;
   right: 1.5em;
-  top: calc(100% - 180px);
+  top: calc(100% - 221px);
   transition: all 0.5s;
 }
 
@@ -716,7 +716,7 @@ footer .row{
   .service_cards::after {
     left: 2em;
     right: 1.5em;
-    top: calc(100% - 150px);
+    top: calc(100% - 200px);
   }
   .modai-viewer-tag{
     width: 350px;

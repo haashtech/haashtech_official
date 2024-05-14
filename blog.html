@@ -347,14 +347,16 @@
           newBlog.classList.add("col");
           newBlog.innerHTML = `
             <div class="card h-100">
+              <a href="/details.html?id=${blog.id}" class="text-black">
               <img
                 src="${blog.image}"
                 class="card-img-top"
                 alt="${blog.title}"
               />
 
-              <a href="/details.html?id=${blog.id}" class="card-body pb-0">
-                <!-- card top -->
+  
+                <div class="card-body pb-0">
+                  <!-- card top -->
                 <div class="my-2 d-flex gap-3">
                   <div class="d-flex gap-2">
                     <i class="bi bi-person-fill"></i> ${blog.name}
@@ -371,16 +373,21 @@
                     ${blog.content}
                   </p>
                 </div>
+                  </div>
+                
               </a>
               <!-- card footer -->
               <div
                 class="card-body pt-0 d-flex justify-content-between align-items-center"
               >
-                <button
+              <a href="/details.html?id=${blog.id}" class="text-white">
+                  <button
                   class="btn bg-black text-white d-flex align-items-center gap-2"
                 >
                   Learn More <i class="bi bi-arrow-right"></i>
                 </button>
+                </a>
+              
                 <button class="border-0 bg-transparent view-modal">
                   <i class="bi bi-share-fill"></i>
                 </button>
