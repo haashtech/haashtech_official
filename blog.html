@@ -35,12 +35,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- md modal -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/carousal2.css" />
     <link rel="stylesheet" href="assets/css/preloader.css" />
     <link rel="stylesheet" href="assets/css/page.css" />
     <link
@@ -48,7 +50,8 @@
       href="assets/imgs/logo/haashlogo.png"
       type="image/x-icon"
     />
-    <title>Haash || Blog</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
   </head>
   <body>
     <!-- ********preloader******** -->
@@ -93,19 +96,20 @@
         </div>
       </section>
 
-      <section class="container text-center py-25 mx-auto reveal">
+      <section class="container text-center py-25 mx-auto">
         <h3
           class="text-gray-600 font-bold text-style tracking-wider"
           style="font-size: clamp(10px, 6vw, 60px)"
         >
           Get started now!
         </h3>
-        <p class="para-home">It takes less than a minute of your time.</p>
-        <br />
+        <p class="text-sub-color"
+          >It takes less than a minute of your time.</p
+        >
         <div class="w-100 d-flex align-items-center justify-content-center">
           <a
             href="contactUs.html"
-            class="p-3 px-4 d-flex align-items-center justify-content-center gap-3 text-black btn mt-4 para-home"
+            class=" py-3 px-4 d-flex align-items-center  justify-content-center gap-3 text-black  mt-2"
             style="background-color: #fabd64"
             >Request a quote <i class="fa-light fa fa-arrow-right"></i
           ></a>

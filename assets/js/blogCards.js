@@ -44,7 +44,7 @@ thisBlog.topics.forEach((topic) => {
           <li>
             ${sub.h3 ? `<h3 class="subheading">${sub?.h3}</h3>` : ""}
             ${sub.paragraph ? `<p>${sub?.paragraph}</p>` : ""}
-            ${sub.src ? `<img src="${sub.src}" class="w-100" alt="" />` : ""}
+            ${sub.src ? `<img src="${sub.src}" class="w-100" alt="${sub.h3}" />` : ""}
           </li>
         `
         )

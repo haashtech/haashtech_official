@@ -16,14 +16,7 @@
       rel="stylesheet"
     />
 
-    <!-- ***** font awsome ***** -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <!-- ***** google font ***** -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,20 +29,30 @@
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <link rel="stylesheet" href="assets/css/cardCarousal.css" />
-    <link rel="stylesheet" href="assets/css/carousal2.css" />
     <link rel="stylesheet" href="assets/css/preloader.css" />
     <link rel="stylesheet" href="assets/css/page.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="phone-number-validation/build-valid/css/intlTelInput.css"
-    />
+    /> -->
     <link
       rel="icon"
       href="assets/imgs/logo/haashlogo.png"
       type="image/x-icon"
     />
     <title>Haash || Contact Us</title>
+    <!-- CSS for intl-tel-input -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+
+<!-- CSS for select2 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+
+<!-- JS for intl-tel-input -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+<!-- JS for select2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
     <script>
       window.addEventListener("load", () => {
         const loader = document.querySelector(".preloader");
@@ -68,30 +71,16 @@
         color: white;
         outline: none !important;
         box-shadow: none !important;
+        
+      }
+      input{
+        padding: 1.5rem;
       }
 
       .form-control::placeholder {
         color: #8e8e8e; /* Placeholder text color */
       }
 
-      .submit-button {
-        color: white;
-        padding: 1rem 5rem;
-        border: none;
-        outline: none;
-        border-radius: 30px;
-        background: rgb(0, 0, 0);
-        background: linear-gradient(
-          90deg,
-          rgba(0, 0, 0, 1) 0%,
-          rgba(36, 36, 36, 1) 0%,
-          rgba(51, 51, 51, 1) 70%,
-          rgba(44, 44, 44, 1) 100%,
-          rgba(60, 60, 60, 1) 100%,
-          rgba(82, 82, 82, 1) 100%,
-          rgba(102, 102, 102, 1) 100%
-        );
-      }
       section {
         position: relative; /* Ensure positioning context for absolute positioning */
       }
@@ -126,9 +115,9 @@
             class="col-lg-5 mb-md-0 mb-5 d-flex justify-content-lg-start justify-content-center align-items-lg-start align-items-center flex-column"
           >
             <p class="text-white text-center text-md-start">
-              <p class="para-home">Get a quote;</p>
+              <p class="para-home text-white">Get a quote;</p>
             </p>
-            <h3 class="text-style space-y-5">
+            <h3 class="text-style text-center text-md-start">
               Discover Digital Transformation
             </h3>
             <p class="text-sub-color para-home w-75 mb-5">
@@ -137,7 +126,7 @@
               your needs.
             </p>
             <button class="button mt-5" id="downloadButton">
-              <span class="text fs-4 para-home"
+              <span class="text para-home"
                 >&#68;ownload company profile <i class="bi bi-download"></i
               ></span>
             </button>
@@ -148,8 +137,8 @@
               <div class="d-md-flex align-items-center gap-3">
                 <img src="assets/imgs/icons/message.png" alt="" />
                 <div class="">
-                  <span class="fs-4 text-sub-color">Email</span>
-                  <h3 class="text-main fs-3">
+                  <span class="text-sub-color">Email</span>
+                  <h3 class="text-main para">
                     <a href="mailto:info@haash.tech" style="color: #ffbe6c"
                       >info@haash.tech</a
                     >
@@ -160,8 +149,8 @@
               <div class="d-md-flex align-items-center gap-3">
                 <img src="assets/imgs/icons/email.png" alt="" />
                 <div class="">
-                  <span class="fs-4 text-sub-color">Whatsapp only</span>
-                  <h3 class="text-main fs-3">
+                  <span class="para text-sub-color">Whatsapp only</span>
+                  <h3 class="text-main para-home" >
                     <a href="tel:+971566494903" class="" style="color: #ffbe6c"
                       >+971 1566 494 903</a
                     >
@@ -183,15 +172,16 @@
               <input
                 type="hidden"
                 name="access_key"
-                value="51250e50-7d71-43a1-b74d-5c5eeeef7e2f"
+                value="18845f48-9e62-4ba6-b681-0de505151a18"
               />
+              <input type="hidden" name="subject" value="A new Enquiry from haash.tech">
               <div class="mb-3 d-md-flex gap-2">
                 <div class="flex-grow-1">
                   <label for="Firstname" class="text-white">First Name</label>
                   <input
                     type="text"
-                    class="form-control fs-4 text-white"
-                    style="outline: none; padding: 1.3rem"
+                    class="form-control  text-white p-3"
+                    style="outline: none; "
                     id="Firstname"
                     name="Firstname"
                     placeholder="First Name"
@@ -202,8 +192,8 @@
                   <label for="Lastname" class="text-white">Last Name</label>
                   <input
                     type="text"
-                    class="form-control fs-4"
-                    style="outline: none; padding: 1.3rem"
+                    class="form-control text-white p-3"
+                    style="outline: none; "
                     id="Lastname"
                     name="Lastname"
                     placeholder="Last Name"
@@ -219,8 +209,8 @@
                   <label for="phone" class="text-white">Phone*</label>
                   <input
                     type="tel"
-                    class="form-control fs-4 w-100"
-                    style="outline: none; padding: 1.3rem 0rem 1.3rem 5rem"
+                    class="form-control text-white py-3"
+                    style="outline: none;  "
                     name="phone"
                     id="phone"
                     placeholder="Phone Number"
@@ -232,8 +222,8 @@
                   <label for="email" class="text-white">Email</label>
                   <input
                     type="email"
-                    class="form-control fs-4 w-100"
-                    style="outline: none; padding: 1.3rem"
+                    class="form-control  text-white p-3"
+                    style="outline: none; "
                     id="email"
                     name="Email"
                     placeholder="Email"
@@ -246,8 +236,8 @@
                 <label for="cbname" class="text-white">Company Name</label>
                 <input
                   type="text"
-                  class="form-control fs-4"
-                  style="outline: none; padding: 1.3rem"
+                  class="form-control text-white p-3 "
+                  style="outline: none; "
                   id="cbname"
                   name="Company Name"
                   placeholder="Company Name"
@@ -258,7 +248,7 @@
               <div class="mb-3">
                 <label for="message" class="text-white">Message</label>
                 <textarea
-                  class="form-control p-3 fs-4"
+                  class="form-control text-white p-3 "
                   id="message"
                   rows="4"
                   name="Message"
@@ -285,7 +275,7 @@
                 </button> -->
                 <!-- ====== -->
                 <button
-                  class="submit-button fs-3 button"
+                  class=" button"
                   id="form-submit"
                   type="submit"
                 >
@@ -385,7 +375,7 @@
         <div class="row">
           <div class="col-md-1">
             <img
-              src="assets/imgs/logo/haashlogofooter.png"
+              src="assets/imgs/logo/footerLogo.svg"
               alt="footer logo"
               class="mx-auto mb-5"
             />
@@ -494,27 +484,43 @@
     <script src="assets/js/formValidation.js"></script>
 
     <script>
-      // window.addEventListener("resize", () => {
-      //   adjustSectionHeight();
+      // var input = document.querySelector("#phone");
+      // window.intlTelInput(input, {
+      //   initialCountry: "in",
+      //   separateDialCode: true,
+      //   preferredCountries: ["in","sa","us", "gb", "au"], // Specify the preferred countries
       // });
-
-      // function adjustSectionHeight() {
-      //   const contactSection = document.getElementById("contact-section");
-      //   const formContainer = document.getElementById("form-container");
-
-      //   // Get the height of the form container
-      //   const formHeight = formContainer.offsetHeight;
-
-      //   // Set the height of the contact section to the form height
-      //   contactSection.style.height = `${formHeight}px`;
-      // }
-
+    </script>
+    <script>
       var input = document.querySelector("#phone");
-      window.intlTelInput(input, {
-        initialCountry: "in",
+      var iti = window.intlTelInput(input, {
+        initialCountry: "in", // Set Saudi Arabia as the initial country
         separateDialCode: true,
-        preferredCountries: ["us", "gb", "in", "au"], // Specify the preferred countries
+        preferredCountries: ["in","sa","us", "gb", "au"], // Include Saudi Arabia in the preferred countries list
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // Load the utils script for formatting/validation
       });
+    
+      // Convert the country dropdown to a select2 dropdown for search functionality
+      var countryList = iti.countryList.querySelector('select');
+    
+      if (countryList) {
+        $(countryList).select2({
+          theme: "default",
+          width: 'resolve'
+        });
+    
+        // Sync select2 selection with intl-tel-input selection
+        $(countryList).on('select2:select', function(e) {
+          var selectedCountry = e.params.data.id;
+          iti.setCountry(selectedCountry);
+        });
+    
+        // Sync intl-tel-input selection with select2 selection
+        input.addEventListener('countrychange', function() {
+          var selectedCountry = iti.getSelectedCountryData().iso2;
+          $(countryList).val(selectedCountry).trigger('change');
+        });
+      }
     </script>
   </body>
 </html>

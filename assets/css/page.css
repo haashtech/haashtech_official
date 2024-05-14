@@ -13,9 +13,8 @@
 .slide_auto {
   height: 260px;
   cursor: pointer;
-
 }
-
+/*  */
 
 /* .slide::after{
     content: '';
@@ -65,7 +64,21 @@
         transform: perspective(800px) rotateY(180deg) translateZ(0); 
     }
 } */
-
+.shadow_bubble_section_mission_l {
+  top: 50%;
+  left: -3%;
+  width: 370px;
+  height: 370px;
+  opacity: 0.3;
+}
+.shadow_bubble_section_mission_r {
+  top: 50%;
+  right: -25%;
+  width: 370px;
+  height: 370px;
+  opacity: 0.3;
+  z-index: -1;
+}
 .section-service {
   height: 100vh;
 }
@@ -74,7 +87,7 @@
   /* width: 40px; */
   max-height: 90%;
 }
-.section-about_costom{
+.section-about_costom {
   width: 60%;
 }
 .section-about .section-about_costom h1 {
@@ -105,14 +118,12 @@
 .ourServices-page_cards .ourServices-page_cards_right {
   width: 70%;
   padding-left: 2rem;
-
 }
 
 .ourServices-page_cards .ourServices-page_cards_right span {
- font-size: 1.7rem;
+  font-size: 1.7rem;
   font-weight: 100;
 }
-
 
 /* contact.html */
 .glassbg {
@@ -147,16 +158,15 @@
 
 @media only screen and (max-width: 768px) {
   .shadow_bubble_contact {
-  opacity: 0.3;
+    opacity: 0.3;
     top: 90%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
   }
   .section-about .section-about-our img {
     max-width: 30%;
   }
- 
 
   /* .section-service {
     height: 100%;

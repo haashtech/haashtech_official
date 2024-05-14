@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  user-select: none;
+  /* user-select: none; */
 }
 body {
   font-family: "Share Tech", sans-serif;
@@ -30,9 +30,9 @@ body {
   /* background: #797979; */
 
 }
-section {
+/* section {
   scroll-snap-align: start;
-}
+} */
 :root {
   --transition: 0.25s;
   --spark: 1.8s;
@@ -59,17 +59,17 @@ section {
 .shadow_bubble {
   border-radius: 50%;
   background: #e98200;
-  opacity: 0.5;
+  opacity: 0.3;
   box-shadow: 0 0 30px 20px rgba(255, 189, 106, 0.5);
   position: absolute;
   transform: translate(-50%, -50%); /* Center the bubble */
   filter: blur(65px);
 }
 .nav-item {
-  margin: 0 0.5rem;
+  /* margin: 0 0.5rem; */
 }
 .nav-link{
-  font-size: clamp(7px, 3vw, 20px);
+  font-size: clamp(15px, 4vw, 20px);
 }
 .section-container .right-Side {
   bottom: -111px;
@@ -198,9 +198,9 @@ nav.scrolled a {
 /* scroll effects */
 .reveal {
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(100px);
   opacity: 0;
-  transition: all 2s ease;
+  transition: all 1s ease-in-out;
 }
 .reveal.active {
   transform: translateY(0px);
@@ -652,7 +652,8 @@ place-items:  center;
   border-radius: 5px;
   border: 1px #555 solid;
   background: #0d0d0d;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: clamp(15px, 4vw, 20px);
   color: #ffbd6a;
 }
 /* index.html */
