@@ -628,7 +628,7 @@ place-items:  center;
   width: 0;
   left: 2em;
   right: 1.5em;
-  top: calc(100% - 221px);
+  bottom: calc(100% - 10%);
   transition: all 0.5s;
 }
 
@@ -727,19 +727,19 @@ footer .row{
   .service_cards::after {
     left: 2em;
     right: 1.5em;
-    top: calc(100% - 200px);
+    bottom: calc(100% - 10%);
   }
   .modai-viewer-tag{
     width: 350px;
     height: 350px;
   }
   
-  footer .row{
+  /* footer .row{
     padding-left: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
    
-  }
+  } */
   .map-sec{
     height: 300px;
           padding: 2rem;

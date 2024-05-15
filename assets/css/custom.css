@@ -45,7 +45,7 @@ a {
 }
 .footer_items {
   color: #757575;
-  font-size: clamp(10px, 3vw, 20px);
+  font-size: 20px;
 
 }
 
@@ -76,7 +76,10 @@ a {
 .navbar .navbar-brand img{
   width: 70%;
 }
-
+.tooltip-inner {
+  background-color: #ffcc00; /* Change this to your desired color */
+  color: #000; /* Optional: Change the text color */
+}
 .navbar .sidebar a{
   position: relative;
 }
@@ -451,6 +454,18 @@ color: white;
 .modal-header .btn-close {
   color: white !important;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-center-res {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
 /* meadia query */
 @media only screen and (max-width: 1330px) {
   .text-style {
@@ -461,14 +476,21 @@ color: white;
   }
 }
 @media only screen and (max-width: 768px) {
-  .flex-center {
+  .foot-privacy{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  
   .text-center-res{
     text-align: center;
+  }
+  .flex-center-res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .section-service {
     width: 50%;

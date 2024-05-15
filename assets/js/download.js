@@ -1,6 +1,6 @@
 document.getElementById('downloadButton').addEventListener('click', function() {
     // Define the URL of the PDF file
-    var pdfUrl = 'assets/pdf/companyProfile.pdf';
+    var pdfUrl = 'assets/pdf/haash.tech.pdf';
     
     // Create a new anchor element
     var link = document.createElement('a');
@@ -9,7 +9,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     link.href = pdfUrl;
     
     // Set the download attribute to force download the file
-    link.download = 'companyProfile.pdf';
+    link.download = 'haash.tech.pdf';
     
     // Trigger a click event on the anchor element to start the download
     link.click();
