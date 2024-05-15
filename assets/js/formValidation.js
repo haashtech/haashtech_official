@@ -24,10 +24,10 @@ function validationForm(event) {
     if (Firstname.value === "" || Firstname.value === null || Lastname.value === "" || Lastname.value === null) {
       error_fname.innerHTML = "Enter First name is required";
       error_lname.innerHTML = "Enter Last name is required";
-      Firstname.style.outline = '1px solid red';
-      Lastname.style.outline = '1px solid red';
-      error_fname.style.margin = "5px";
-      error_lname.style.margin = "5px";
+      Firstname.style.outline = '0.1px solid red';
+      Lastname.style.outline = '0.1px solid red';
+      // error_fname.style.margin = "5px";
+      // error_lname.style.margin = "5px";
       isValid = false;
     } else {
       error_fname.innerHTML = "";
@@ -40,8 +40,8 @@ function validationForm(event) {
 
     if (cbname.value === "" || cbname.value === null ) {
       error_cbname.innerHTML = "Enter company name";
-      cbname.style.outline = '1px solid red';
-      error_cbname.style.margin = "5px";
+      cbname.style.outline = '0.1px solid red';
+      // error_cbname.style.margin = "5px";
       isValid = false;
     } else {
       error_cbname.innerHTML = "";
@@ -52,8 +52,8 @@ function validationForm(event) {
   
     if (!email.value.match(email_check)) {
       error_email.innerHTML = "Valid email is required";
-      email.style.outline = '1px solid red';
-      error_email.style.margin = "5px";
+      email.style.outline = '0.1px solid red';
+      // error_email.style.margin = "5px";
       isValid = false;
     } else {
       error_email.innerHTML = "";
@@ -66,8 +66,8 @@ function validationForm(event) {
     const phone = document.getElementById("phone")
     if (!phone.value.match(phoneRegex)) {
       error_phone.innerHTML = "Please enter a valid phone number";
-      phone.style.outline = '1px solid red';
-      error_phone.style.margin = "5px";
+      phone.style.outline = '0.1px solid red';
+      // error_phone.style.margin = "5px";
       isValid = false;
     } else {
       error_phone.innerHTML = "";
@@ -78,8 +78,8 @@ function validationForm(event) {
   
     if (message.value === "" || message.value.length < 5) {
       error_message.innerHTML = "Message can't be less than 5 characters";
-      message.style.outline = '1px solid red';
-      error_message.style.margin = "5px";
+      message.style.outline = '0.1px solid red';
+      // error_message.style.margin = "5px";
       isValid = false;
     } else {
       error_message.innerHTML = "";

@@ -124,6 +124,10 @@
   font-size: 1.7rem;
   font-weight: 100;
 }
+/* career.html */
+.section-career{
+  height: 70vh;
+}
 
 /* contact.html */
 .glassbg {
@@ -155,6 +159,9 @@
   height: 150px;
 }
 /* blog.html */
+.section-blog{
+  margin: 9rem 0rem 0rem 0rem;
+}
 
 @media only screen and (max-width: 768px) {
   .shadow_bubble_contact {
@@ -167,7 +174,9 @@
   .section-about .section-about-our img {
     max-width: 30%;
   }
-
+  .section-blog{
+    margin: 5rem 0rem 0rem 0rem;
+  }
   /* .section-service {
     height: 100%;
   } */

@@ -38,16 +38,7 @@ body {
   --spark: 1.8s;
   --paracolor: #8c8c8c;
 }
-.glass {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.1)
-  ); /* Adjust the opacity values to make it darker */
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  transition: all 2s;
-}
+
 .modai-viewer-tag{
   width: 100%;
   height: 100%;
@@ -64,6 +55,7 @@ body {
   position: absolute;
   transform: translate(-50%, -50%); /* Center the bubble */
   filter: blur(65px);
+  z-index: -1;
 }
 .nav-item {
   /* margin: 0 0.5rem; */
@@ -657,7 +649,18 @@ place-items:  center;
   color: #ffbd6a;
 }
 /* index.html */
-
+@media only screen and (min-width: 992px){
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1)
+  ); 
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: all 2s;
+}
+}
 
 /* about page/************************ */
 @media only screen and (max-width: 1024px) {
@@ -701,12 +704,20 @@ footer .row{
  
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   .sidebar {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     padding: 2rem;
     z-index: 9999;
+  }
+  .glass {
+    background: linear-gradient(
+      135deg,
+      rgba(19, 19, 19, 0.4),
+      rgba(0, 0, 0, 0.5)
+    ); 
+    transition: all 2s;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -737,6 +748,7 @@ footer .row{
     border-radius: 15px;
   
    }
+
 }
 @media only screen and (max-width: 425px) {
   .cards {

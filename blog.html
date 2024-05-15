@@ -42,7 +42,6 @@
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <link rel="stylesheet" href="assets/css/carousal2.css" />
     <link rel="stylesheet" href="assets/css/preloader.css" />
     <link rel="stylesheet" href="assets/css/page.css" />
     <link
@@ -87,8 +86,8 @@
     </style>
     <main>
       <!-- blog cards section -->
-      <section class="container" style="margin-top: 13rem">
-        <div class="my-5 text-center text-white">
+      <section class="container section-blog " >
+        <div class=" text-center text-white my-5">
           <h1>Blog</h1>
         </div>
         <div class="row listBlog row-cols-1 row-cols-md-3 row-cols-sm-2 g-4">
@@ -345,6 +344,8 @@
           let newBlog = document.createElement("div");
           newBlog.href = "/details.html?id=" + blog.id;
           newBlog.classList.add("col");
+          let truncatedContent = blog.content.length > 130 ? blog.content.substring(0, 130) + "..." : blog.content;
+
           newBlog.innerHTML = `
             <div class="card h-100">
               <a href="/details.html?id=${blog.id}" class="text-black">
@@ -366,11 +367,11 @@
                   </div>
                 </div>
                 <div class="my-4">
-                  <h5 class="card-title para-head">
+                  <h5 class="card-title para-head text-truncate">
                     ${blog.title}
                   </h5>
-                  <p class="card-text para-home text-sub-color  text-truncate ">
-                    ${blog.content}
+                  <p class="card-text para-home text-sub-color   ">
+                    ${truncatedContent}
                   </p>
                 </div>
                   </div>

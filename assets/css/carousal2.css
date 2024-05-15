@@ -16,12 +16,12 @@ body {
   background: var(--bg);
 } */
 
-.container-auto {
+/* .container-auto {
   max-width: 55rem;
   padding: 0 1rem;
   margin: 0 auto;
   flex-direction: column;
-}
+} */
 
 /* .container {
   max-width: 124rem;
@@ -54,6 +54,7 @@ body {
 
 .quote {
   color: #fff;
+
   font-size: clamp(10px, 3vw, 20px);
 }
 
@@ -64,7 +65,7 @@ body {
 }
 
 #tranding {
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
 @media (max-width: 1440px) {
@@ -75,14 +76,14 @@ body {
 
 #tranding .tranding-slider {
   /* height: 52rem; */
-  height: 38rem;
+  height: 34rem;
   padding: 2rem 0;
   position: relative;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #tranding .tranding-slider {
-    height: 45rem;
+    height: 44rem;
   }
 }
 
@@ -96,15 +97,19 @@ body {
   background: linear-gradient(101.84deg, #000000 2.52%, #202020 97.74%);
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .tranding-slide {
     width: 30rem !important;
-    height: 36rem !important;
+    height: 22rem !important;
+    border-radius: 15px;
   }
   .tranding-slide .tranding-slide-img img {
     width: 30rem !important;
     height: 36rem !important;
   }
+  #tranding .tranding-slider {
+    height: 31rem;
+}
 }
 
 .tranding-slide .tranding-slide-img img {
@@ -154,6 +159,11 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .tranding-slider-control .slider-arrow  {
+   display: none;
+  }
+}
 @media (max-width: 450px) {
   .tranding-slider-control .swiper-button-next {
     left: 80% !important;

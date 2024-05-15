@@ -69,6 +69,9 @@ a {
   margin-bottom: 4rem;
 }
 
+.error{
+  margin: 5px 1px -10px 1px;
+}
 
 .navbar .navbar-brand img{
   width: 70%;
@@ -91,6 +94,9 @@ a {
  width: 100%;
 
 }
+.text-center-res{
+  text-align: start;
+}
 .py-24 {
   padding-top: 6rem /* 96px */;
   padding-bottom: 6rem /* 96px */;
@@ -102,12 +108,6 @@ a {
 .py-large {
   padding-top: 12rem /* 96px */;
   padding-bottom: 12rem /* 96px */;
-}
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .btn_custom_1{
@@ -461,6 +461,15 @@ color: white;
   }
 }
 @media only screen and (max-width: 768px) {
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text-center-res{
+    text-align: center;
+  }
   .section-service {
     width: 50%;
     text-align: center;
@@ -493,6 +502,10 @@ color: white;
   
 .navbar .navbar-brand img{
   width: 50%;
+}
+.py-25 {
+  padding-top: 2rem /* 96px */;
+  padding-bottom: 2rem /* 96px */;
 }
   /* .accordion-part {
     width: 100%;
