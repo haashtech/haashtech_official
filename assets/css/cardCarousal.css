@@ -1,6 +1,5 @@
 .slider {
   position: relative;
-  /* width: 100%; */
   height: 380px;
   overflow: hidden;
 }
@@ -19,7 +18,6 @@
   left: calc(50% - 110px);
   top: 10px;
 }
-
 #next,
 #prev {
   position: absolute;
@@ -36,16 +34,6 @@
   left: unset;
   right: 0;
 }
-
-/* @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 9));
-  }
-} */
-
 /* slider2 */
 /*  */
 @media (max-width:768px){
@@ -59,7 +47,6 @@
     height: 290px;
   }
 }
-
 /* slider image moving */
 .slider_brands{
   height: 250px;
@@ -86,7 +73,7 @@
 
 }
 .slider_brands img{
-  width: 50%;
+  width: 60%;
 }
 @keyframes scroll {
   0%{

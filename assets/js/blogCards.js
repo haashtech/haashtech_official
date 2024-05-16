@@ -115,29 +115,3 @@ function setupShareButton() {
 }
 
 
-
-// {
-//   "no": 1,
-//   "subtitle": "",
-//   "discription": "",
-//   "subTopics":[
-//       {
-//           "h3":"",
-//           "paragraph":""
-//       },
-//       {
-//           "h3":"",
-//           "paragraph":""
-//       }
-//       ,
-//       {
-//           "h3":"",
-//           "paragraph":""
-//       }
-//       ,
-//       {
-//           "h3":"",
-//           "paragraph":""
-//       }
-//   ]
-// }
