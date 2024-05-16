@@ -15,11 +15,6 @@
       rel="stylesheet"
     />
 
-    <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,9 +30,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- md modal -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -156,24 +148,29 @@
                     >
                   </li>
                   <li>
-                    <ul
-                      class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2"
-                    >
+                    <ul class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2">
                       <li>
-                        <a href="https://www.instagram.com/haash_tech/"
-                          ><i class="fa-brands fa-square-instagram"></i
-                        ></a>
+                        <a href="https://www.instagram.com/haash_tech/" aria-label="Instagram">
+                          <i class="fa-brands fa-square-instagram"></i>
+                        </a>
                       </li>
                       <li>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/yourpage" aria-label="Facebook">
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
                       </li>
                       <li>
-                        <a href=""> <i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://twitter.com/youraccount" aria-label="Twitter">
+                          <i class="fa-brands fa-x-twitter"></i>
+                        </a>
                       </li>
                       <li>
-                        <a href="https://www.linkedin.com/in/haash-tech-a61b2b309/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/haash-tech-a61b2b309/" aria-label="LinkedIn">
+                          <i class="fa-brands fa-linkedin"></i>
+                        </a>
                       </li>
                     </ul>
+                    
                   </li>
                 </ul>
               </div>
@@ -190,6 +187,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              title="Haash.tech Location"
             ></iframe>
           </div>
         </div>
@@ -318,86 +316,41 @@
         </div>
        
         <!-- foot -->
-        <div
-          class="d-md-flex foot-privacy gap-3 justify-content-center align-items-center pt-3 bg-dark bg-gradient"
-        >
-          <ul
-            class="list-unstyled d-md-flex foot-privacy gap-3 justify-content-center align-items-center"
-          >
-            <div class="d-sm-flex d-none gap-3">
-              <li>
-                <span class="mt-4 footer_items fs-5">
-                  Haash.Tech &copy 2024
-                </span>
-              </li>
-              <li>
-                <span class="mt-4 footer_items fs-5">Privacy & Legal</span>
-              </li>
-            <!-- <p class="d-flex justify-content-center align-items-center ">|</p> -->
-
-            </div>
-            <li class="">
-              <span
-              clspanss="text-decoration-none footer_items text-center"
-              >|<span
-            >
+        <div class="d-md-flex foot-privacy gap-3 justify-content-center align-items-center pt-3 bg-dark bg-gradient">
+          <ul class="list-unstyled d-md-flex foot-privacy gap-3 justify-content-center align-items-center">
+            <li class="d-sm-flex gap-3 d-none">
+              <span class=" footer_items">Haash.Tech &copy 2024</span>
+              <span class=" footer_items">Privacy & Legal</span>
             </li>
-            <li class="">
-              <a
-                href="index.html"
-                class="text-decoration-none footer_items text-center"
-                >Home</a
-              >
-            </li>
-
             <li>
-              <a
-                href="services.html"
-                class="text-decoration-none footer_items text-center"
-                >Who We Are</a
-              >
+              <span class="text-decoration-none footer_items text-center">|</span>
             </li>
-
             <li>
-              <a
-                href="services.html"
-                class="text-decoration-none footer_items text-center"
-                >What We Do</a
-              >
+              <a href="index.html" class="text-decoration-none footer_items text-center">Home</a>
             </li>
-
             <li>
-              <a
-                href="career.html"
-                class="text-decoration-none footer_items text-center"
-                >Career</a
-              >
+              <a href="services.html" class="text-decoration-none footer_items text-center">Who We Are</a>
             </li>
-
             <li>
-              <a
-                href="contactUs.html"
-                class="text-decoration-none footer_items text-center"
-                >Contact Us</a
-              >
+              <a href="career.html" class="text-decoration-none footer_items text-center">Career</a>
             </li>
-            <div class="d-flex gap-3 d-sm-none">
-              <li>
-                <span class="mt-4 footer_items fs-5">
-                  Haash.Tech &copy 2024
-                </span>
-              </li>
-              <li>
-                <span class="mt-4 footer_items fs-5">Privacy & Legal</span>
-              </li>
-            </div>
+            <li>
+              <a href="blog.html" class="text-decoration-none footer_items text-center">Blog</a>
+            </li>
+            <li>
+              <a href="contactUs.html" class="text-decoration-none footer_items text-center">Contact Us</a>
+            </li>
+            <li class="d-sm-none d-flex gap-3">
+              <span class=" footer_items">Haash.Tech &copy 2024</span>
+              <span class=" footer_items">Privacy & Legal</span>
+            </li>
           </ul>
         </div>
       </footer>
     </main>
 
     <!--  *** scripts **** -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/scrollYanime.js"></script>
     <!-- <script src="assets/js/blogCards.js"></script> -->
@@ -482,7 +435,7 @@
                 </button>
                 </a>
               
-                <button class="border-0 bg-transparent view-modal">
+                <button class="border-0 bg-transparent view-modal" aria-label="Share">
                   <i class="bi bi-share-fill"></i>
                 </button>
 
