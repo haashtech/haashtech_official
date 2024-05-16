@@ -65,16 +65,6 @@
 
     <!-- JS for select2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-
-    <script>
-      window.addEventListener("load", () => {
-        const loader = document.querySelector(".preloader");
-        loader.classList.add("preloader-hidden");
-        loader.addEventListener("transitionend", () => {
-          document.body.removeChild(loader);
-        });
-      });
-    </script>
   </head>
   <body>
     <style>
@@ -82,7 +72,7 @@
         background-color: #6a6a6a !important;
         border: none;
         color: white;
-        outline: none ;
+        outline: none;
         box-shadow: none !important;
         border: none;
       }
@@ -130,66 +120,85 @@
           <div
             class="col-lg-5 mb-md-0 d-flex justify-content-lg-start g-0 align-items-lg-start align-items-center flex-column"
           >
-            <div class="d-flex flex-column gap-4 justify-content-md-between justify-content-center  h-100">
+            <div
+              class="d-flex flex-column gap-4 justify-content-md-between justify-content-center h-100"
+            >
               <!-- flex starts -->
-             <div class="d-flex flex-column gap-3 align-items-md-start align-items-center">
-              <div class="text-white text-center text-md-start">
-                <p class="para-home text-white fs-3">Get a quote;</p>
-              </div>
-              <!-- ============ -->
-              <div class="">
-                <h3 class="text-style text-center text-md-start">
-                  Discover Digital Transformation
-                </h3>
-              </div>
-              <!-- ============== -->
-              <div class="flex-center-res">
-                <p class="text-sub-color para text-center-res">
-                  Elevate your digital presence with us. Explore UI/UX
-                  design, software development, and branding services tailored to
-                  your needs.
-                </p>
-              </div>
+              <div
+                class="d-flex flex-column gap-3 align-items-md-start align-items-center"
+              >
+                <div class="text-white text-center text-md-start">
+                  <p class="para-home text-white fs-3">Get a quote;</p>
+                </div>
+                <!-- ============ -->
+                <div class="">
+                  <h3 class="text-style text-center text-md-start">
+                    Discover Digital Transformation
+                  </h3>
+                </div>
                 <!-- ============== -->
-              <div class="">
-                <button class="button" id="downloadButton">
-                  <span class="text para-home"
-                    >&#68;ownload company profile <i class="bi bi-download"></i
-                  ></span>
-                </button>
+                <div class="flex-center-res">
+                  <p class="text-sub-color para text-center-res">
+                    Elevate your digital presence with us. Explore UI/UX design,
+                    software development, and branding services tailored to your
+                    needs.
+                  </p>
+                </div>
+                <!-- ============== -->
+                <div class="">
+                  <button
+                    class="button"
+                    id="downloadButton"
+                    aria-label="button"
+                  >
+                    <span class="text para-home"
+                      >&#68;ownload company profile
+                      <i class="bi bi-download"></i
+                    ></span>
+                  </button>
+                </div>
               </div>
-             </div>
               <!-- ----------------------------  next -------------------------- -->
               <div
-              class="d-flex my-md-0 my-5  gap-3 justify-content-md-start justify-content-center email-message gap-5 "
-            >
-              <div class="d-md-flex align-items-center gap-3">
-                <img src="assets/imgs/icons/m1.svg" alt="message" class="mb-3"/>
-                <div class="">
-                  <span class="text-sub-color">Email</span>
-                  <h3 class="text-main para">
-                    <a href="mailto:info@haash.tech" style="color: #ffbe6c"
-                      >info@haash.tech</a
-                    >
-                  </h3>
+                class="d-flex my-md-0 my-5 gap-3 justify-content-md-start justify-content-center email-message gap-5"
+              >
+                <div class="d-md-flex align-items-center gap-3">
+                  <img
+                    src="assets/imgs/icons/m1.svg"
+                    alt="message"
+                    class="mb-3"
+                  />
+                  <div class="">
+                    <span class="text-sub-color">Email</span>
+                    <h3 class="text-main para">
+                      <a href="mailto:info@haash.tech" style="color: #ffbe6c"
+                        >info@haash.tech</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <!-- 2nd -->
+                <div class="d-md-flex align-items-center gap-3">
+                  <img
+                    src="assets/imgs/icons/m2.svg"
+                    alt="email"
+                    class="mb-3"
+                  />
+                  <div class="">
+                    <span class="para text-sub-color">Whatsapp only</span>
+                    <h3 class="text-main para-home">
+                      <a
+                        href="tel:+971566494903"
+                        class=""
+                        style="color: #ffbe6c"
+                        >+971 1566 494 903</a
+                      >
+                    </h3>
+                  </div>
                 </div>
               </div>
-              <!-- 2nd -->
-              <div class="d-md-flex align-items-center gap-3">
-                <img src="assets/imgs/icons/m2.svg" alt="email" class="mb-3"/>
-                <div class="">
-                  <span class="para text-sub-color">Whatsapp only</span>
-                  <h3 class="text-main para-home">
-                    <a href="tel:+971566494903" class="" style="color: #ffbe6c"
-                      >+971 1566 494 903</a
-                    >
-                  </h3>
-                </div>
-              </div>
+              <!-- ==========================  end ======================== -->
             </div>
-            <!-- ==========================  end ======================== -->
-            </div>
-            
           </div>
           <!-- <div class="col-md-2"></div>  2nd col -->
           <div class="col-lg-7">
@@ -310,7 +319,12 @@
                   Submit
                 </button> -->
                 <!-- ====== -->
-                <button class="button" id="form-submit" type="submit">
+                <button
+                  class="button"
+                  id="form-submit"
+                  type="submit"
+                  aria-label="submit"
+                >
                   <span class="text fs-4"></span>
                   Submit
                 </button>
@@ -364,29 +378,42 @@
                     >
                   </li>
                   <li>
-                    <ul class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2">
+                    <ul
+                      class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2"
+                    >
                       <li>
-                        <a href="https://www.instagram.com/haash_tech/" aria-label="Instagram">
+                        <a
+                          href="https://www.instagram.com/haash_tech/"
+                          aria-label="Instagram"
+                        >
                           <i class="fa-brands fa-square-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.facebook.com/yourpage" aria-label="Facebook">
+                        <a
+                          href="https://www.facebook.com/yourpage"
+                          aria-label="Facebook"
+                        >
                           <i class="fa-brands fa-facebook"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://twitter.com/youraccount" aria-label="Twitter">
+                        <a
+                          href="https://twitter.com/youraccount"
+                          aria-label="Twitter"
+                        >
                           <i class="fa-brands fa-x-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.linkedin.com/in/haash-tech-a61b2b309/" aria-label="LinkedIn">
+                        <a
+                          href="https://www.linkedin.com/in/haash-tech-a61b2b309/"
+                          aria-label="LinkedIn"
+                        >
                           <i class="fa-brands fa-linkedin"></i>
                         </a>
                       </li>
                     </ul>
-                    
                   </li>
                 </ul>
               </div>
@@ -411,153 +438,179 @@
       <!-- #footer -->
       <footer class=" ">
         <div class="container footer">
-           <div class="row">
-          <div class="col-md-3 footer_image bg-">
-            <img
-              src="assets/imgs/logo/footerLogo.svg"
-              alt="footer logo"
-              class="mx-auto mb-5"
-            />
-          </div>
-          <div class="col-md-1"></div>
-          <!-- <div class="col-md-4"></div> -->
-          <div class="col-md-3 g-0 bg-">
-            <h3 class="text-start mb-4 text-white">Find Us Here</h3>
-            <address class="footer_items">
-              <a
-                href="https://maps.app.goo.gl/KXzmksXmXPui5QSS9"
-                class="footer_items"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-bs-toggle="tooltip"
-                data-bs-title="Click Here"
-              >
-                <span> Odio cradle 1, kambanimukku <br /></span>
-                <span>koduvally Road Exit-2, <br /></span>
-                <span>Malayamma PO, NIT Campus, <br /></span>
-                <span>Kozhikode, Kerala - 673601</span>
-              </a>
-            </address>
-            <address class="footer_items">
-              <a
-                href="https://maps.app.goo.gl/oHh6bU9kCRqvXxss6"
-                class="footer_items"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-bs-toggle="tooltip"
-                data-bs-title="Click Here"
-              >
-                <span>603, -D Block - <br /></span>
-                <span>Horizon Towers <br /></span>
-                <span>Al Rashidiya 1, <br /></span>
-                <span>Ajman, UAE</span>
-              </a>
-            </address>
-          </div>
-          <div class="col-md-2 g-0 bg-">
-            <h3 class="text-start mb-4 text-white">Services</h3>
-            <ul class="list-unstyled">
-              <li>
+          <div class="row">
+            <div class="col-md-3 footer_image bg-">
+              <img
+                src="assets/imgs/logo/footerLogo.svg"
+                alt="footer logo"
+                class="mx-auto mb-5"
+              />
+            </div>
+            <div class="col-md-1"></div>
+            <!-- <div class="col-md-4"></div> -->
+            <div class="col-md-3 g-0 bg-">
+              <h3 class="text-start mb-4 text-white">Find Us Here</h3>
+              <address class="footer_items">
                 <a
-                  href="services.html#webApp"
-                  class="text-decoration-none footer_items"
-                  >Ui/ux design</a
+                  href="https://maps.app.goo.gl/KXzmksXmXPui5QSS9"
+                  class="footer_items"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Click Here"
                 >
-              </li>
-              <li>
+                  <span> Odio cradle 1, kambanimukku <br /></span>
+                  <span>koduvally Road Exit-2, <br /></span>
+                  <span>Malayamma PO, NIT Campus, <br /></span>
+                  <span>Kozhikode, Kerala - 673601</span>
+                </a>
+              </address>
+              <address class="footer_items">
                 <a
-                  href="services.html#tech"
-                  class="text-decoration-none footer_items"
-                  >Web development</a
+                  href="https://maps.app.goo.gl/oHh6bU9kCRqvXxss6"
+                  class="footer_items"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Click Here"
                 >
-              </li>
-              <li>
-                <a
-                  href="services.html#tech"
-                  class="text-decoration-none footer_items"
-                  >App development</a
-                >
-              </li>
-              <li>
-                <a
-                  href="services.html#branding"
-                  class="text-decoration-none footer_items"
-                  >E-commerce</a
-                >
-              </li>
-            </ul>
-          </div>
+                  <span>603, -D Block - <br /></span>
+                  <span>Horizon Towers <br /></span>
+                  <span>Al Rashidiya 1, <br /></span>
+                  <span>Ajman, UAE</span>
+                </a>
+              </address>
+            </div>
+            <div class="col-md-2 g-0 bg-">
+              <h3 class="text-start mb-4 text-white">Services</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="services.html#webApp"
+                    class="text-decoration-none footer_items"
+                    >Ui/ux design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html#tech"
+                    class="text-decoration-none footer_items"
+                    >Web development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html#tech"
+                    class="text-decoration-none footer_items"
+                    >App development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html#branding"
+                    class="text-decoration-none footer_items"
+                    >E-commerce</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-          <div class="col-md-2 g-0">
-            <h3
-              class="text-start mb-4 text-white d-md-block d-none"
-              style="visibility: hidden"
-            >
-              Services
-            </h3>
-            <ul class="list-unstyled">
-              <li>
-                <a
-                  href="services.html#tech"
-                  class="text-decoration-none footer_items"
-                  >DevOps Consulting</a
-                >
-              </li>
+            <div class="col-md-2 g-0">
+              <h3
+                class="text-start mb-4 text-white d-md-block d-none"
+                style="visibility: hidden"
+              >
+                Services
+              </h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="services.html#tech"
+                    class="text-decoration-none footer_items"
+                    >DevOps Consulting</a
+                  >
+                </li>
 
-              <li>
-                <a
-                  href="services.html#tech"
-                  class="text-decoration-none footer_items"
-                  >Social Media Management</a
-                >
-              </li>
-              <li>
-                <a
-                  href="services.html#tech"
-                  class="text-decoration-none footer_items"
-                  >Performance Marketing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="services.html#tech"
-                  class="text-decoration-none footer_items"
-                  >Search Engine</a
-                >
-              </li>
-            </ul>
+                <li>
+                  <a
+                    href="services.html#tech"
+                    class="text-decoration-none footer_items"
+                    >Social Media Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html#tech"
+                    class="text-decoration-none footer_items"
+                    >Performance Marketing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html#tech"
+                    class="text-decoration-none footer_items"
+                    >Search Engine</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        </div>
-       
+
         <!-- foot -->
-        <div class="d-md-flex foot-privacy gap-3 justify-content-center align-items-center pt-3 bg-dark bg-gradient">
-          <ul class="list-unstyled d-md-flex foot-privacy gap-3 justify-content-center align-items-center">
+        <div
+          class="d-md-flex foot-privacy gap-3 justify-content-center align-items-center pt-3 bg-dark bg-gradient"
+        >
+          <ul
+            class="list-unstyled d-md-flex foot-privacy gap-3 justify-content-center align-items-center"
+          >
             <li class="d-sm-flex gap-3 d-none">
-              <span class=" footer_items">Haash.Tech &copy 2024</span>
-              <span class=" footer_items">Privacy & Legal</span>
+              <span class="footer_items">Haash.Tech &copy 2024</span>
+              <span class="footer_items">Privacy & Legal</span>
             </li>
             <li>
-              <span class="text-decoration-none footer_items text-center">|</span>
+              <span class="text-decoration-none footer_items text-center"
+                >|</span
+              >
             </li>
             <li>
-              <a href="index.html" class="text-decoration-none footer_items text-center">Home</a>
+              <a
+                href="index.html"
+                class="text-decoration-none footer_items text-center"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="services.html" class="text-decoration-none footer_items text-center">Who We Are</a>
+              <a
+                href="services.html"
+                class="text-decoration-none footer_items text-center"
+                >Who We Are</a
+              >
             </li>
             <li>
-              <a href="career.html" class="text-decoration-none footer_items text-center">Career</a>
+              <a
+                href="career.html"
+                class="text-decoration-none footer_items text-center"
+                >Career</a
+              >
             </li>
             <li>
-              <a href="blog.html" class="text-decoration-none footer_items text-center">Blog</a>
+              <a
+                href="blog.html"
+                class="text-decoration-none footer_items text-center"
+                >Blog</a
+              >
             </li>
             <li>
-              <a href="contactUs.html" class="text-decoration-none footer_items text-center">Contact Us</a>
+              <a
+                href="contactUs.html"
+                class="text-decoration-none footer_items text-center"
+                >Contact Us</a
+              >
             </li>
             <li class="d-sm-none d-flex gap-3">
-              <span class=" footer_items">Haash.Tech &copy 2024</span>
-              <span class=" footer_items">Privacy & Legal</span>
+              <span class="footer_items">Haash.Tech &copy 2024</span>
+              <span class="footer_items">Privacy & Legal</span>
             </li>
           </ul>
         </div>
@@ -573,14 +626,24 @@
     <script src="assets/js/formValidation.js"></script>
 
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("load", () => {
+          const loader = document.querySelector(".preloader");
+          loader.classList.add("preloader-hidden");
+          loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+          });
+        }); 
+      });
+    </script>
+    <script>
       // var input = document.querySelector("#phone");
       // window.intlTelInput(input, {
       //   initialCountry: "in",
       //   separateDialCode: true,
       //   preferredCountries: ["in","sa","us", "gb", "au"], // Specify the preferred countries
       // });
-    </script>
-    <script>
+      // ==================================================
       var input = document.querySelector("#phone");
       var iti = window.intlTelInput(input, {
         initialCountry: "in", // Set Saudi Arabia as the initial country

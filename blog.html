@@ -394,7 +394,7 @@
 
           newBlog.innerHTML = `
             <div class="card h-100">
-              <a href="/details.html?id=${blog.id}" class="text-black">
+              <a href="/details.html?id=${blog.id}" class="text-black" aria-label="blogs">
               <img
                 src="${blog.image}"
                 class="card-img-top"
@@ -428,7 +428,7 @@
                 class="card-body pt-0 d-flex justify-content-between align-items-center"
               >
               <a href="/details.html?id=${blog.id}" class="text-white">
-                  <button
+                  <button aria-label="arrow"
                   class="btn bg-black text-white d-flex align-items-center gap-2"
                 >
                   Learn More <i class="bi bi-arrow-right"></i>

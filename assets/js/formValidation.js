@@ -38,7 +38,7 @@ function validationForm(event) {
       error_lname.style.margin = "";
     }
 
-    if (cbname.value === "" || cbname.value === null ) {
+    if (cbname.value.trim() === "" || cbname.value === null ) {
       error_cbname.innerHTML = "Enter company name";
       cbname.style.outline = '0.1px solid red';
       // error_cbname.style.margin = "5px";

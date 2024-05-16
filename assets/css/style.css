@@ -11,7 +11,7 @@ body {
   background-color: black;
 }
 ::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -27,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  /* background: #797979; */
+  background: #4b4b4b;
 
 }
 /* section {
