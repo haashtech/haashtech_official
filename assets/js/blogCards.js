@@ -23,7 +23,7 @@ function showDetails() {
     window.location.href = "/blog.html";
   }
   let truncatedContent = thisBlog?.title.length > 15 ? thisBlog?.title.substring(0, 15) + "..." : thisBlog?.title;
-  document.title = "Haash ||" + thisBlog.title;
+  document.title = "Haash.tech ||" + thisBlog.title;
   detail.querySelector(".active").innerHTML = truncatedContent;
   detail.querySelector(".title").innerHTML = thisBlog?.title;
   detail.querySelector(".image img").src = thisBlog?.image;
