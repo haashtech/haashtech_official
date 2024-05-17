@@ -37,6 +37,9 @@
 .h-100-min{
   min-height: 100vh;
 }
+.w-70{
+  width: 70%;
+}
 .w-80{
   width: 80%;
 }
@@ -357,6 +360,11 @@ footer a:hover{
 .py-25 {
   padding-top: 2rem /* 96px */;
   padding-bottom: 2rem /* 96px */;
+}
+.footer_items {
+  color: #757575;
+  font-size: 17px;
+
 }
   /* .accordion-part {
     width: 100%;

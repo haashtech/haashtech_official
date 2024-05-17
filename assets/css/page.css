@@ -140,6 +140,7 @@
   .ourServices-page_cards .ourServices-page_cards_right {
     width: 90%;
     margin-bottom: 2rem;
+    padding-left: 0;
   }
   .flotingimage_1 {
     top: 20%;

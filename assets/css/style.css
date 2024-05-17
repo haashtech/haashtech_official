@@ -611,6 +611,9 @@ footer .row{
     ); 
     transition: all 2s;
   }
+  footer .row img{
+    width: 35%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .service_cards {

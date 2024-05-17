@@ -16,7 +16,7 @@ function showDetails() {
   let thisBlog = blogs.filter((value) => {
     return value.id == blogId;
   })[0];
-  console.log(thisBlog, "thisBlog");
+  // console.log(thisBlog, "thisBlog");
   // if there is no blog has id = blogId
   // => reurn to home page
   if (!thisBlog) {

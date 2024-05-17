@@ -26,8 +26,8 @@ function validationForm(event) {
       error_lname.innerHTML = "Enter Last name is required";
       Firstname.style.outline = '0.1px solid red';
       Lastname.style.outline = '0.1px solid red';
-      // error_fname.style.margin = "5px";
-      // error_lname.style.margin = "5px";
+      error_fname.style.margin = "3px";
+      error_lname.style.margin = "3px";
       isValid = false;
     } else {
       error_fname.innerHTML = "";
@@ -41,7 +41,7 @@ function validationForm(event) {
     if (cbname.value.trim() === "" || cbname.value === null ) {
       error_cbname.innerHTML = "Enter company name";
       cbname.style.outline = '0.1px solid red';
-      // error_cbname.style.margin = "5px";
+      error_cbname.style.margin = "3px";
       isValid = false;
     } else {
       error_cbname.innerHTML = "";
@@ -53,7 +53,7 @@ function validationForm(event) {
     if (!email.value.match(email_check)) {
       error_email.innerHTML = "Valid email is required";
       email.style.outline = '0.1px solid red';
-      // error_email.style.margin = "5px";
+      error_email.style.margin = "3px";
       isValid = false;
     } else {
       error_email.innerHTML = "";
@@ -62,24 +62,32 @@ function validationForm(event) {
     }
   
     // Phone number validation
-    const phoneRegex = /^\d{10}$/; // Regular expression to validate 10-digit phone numbers
-    const phone = document.getElementById("phone")
-    if (!phone.value.match(phoneRegex)) {
+    const phoneRegex = /^\d{4,10}$/; // Regular expression to validate 10-digit phone numbers
+    if (phone.value === "") {
       error_phone.innerHTML = "Please enter a valid phone number";
       phone.style.outline = '0.1px solid red';
-      // error_phone.style.margin = "5px";
+      isValid = false;
+    } else if (phone.value.length < 4) {
+      error_phone.innerHTML = "Minimum 4 digits needed!!";
+      phone.style.outline = '0.1px solid red';
+      isValid = false;
+    } else if (phone.value.length > 10) {
+      error_phone.innerHTML = "Maximum 10 digits needed!!";
+      phone.style.outline = '0.1px solid red';
+    } else if (!phone.value.match(phoneRegex)) {
+      error_phone.innerHTML = "Please enter a valid phone number";
+      phone.style.outline = '0.1px solid red';
       isValid = false;
     } else {
       error_phone.innerHTML = "";
-      error_phone.style.margin = "";
       phone.style.outline = '';
-
     }
+    // ==========
   
     if (message.value === "" || message.value.length < 5) {
       error_message.innerHTML = "Message can't be less than 5 characters";
       message.style.outline = '0.1px solid red';
-      // error_message.style.margin = "5px";
+      error_message.style.margin = "3px";
       isValid = false;
     } else {
       error_message.innerHTML = "";
