@@ -7,6 +7,29 @@ fetch("/blog.json")
     setupShareButton();
   });
 
+  // Function to wrap "website design" with an <a> tag
+// function wrapWithLink(content) {
+//   const link = '<a href="https://haash.tech/topmost-software-companies-in-india.html" >website design</a>';
+//   const regex = new RegExp('website design', 'gi');
+//   return content.replace(regex, link);
+// }
+function wrapWithLink(content) {
+  const links = [
+    { text: 'website design', url: 'https://haash.tech/topmost-software-companies-in-india.html' },
+    { text: 'Content Management System (CMS):', url: 'https://kinsta.com/knowledgebase/content-management-system/' } // Add the appropriate URL
+  ];
+
+  links.forEach(link => {
+    // Escape special characters in the link text
+    const escapedText = link.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(escapedText, 'gi');
+    content = content.replace(regex, `<a href="${link.url}" class="underline">${link.text}</a>`);
+  });
+
+  return content;
+}
+
+
 //   show details ======================
 function showDetails() {
   let detail = document.querySelector(".detail");
@@ -29,7 +52,9 @@ function showDetails() {
   detail.querySelector(".image img").src = thisBlog?.image;
   detail.querySelector(".name").innerHTML = thisBlog?.name;
   detail.querySelector(".date").innerHTML = thisBlog?.date;
-  detail.querySelector(".content").innerHTML = thisBlog?.content;
+  // detail.querySelector(".content").innerHTML = thisBlog?.content;
+  let contentWithLink = wrapWithLink(thisBlog?.content);
+  detail.querySelector(".content").innerHTML = contentWithLink;
   detail.querySelector(".secContent").innerHTML = `${thisBlog.secContent ? thisBlog.secContent : ""}`;
   detail.querySelector(".conclusion-head").innerHTML = thisBlog?.conclusion;
   detail.querySelector(".conclusion-text").innerHTML = thisBlog?.conclusiontext;
@@ -44,7 +69,7 @@ thisBlog.topics.forEach((topic) => {
         .map(
           (sub) => `
           <li>
-            ${sub.h3 ? `<h3 class="subheading">${sub?.h3}</h3>` : ""}
+            ${sub.h3 ? `<h3 class="subheading">${wrapWithLink(sub?.h3)}</h3>` : ""}
             ${sub.paragraph ? `<p>${sub?.paragraph}</p>` : ""}
             ${sub.src ? `<img src="${sub.src}" class="w-100" alt="${sub.h3}" />` : ""}
           </li>
