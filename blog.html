@@ -43,11 +43,27 @@
       type="image/x-icon"
     />
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BRN8J2ZNG0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-BRN8J2ZNG0");
+    </script>
   </head>
   <body>
     <!-- ********preloader******** -->
-    <div class="preloader"><img src="assets/imgs/logo/headerLogo.svg" alt=""><div class="preloader-after"></div></div>
+    <div class="preloader">
+      <img src="assets/imgs/logo/headerLogo.svg" alt="" />
+      <div class="preloader-after"></div>
+    </div>
 
     <!-- ********Header******** -->
     <div id="navbar_include"></div>
@@ -79,8 +95,8 @@
     </style>
     <main>
       <!-- blog cards section -->
-      <section class="container section-blog " >
-        <div class=" text-center text-white my-5">
+      <section class="container section-blog">
+        <div class="text-center text-white my-5">
           <h1>Blog</h1>
         </div>
         <div class="row listBlog row-cols-1 row-cols-md-3 row-cols-sm-2 g-4">
@@ -95,7 +111,9 @@
         >
           Get started now!
         </h3>
-        <p class="text-sub-color para-home">It takes less than a minute of your time.</p>
+        <p class="text-sub-color para-home">
+          It takes less than a minute of your time.
+        </p>
         <div class="w-100 d-flex align-items-center justify-content-center">
           <a
             href="contactUs.html"
@@ -136,9 +154,9 @@
                       >9846 012 078</a
                     >
                     <a
-                      href="tel:+971566494903"
+                      href="https://wa.link/wpu2tb"
                       class="text-decoration-none footer_items"
-                      >, +97 1566 494 903</a
+                      >, +971 566 494 903</a
                     >
                   </li>
                   <li>
@@ -149,29 +167,42 @@
                     >
                   </li>
                   <li>
-                    <ul class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2">
+                    <ul
+                      class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2"
+                    >
                       <li>
-                        <a href="https://www.instagram.com/haash_tech/" aria-label="Instagram">
+                        <a
+                          href="https://www.instagram.com/haash_tech/"
+                          aria-label="Instagram"
+                        >
                           <i class="fa-brands fa-square-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.facebook.com/yourpage" aria-label="Facebook">
+                        <a
+                          href="https://www.facebook.com/yourpage"
+                          aria-label="Facebook"
+                        >
                           <i class="fa-brands fa-facebook"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://twitter.com/youraccount" aria-label="Twitter">
+                        <a
+                          href="https://twitter.com/youraccount"
+                          aria-label="Twitter"
+                        >
                           <i class="fa-brands fa-x-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.linkedin.com/in/haash-tech-a61b2b309/" aria-label="LinkedIn">
+                        <a
+                          href="https://www.linkedin.com/in/haash-tech-a61b2b309/"
+                          aria-label="LinkedIn"
+                        >
                           <i class="fa-brands fa-linkedin"></i>
                         </a>
                       </li>
                     </ul>
-                    
                   </li>
                 </ul>
               </div>
@@ -197,153 +228,179 @@
       <!-- #footer -->
       <footer class=" ">
         <div class="container footer">
-           <div class="row">
-          <div class="col-md-3 footer_image bg-">
-            <img
-              src="assets/imgs/logo/footerLogo.svg"
-              alt="footer logo"
-              class="mx-auto mb-5"
-            />
-          </div>
-          <div class="col-md-1"></div>
-          <!-- <div class="col-md-4"></div> -->
-          <div class="col-md-3 g-0 bg-">
-            <h3 class="text-start mb-4 text-white">Find Us Here</h3>
-            <address class="footer_items">
-              <a
-                href="https://maps.app.goo.gl/KXzmksXmXPui5QSS9"
-                class="footer_items"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-bs-toggle="tooltip"
-                data-bs-title="Click Here"
-              >
-                <span> Odio cradle 1, kambanimukku <br /></span>
-                <span>koduvally Road Exit-2, <br /></span>
-                <span>Malayamma PO, NIT Campus, <br /></span>
-                <span>Kozhikode, Kerala - 673601</span>
-              </a>
-            </address>
-            <address class="footer_items">
-              <a
-                href="https://maps.app.goo.gl/oHh6bU9kCRqvXxss6"
-                class="footer_items"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-bs-toggle="tooltip"
-                data-bs-title="Click Here"
-              >
-                <span>603, -D Block - <br /></span>
-                <span>Horizon Towers <br /></span>
-                <span>Al Rashidiya 1, <br /></span>
-                <span>Ajman, UAE</span>
-              </a>
-            </address>
-          </div>
-          <div class="col-md-2 g-0 bg-">
-            <h3 class="text-start mb-4 text-white">Services</h3>
-            <ul class="list-unstyled">
-              <li>
+          <div class="row">
+            <div class="col-md-3 footer_image bg-">
+              <img
+                src="assets/imgs/logo/footerLogo.svg"
+                alt="footer logo"
+                class="mx-auto mb-5"
+              />
+            </div>
+            <div class="col-md-1"></div>
+            <!-- <div class="col-md-4"></div> -->
+            <div class="col-md-3 g-0 bg-">
+              <h3 class="text-start mb-4 text-white">Find Us Here</h3>
+              <address class="footer_items">
                 <a
-                  href="topmost-software-companies-in-india.html#webApp"
-                  class="text-decoration-none footer_items"
-                  >Ui/ux design</a
+                  href="https://maps.app.goo.gl/KXzmksXmXPui5QSS9"
+                  class="footer_items"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Click Here"
                 >
-              </li>
-              <li>
+                  <span> Odio cradle 1, kambanimukku <br /></span>
+                  <span>koduvally Road Exit-2, <br /></span>
+                  <span>Malayamma PO, NIT Campus, <br /></span>
+                  <span>Kozhikode, Kerala - 673601</span>
+                </a>
+              </address>
+              <address class="footer_items">
                 <a
-                  href="topmost-software-companies-in-india.html#tech"
-                  class="text-decoration-none footer_items"
-                  >Web development</a
+                  href="https://maps.app.goo.gl/oHh6bU9kCRqvXxss6"
+                  class="footer_items"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Click Here"
                 >
-              </li>
-              <li>
-                <a
-                  href="topmost-software-companies-in-india.html#tech"
-                  class="text-decoration-none footer_items"
-                  >App development</a
-                >
-              </li>
-              <li>
-                <a
-                  href="topmost-software-companies-in-india.html#branding"
-                  class="text-decoration-none footer_items"
-                  >E-commerce</a
-                >
-              </li>
-            </ul>
-          </div>
+                  <span>603, -D Block - <br /></span>
+                  <span>Horizon Towers <br /></span>
+                  <span>Al Rashidiya 1, <br /></span>
+                  <span>Ajman, UAE</span>
+                </a>
+              </address>
+            </div>
+            <div class="col-md-2 g-0 bg-">
+              <h3 class="text-start mb-4 text-white">Services</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="topmost-software-companies-in-india.html#webApp"
+                    class="text-decoration-none footer_items"
+                    >Ui/ux design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="topmost-software-companies-in-india.html#tech"
+                    class="text-decoration-none footer_items"
+                    >Web development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="topmost-software-companies-in-india.html#tech"
+                    class="text-decoration-none footer_items"
+                    >App development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="topmost-software-companies-in-india.html#branding"
+                    class="text-decoration-none footer_items"
+                    >E-commerce</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-          <div class="col-md-2 g-0">
-            <h3
-              class="text-start mb-4 text-white d-md-block d-none"
-              style="visibility: hidden"
-            >
-              Services
-            </h3>
-            <ul class="list-unstyled">
-              <li>
-                <a
-                  href="topmost-software-companies-in-india.html#tech"
-                  class="text-decoration-none footer_items"
-                  >DevOps Consulting</a
-                >
-              </li>
+            <div class="col-md-2 g-0">
+              <h3
+                class="text-start mb-4 text-white d-md-block d-none"
+                style="visibility: hidden"
+              >
+                Services
+              </h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="topmost-software-companies-in-india.html#tech"
+                    class="text-decoration-none footer_items"
+                    >DevOps Consulting</a
+                  >
+                </li>
 
-              <li>
-                <a
-                  href="topmost-software-companies-in-india.html#tech"
-                  class="text-decoration-none footer_items"
-                  >Social Media Management</a
-                >
-              </li>
-              <li>
-                <a
-                  href="topmost-software-companies-in-india.html#tech"
-                  class="text-decoration-none footer_items"
-                  >Performance Marketing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="topmost-software-companies-in-india.html#tech"
-                  class="text-decoration-none footer_items"
-                  >Search Engine</a
-                >
-              </li>
-            </ul>
+                <li>
+                  <a
+                    href="topmost-software-companies-in-india.html#tech"
+                    class="text-decoration-none footer_items"
+                    >Social Media Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="topmost-software-companies-in-india.html#tech"
+                    class="text-decoration-none footer_items"
+                    >Performance Marketing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="topmost-software-companies-in-india.html#tech"
+                    class="text-decoration-none footer_items"
+                    >Search Engine</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        </div>
-       
+
         <!-- foot -->
-        <div class="d-md-flex foot-privacy gap-3 justify-content-center align-items-center pt-3 bg-dark bg-gradient">
-          <ul class="list-unstyled d-md-flex foot-privacy gap-3 justify-content-center align-items-center">
+        <div
+          class="d-md-flex foot-privacy gap-3 justify-content-center align-items-center pt-3 bg-dark bg-gradient"
+        >
+          <ul
+            class="list-unstyled d-md-flex foot-privacy gap-3 justify-content-center align-items-center"
+          >
             <li class="d-sm-flex gap-3 d-none">
-              <span class=" footer_items">Haash.Tech &copy 2024</span>
-              <span class=" footer_items">Privacy & Legal</span>
+              <span class="footer_items">Haash.Tech &copy 2024</span>
+              <span class="footer_items">Privacy & Legal</span>
             </li>
             <li>
-              <span class="text-decoration-none footer_items text-center">|</span>
+              <span class="text-decoration-none footer_items text-center"
+                >|</span
+              >
             </li>
             <li>
-              <a href="index.html" class="text-decoration-none footer_items text-center">Home</a>
+              <a
+                href="index.html"
+                class="text-decoration-none footer_items text-center"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="topmost-software-companies-in-india.html" class="text-decoration-none footer_items text-center">Who We Are</a>
+              <a
+                href="topmost-software-companies-in-india.html"
+                class="text-decoration-none footer_items text-center"
+                >Who We Are</a
+              >
             </li>
             <li>
-              <a href="career.html" class="text-decoration-none footer_items text-center">Career</a>
+              <a
+                href="career.html"
+                class="text-decoration-none footer_items text-center"
+                >Career</a
+              >
             </li>
             <li>
-              <a href="blog.html" class="text-decoration-none footer_items text-center">Blog</a>
+              <a
+                href="blog.html"
+                class="text-decoration-none footer_items text-center"
+                >Blog</a
+              >
             </li>
             <li>
-              <a href="contactUs.html" class="text-decoration-none footer_items text-center">Contact Us</a>
+              <a
+                href="contactUs.html"
+                class="text-decoration-none footer_items text-center"
+                >Contact Us</a
+              >
             </li>
             <li class="d-sm-none d-flex gap-3">
-              <span class=" footer_items">Haash.Tech &copy 2024</span>
-              <span class=" footer_items">Privacy & Legal</span>
+              <span class="footer_items">Haash.Tech &copy 2024</span>
+              <span class="footer_items">Privacy & Legal</span>
             </li>
           </ul>
         </div>
@@ -382,7 +439,7 @@
           blogs = data;
           // console.log(blogs);
           addDataToHTML();
-          setupShareButton() 
+          setupShareButton();
         });
       // addd data to html
       let listBlog = document.querySelector(".listBlog");
@@ -391,7 +448,10 @@
           let newBlog = document.createElement("div");
           newBlog.href = "/details.html?id=" + blog.id;
           newBlog.classList.add("col");
-          let truncatedContent = blog.content.length > 130 ? blog.content.substring(0, 130) + "..." : blog.content;
+          let truncatedContent =
+            blog.content.length > 130
+              ? blog.content.substring(0, 130) + "..."
+              : blog.content;
 
           newBlog.innerHTML = `
             <div class="card h-100">
@@ -448,28 +508,27 @@
       }
 
       function setupShareButton() {
-    const viewBtns = document.querySelectorAll(".view-modal");
-    viewBtns.forEach((viewBtn, index) => {
-        viewBtn.addEventListener("click", () => {
+        const viewBtns = document.querySelectorAll(".view-modal");
+        viewBtns.forEach((viewBtn, index) => {
+          viewBtn.addEventListener("click", () => {
             const blog = blogs[index]; // Get the corresponding blog for this button
             if (navigator.share && blog) {
-                const shareText = `${blog.title}\n${window.location.origin}/details.html?id=${blog.id}`;
-                navigator
-                    .share({
-                        title: blog.title,
-                        text: shareText,
-                    })
-                    .then(() => {
-                        console.log("Sharing successful");
-                    })
-                    .catch((error) => {
-                        console.error("Error sharing:", error);
-                    });
+              const shareText = `${blog.title}\n${window.location.origin}/details.html?id=${blog.id}`;
+              navigator
+                .share({
+                  title: blog.title,
+                  text: shareText,
+                })
+                .then(() => {
+                  console.log("Sharing successful");
+                })
+                .catch((error) => {
+                  console.error("Error sharing:", error);
+                });
             }
+          });
         });
-    });
-}
-
+      }
     </script>
   </body>
 </html>

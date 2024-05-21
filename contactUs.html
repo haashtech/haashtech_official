@@ -65,6 +65,20 @@
 
     <!-- JS for select2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BRN8J2ZNG0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BRN8J2ZNG0");
+    </script>
   </head>
   <body>
     <style>
@@ -188,10 +202,10 @@
                     <span class="para text-sub-color">Whatsapp only</span>
                     <h3 class="text-main para-home">
                       <a
-                        href="tel:+971566494903"
+                        href="https://wa.link/wpu2tb"
                         class=""
                         style="color: #ffbe6c"
-                        >+971 1566 494 903</a
+                        >+971 566 494 903</a
                       >
                     </h3>
                   </div>
@@ -208,7 +222,7 @@
               method="POST"
               class="container glassbg p-"
               novalidate
-              style="padding: 2rem 2rem;"
+              style="padding: 2rem 2rem"
             >
               <input
                 type="hidden"
@@ -233,7 +247,7 @@
                   />
                   <div id="error_fname" class="error text-danger"></div>
                 </div>
-                <div class="flex-grow-1 ">
+                <div class="flex-grow-1">
                   <label for="Lastname" class="text-white">Last Name</label>
                   <input
                     type="text"
@@ -313,7 +327,7 @@
               <div class="col-12 d-flex justify-content-end mt-5">
                 <!-- ====== -->
                 <button
-                  class="button "
+                  class="button"
                   id="form-submit"
                   type="submit"
                   aria-label="submit"
@@ -358,9 +372,9 @@
                       >9846 012 078</a
                     >
                     <a
-                      href="tel:+971566494903"
+                      href="https://wa.link/wpu2tb"
                       class="text-decoration-none footer_items"
-                      >, +97 1566 494 903</a
+                      >, +971 566 494 903</a
                     >
                   </li>
                   <li>
@@ -626,7 +640,7 @@
           loader.addEventListener("transitionend", () => {
             document.body.removeChild(loader);
           });
-        }); 
+        });
       });
     </script>
     <script>
@@ -641,7 +655,7 @@
       var iti = window.intlTelInput(input, {
         initialCountry: "in", // Set Saudi Arabia as the initial country
         separateDialCode: true,
-        preferredCountries: ["in", "sa", "us", "gb", "au"], // Include Saudi Arabia in the preferred countries list
+        preferredCountries: ["in", "sa", "us", "gb", "ae"], // Include Saudi Arabia in the preferred countries list
         utilsScript:
           "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js", // Load the utils script for formatting/validation
       });

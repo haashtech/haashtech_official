@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
-    rel="icon"
-    href="assets/imgs/logo/titleLogo.webp"
-    type="image/x-icon"
-    alt="Website Favicon"
-  />
-  <title></title>
-  
+      rel="icon"
+      href="assets/imgs/logo/titleLogo.webp"
+      type="image/x-icon"
+      alt="Website Favicon"
+    />
+    <title></title>
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -47,6 +47,21 @@
     <link rel="stylesheet" href="assets/css/custom.css" />
     <link rel="stylesheet" href="assets/css/preloader.css" />
     <link rel="stylesheet" href="assets/css/page.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BRN8J2ZNG0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BRN8J2ZNG0");
+    </script>
 
     <script>
       window.addEventListener("load", () => {
@@ -89,7 +104,7 @@
       .detail {
         position: relative;
       }
-      .bi{
+      .bi {
         color: white;
       }
       .fixed {
@@ -99,7 +114,7 @@
         height: 100vh;
         border-left: 1px solid #4e4d4d;
       }
-      .fixed h2{
+      .fixed h2 {
         font-size: 1rem;
         color: white;
       }
@@ -121,7 +136,10 @@
       }
     </style>
     <!-- ********preloader******** -->
-    <div class="preloader"><img src="assets/imgs/logo/headerLogo.svg" alt=""><div class="preloader-after"></div></div>
+    <div class="preloader">
+      <img src="assets/imgs/logo/headerLogo.svg" alt="" />
+      <div class="preloader-after"></div>
+    </div>
 
     <!-- ********Header******** -->
     <div id="navbar_include"></div>
@@ -131,14 +149,26 @@
 
     <section class="container" style="margin-top: 13rem">
       <div class="row detail">
-        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-         <u class="">
-          <ol class="breadcrumb ">
-            <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
-            <li class="breadcrumb-item active text-truncate text-white-50 " aria-current="page"><a href="#"></a></li>
-          </ol>
-         </u>
-          
+        <nav
+          style="
+            --bs-breadcrumb-divider: url(
+              &#34;data:image/svg + xml,
+              %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+            );
+          "
+          aria-label="breadcrumb"
+        >
+          <u class="">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+              <li
+                class="breadcrumb-item active text-truncate text-white-50"
+                aria-current="page"
+              >
+                <a href="#"></a>
+              </li>
+            </ol>
+          </u>
         </nav>
         <div class="col-lg-8 d-flex flex-column gap-3">
           <div class="">
@@ -156,8 +186,11 @@
                 <p class="date"></p>
               </div>
             </div>
-            <button class="border-0 bg-transparent view-modal" aria-label="Share">
-              <i class="bi bi-share-fill "></i>
+            <button
+              class="border-0 bg-transparent view-modal"
+              aria-label="Share"
+            >
+              <i class="bi bi-share-fill"></i>
             </button>
           </div>
           <!-- =========== -->
@@ -178,9 +211,9 @@
           </div>
         </div>
         <!-- other topics -->
-          <div class="col-lg-4 fixed otherTopics">
-             <h4 class="pt-3 pb-5 text-white">Other topics</h4>
-          </div>
+        <div class="col-lg-4 fixed otherTopics">
+          <h4 class="pt-3 pb-5 text-white">Other topics</h4>
+        </div>
       </div>
     </section>
 
@@ -192,7 +225,9 @@
       >
         Get started now!
       </h5>
-      <p class="text-sub-color para-home">It takes less than a minute of your time.</p>
+      <p class="text-sub-color para-home">
+        It takes less than a minute of your time.
+      </p>
       <div class="w-100 d-flex align-items-center justify-content-center">
         <a
           href="contactUs.html"
@@ -202,7 +237,6 @@
         ></a>
       </div>
     </section>
-
 
     <section class="bg-white my-5 w-100 overflow-hidden">
       <div class="row overflow-hidden">
@@ -233,9 +267,9 @@
                     >9846 012 078</a
                   >
                   <a
-                    href="tel:+971566494903"
+                    href="https://wa.link/wpu2tb"
                     class="text-decoration-none footer_items"
-                    >, +97 1566 494 903</a
+                    >, +971 566 494 903</a
                   >
                 </li>
                 <li>
@@ -246,29 +280,42 @@
                   >
                 </li>
                 <li>
-                  <ul class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2">
+                  <ul
+                    class="list-unstyled d-flex gap-4 justify-content-start align-items-center mt-2"
+                  >
                     <li>
-                      <a href="https://www.instagram.com/haash_tech/" aria-label="Instagram">
+                      <a
+                        href="https://www.instagram.com/haash_tech/"
+                        aria-label="Instagram"
+                      >
                         <i class="fa-brands fa-square-instagram"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.facebook.com/yourpage" aria-label="Facebook">
+                      <a
+                        href="https://www.facebook.com/yourpage"
+                        aria-label="Facebook"
+                      >
                         <i class="fa-brands fa-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://twitter.com/youraccount" aria-label="Twitter">
+                      <a
+                        href="https://twitter.com/youraccount"
+                        aria-label="Twitter"
+                      >
                         <i class="fa-brands fa-x-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/in/haash-tech-a61b2b309/" aria-label="LinkedIn">
+                      <a
+                        href="https://www.linkedin.com/in/haash-tech-a61b2b309/"
+                        aria-label="LinkedIn"
+                      >
                         <i class="fa-brands fa-linkedin"></i>
                       </a>
                     </li>
                   </ul>
-                  
                 </li>
               </ul>
             </div>
@@ -278,171 +325,195 @@
         <!-- map section starts -->
         <div class="col-md-7 g-0 map-sec">
           <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.154298471097!2d75.934691074095!3d11.32940824875246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba643000c7d3771%3A0x9463d4507015c114!2sHaash%20india%20exports%20private%20limited!5e1!3m2!1sen!2sin!4v1714564975445!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Haash.tech Location"
-            ></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.154298471097!2d75.934691074095!3d11.32940824875246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba643000c7d3771%3A0x9463d4507015c114!2sHaash%20india%20exports%20private%20limited!5e1!3m2!1sen!2sin!4v1714564975445!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Haash.tech Location"
+          ></iframe>
         </div>
       </div>
     </section>
 
     <!-- ================ -->
-    
+
     <!-- #footer -->
     <footer class=" ">
       <div class="container footer">
-         <div class="row">
-        <div class="col-md-3 footer_image bg-">
-          <img
-            src="assets/imgs/logo/footerLogo.svg"
-            alt="footer logo"
-            class="mx-auto mb-5"
-          />
-        </div>
-        <div class="col-md-1"></div>
-        <!-- <div class="col-md-4"></div> -->
-        <div class="col-md-3 g-0 bg-">
-          <h3 class="text-start mb-4 text-white">Find Us Here</h3>
-          <address class="footer_items">
-            <a
-              href="https://maps.app.goo.gl/KXzmksXmXPui5QSS9"
-              class="footer_items"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-bs-toggle="tooltip"
-              data-bs-title="Click Here"
-            >
-              <span> Odio cradle 1, kambanimukku <br /></span>
-              <span>koduvally Road Exit-2, <br /></span>
-              <span>Malayamma PO, NIT Campus, <br /></span>
-              <span>Kozhikode, Kerala - 673601</span>
-            </a>
-          </address>
-          <address class="footer_items">
-            <a
-              href="https://maps.app.goo.gl/oHh6bU9kCRqvXxss6"
-              class="footer_items"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-bs-toggle="tooltip"
-              data-bs-title="Click Here"
-            >
-              <span>603, -D Block - <br /></span>
-              <span>Horizon Towers <br /></span>
-              <span>Al Rashidiya 1, <br /></span>
-              <span>Ajman, UAE</span>
-            </a>
-          </address>
-        </div>
-        <div class="col-md-2 g-0 bg-">
-          <h3 class="text-start mb-4 text-white">Services</h3>
-          <ul class="list-unstyled">
-            <li>
+        <div class="row">
+          <div class="col-md-3 footer_image bg-">
+            <img
+              src="assets/imgs/logo/footerLogo.svg"
+              alt="footer logo"
+              class="mx-auto mb-5"
+            />
+          </div>
+          <div class="col-md-1"></div>
+          <!-- <div class="col-md-4"></div> -->
+          <div class="col-md-3 g-0 bg-">
+            <h3 class="text-start mb-4 text-white">Find Us Here</h3>
+            <address class="footer_items">
               <a
-                href="topmost-software-companies-in-india.html"
-                class="text-decoration-none footer_items"
-                >Ui/ux design</a
+                href="https://maps.app.goo.gl/KXzmksXmXPui5QSS9"
+                class="footer_items"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-bs-toggle="tooltip"
+                data-bs-title="Click Here"
               >
-            </li>
-            <li>
+                <span> Odio cradle 1, kambanimukku <br /></span>
+                <span>koduvally Road Exit-2, <br /></span>
+                <span>Malayamma PO, NIT Campus, <br /></span>
+                <span>Kozhikode, Kerala - 673601</span>
+              </a>
+            </address>
+            <address class="footer_items">
               <a
-                href="topmost-software-companies-in-india.html#tech"
-                class="text-decoration-none footer_items"
-                >Web development</a
+                href="https://maps.app.goo.gl/oHh6bU9kCRqvXxss6"
+                class="footer_items"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-bs-toggle="tooltip"
+                data-bs-title="Click Here"
               >
-            </li>
-            <li>
-              <a
-                href="topmost-software-companies-in-india.html#tech"
-                class="text-decoration-none footer_items"
-                >App development</a
-              >
-            </li>
-            <li>
-              <a
-                href="topmost-software-companies-in-india.html#branding"
-                class="text-decoration-none footer_items"
-                >E-commerce</a
-              >
-            </li>
-          </ul>
-        </div>
+                <span>603, -D Block - <br /></span>
+                <span>Horizon Towers <br /></span>
+                <span>Al Rashidiya 1, <br /></span>
+                <span>Ajman, UAE</span>
+              </a>
+            </address>
+          </div>
+          <div class="col-md-2 g-0 bg-">
+            <h3 class="text-start mb-4 text-white">Services</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="topmost-software-companies-in-india.html"
+                  class="text-decoration-none footer_items"
+                  >Ui/ux design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="topmost-software-companies-in-india.html#tech"
+                  class="text-decoration-none footer_items"
+                  >Web development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="topmost-software-companies-in-india.html#tech"
+                  class="text-decoration-none footer_items"
+                  >App development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="topmost-software-companies-in-india.html#branding"
+                  class="text-decoration-none footer_items"
+                  >E-commerce</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div class="col-md-2 g-0">
-          <h6
-            class="text-start mb-4 text-white d-md-block d-none"
-            style="visibility: hidden"
-          >
-            Services
-          </h6>
-          <ul class="list-unstyled">
-            <li>
-              <a
-                href="topmost-software-companies-in-india.html#tech"
-                class="text-decoration-none footer_items"
-                >DevOps Consulting</a
-              >
-            </li>
+          <div class="col-md-2 g-0">
+            <h6
+              class="text-start mb-4 text-white d-md-block d-none"
+              style="visibility: hidden"
+            >
+              Services
+            </h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="topmost-software-companies-in-india.html#tech"
+                  class="text-decoration-none footer_items"
+                  >DevOps Consulting</a
+                >
+              </li>
 
-            <li>
-              <a
-                href="topmost-software-companies-in-india.html#tech"
-                class="text-decoration-none footer_items"
-                >Social Media Management</a
-              >
-            </li>
-            <li>
-              <a
-                href="topmost-software-companies-in-india.html#tech"
-                class="text-decoration-none footer_items"
-                >Performance Marketing</a
-              >
-            </li>
-            <li>
-              <a
-                href="topmost-software-companies-in-india.html#tech"
-                class="text-decoration-none footer_items"
-                >Search Engine</a
-              >
-            </li>
-          </ul>
+              <li>
+                <a
+                  href="topmost-software-companies-in-india.html#tech"
+                  class="text-decoration-none footer_items"
+                  >Social Media Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="topmost-software-companies-in-india.html#tech"
+                  class="text-decoration-none footer_items"
+                  >Performance Marketing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="topmost-software-companies-in-india.html#tech"
+                  class="text-decoration-none footer_items"
+                  >Search Engine</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      </div>
-     
+
       <!-- foot -->
-      <div class="d-md-flex foot-privacy gap-3 justify-content-center align-items-center pt-3 bg-dark bg-gradient">
-        <ul class="list-unstyled d-md-flex foot-privacy gap-3 justify-content-center align-items-center">
+      <div
+        class="d-md-flex foot-privacy gap-3 justify-content-center align-items-center pt-3 bg-dark bg-gradient"
+      >
+        <ul
+          class="list-unstyled d-md-flex foot-privacy gap-3 justify-content-center align-items-center"
+        >
           <li class="d-sm-flex gap-3 d-none">
-            <span class=" footer_items">Haash.Tech &copy 2024</span>
-            <span class=" footer_items">Privacy & Legal</span>
+            <span class="footer_items">Haash.Tech &copy 2024</span>
+            <span class="footer_items">Privacy & Legal</span>
           </li>
           <li>
             <span class="text-decoration-none footer_items text-center">|</span>
           </li>
           <li>
-            <a href="index.html" class="text-decoration-none footer_items text-center">Home</a>
+            <a
+              href="index.html"
+              class="text-decoration-none footer_items text-center"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="topmost-software-companies-in-india.html" class="text-decoration-none footer_items text-center">Who We Are</a>
+            <a
+              href="topmost-software-companies-in-india.html"
+              class="text-decoration-none footer_items text-center"
+              >Who We Are</a
+            >
           </li>
           <li>
-            <a href="career.html" class="text-decoration-none footer_items text-center">Career</a>
+            <a
+              href="career.html"
+              class="text-decoration-none footer_items text-center"
+              >Career</a
+            >
           </li>
           <li>
-            <a href="blog.html" class="text-decoration-none footer_items text-center">Blog</a>
+            <a
+              href="blog.html"
+              class="text-decoration-none footer_items text-center"
+              >Blog</a
+            >
           </li>
           <li>
-            <a href="contactUs.html" class="text-decoration-none footer_items text-center">Contact Us</a>
+            <a
+              href="contactUs.html"
+              class="text-decoration-none footer_items text-center"
+              >Contact Us</a
+            >
           </li>
           <li class="d-sm-none d-flex gap-3">
-            <span class=" footer_items">Haash.Tech &copy 2024</span>
-            <span class=" footer_items">Privacy & Legal</span>
+            <span class="footer_items">Haash.Tech &copy 2024</span>
+            <span class="footer_items">Privacy & Legal</span>
           </li>
         </ul>
       </div>
